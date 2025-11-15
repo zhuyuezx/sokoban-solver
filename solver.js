@@ -341,7 +341,7 @@ function breadthFirstSearch() {
         
         if (isEndState(node[node.length - 1][1])) {
             const solution = nodeAction.slice(1).join('').replace(/,/g, '');
-            console.log(count);
+            // console.log(count); // Commented out for cleaner test output
             return solution;
         }
         
@@ -379,7 +379,7 @@ function depthFirstSearch() {
         
         if (isEndState(node[node.length - 1][1])) {
             const solution = nodeAction.slice(1).join('').replace(/,/g, '');
-            console.log(count);
+            // console.log(count); // Commented out for cleaner test output
             return solution;
         }
         
@@ -470,7 +470,7 @@ function uniformCostSearch() {
         
         if (isEndState(node[node.length - 1][1])) {
             const solution = nodeAction.slice(1).join('').replace(/,/g, '');
-            console.log(count);
+            // console.log(count); // Commented out for cleaner test output
             return solution;
         }
         
@@ -536,8 +536,8 @@ async function aStarSearch(progressCallback = null, timeoutMs = 30000) {
         
         // Check if we've reached the goal
         if (isEndState(currentState.boxes)) {
-            console.log(currentState.path);
-            console.log(count);
+            // console.log(currentState.path); // Commented out for cleaner test output
+            // console.log(count); // Commented out for cleaner test output
             return currentState.path;
         }
         
@@ -601,7 +601,7 @@ function transferToGameState(layout) {
 }
 
 async function solveSokoban(method, layout, progressCallback = null, timeoutMs = 30000) {
-    console.log('solve');
+    // console.log('solve'); // Commented out for cleaner test output
     const timeStart = performance.now();
     
     gameState = transferToGameState(layout);
@@ -638,8 +638,8 @@ async function solveSokoban(method, layout, progressCallback = null, timeoutMs =
     const timeEnd = performance.now();
     const timeStr = ((timeEnd - timeStart) / 1000).toFixed(2) + ' seconds.';
     
-    console.log(solution);
-    console.log(`Runtime of ${method}: ${timeStr}`);
+    // console.log(solution); // Commented out for cleaner test output
+    // console.log(`Runtime of ${method}: ${timeStr}`); // Commented out for cleaner test output
     
     return [solution, timeStr];
 }

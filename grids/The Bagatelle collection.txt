@@ -1,0 +1,304 @@
+Level: The Bagatelle collection 1
+
+###################
+##               ##
+ ##  B B.B.B B  ##
+  ##  B.B.B.B  ##
+   ## .B.B.B. ##
+    ## .B.B. ##
+     ## .B. ##
+      ## . ##
+       ##&##
+      ## . ##
+     ## .B. ##
+    ## .B.B. ##
+   ## .B.B.B. ##
+  ##  B.B.B.B  ##
+ ##  B B.B.B B  ##
+##               ##
+###################
+
+
+Level: The Bagatelle collection 2
+
+  #########
+ ##   #   ##
+##  # # #  ##
+#  # B.B #  #
+# #  X .  # #
+#   .#X# B  #
+###.B#&#B.###
+#  B.###.B  #
+# #  . . .# #
+#  #  B  #  #
+##  #B#B#  ##
+ ##   #   ##
+  #########
+
+
+Level: The Bagatelle collection 3
+
+  #########
+  #&   #  ####
+  # B  # BB  #
+  #  B B  #  #
+  ##B #.#   ####
+  ## ##.###    #
+  #  X......#  #
+  #  ##.##### ###
+#### ##.##  # B #
+#    B   #B   # #
+# #  ##  B  #   #
+# ########  #####
+#        # ##
+########   #
+       #####
+
+
+Level: The Bagatelle collection 4
+
+ ####
+ #  #######
+ #   B&#  #
+ # #.#B   #
+ # #X .#B #
+## #. X  ##
+#  .#B# ##
+#       #
+####   ##
+   #####
+
+
+Level: The Bagatelle collection 5
+
+        ####
+   ######  #####
+#### .. BB #   #
+#    XB #    B #
+#  # .## .## ###
+## #X.##B### #
+ #     &     #
+## ###B##.X# ##
+#  ##. ##. #  #
+#     # BX B  #
+#  # BB .. ####
+####  ######
+   ####
+
+
+Level: The Bagatelle collection 6
+
+     #####
+  ####   #
+  #  # B #
+  #. .&X######
+ ##..X.. #   #
+##  #X#    # #
+#  ##.# BB#  #
+# # B.    # ##
+#   ## # B   #
+###### B B B #
+     #  ######
+     ####
+
+
+Level: The Bagatelle collection 7
+
+#############
+#     #     #
+# X.XB#BX.X #
+# .B. &..B. #
+# X.X # X.X #
+# B B # B.B #
+### ##### ###
+# B.B # B.B #
+# X.X # B.B #
+# .B.. ..B  #
+# X.XB#BB B #
+#     #     #
+#############
+
+
+Level: The Bagatelle collection 8
+
+#####
+#   #####
+#       #
+##B# .B #
+#. X #B##
+#.B.B  #
+#.B.. ##
+#B ####
+#& #
+####
+
+
+Level: The Bagatelle collection 9
+
+        ######
+    #####    ####
+ #### B  B##   &###
+## B  B # B ### B ##
+#  B #B## # ### B  #
+# #B.............. #
+#  B ### #B####   ##
+##   # B  B # ##  #
+ #####      #  ####
+     ########
+
+
+Level: The Bagatelle collection 10
+
+   ####
+ ###  #
+ #&B. ##
+ #BX . #
+##  .  #
+# BXBX #
+#   . ##
+###  ##
+  ####
+
+
+Level: The Bagatelle collection 11
+
+#################
+#    ....    #  #
+# #.  B&B.XX.   #
+# #. X #B#   #B #
+#   #. #  ####  #
+#####B##      B #
+    #  ## ####  #
+    ## B B # ####
+     #  B  #
+     ##    #
+      ######
+
+
+Level: The Bagatelle collection 12
+
+########
+#      ##
+# & # . #
+# B B.B #
+##.#B#B##
+#  . .  #
+# XB# . #
+##     ##
+ #######
+
+
+Level: The Bagatelle collection 13
+
+########
+#  #   #
+#  X . #
+# .BXB #
+## X . #
+# XBX  #
+# & #  #
+########
+
+
+Level: The Bagatelle collection 14
+
+####
+#  #####
+# B#...###
+#    BBB #####
+# B#.X.  .#  #
+#& # B .X.#B #
+##### BBB    #
+    ## ...#B #
+     ######  #
+          ####
+
+
+Level: The Bagatelle collection 15
+
+   ####
+   #  #
+####B.######
+#   B.B #  #
+# B  %     #
+####BX###X #
+#### .### ##
+#   #.  # #
+#       # #
+#### #  # ##
+   # ####  #
+   #       #
+   #  ######
+   ####
+
+
+Level: The Bagatelle collection 16
+
+####
+#  #######
+# BB B B ##
+#  B&B #  #
+## #X#  # #
+#  X.   # #
+# B#.#. # #
+#   .. #  #
+### X..  ##
+  ########
+
+
+Level: The Bagatelle collection 17
+
+     #######
+     #     #
+    ##.XB# #
+    #  ..B #
+#####B# B###
+# B   # .#
+# #X X  B#
+#& .. #  #
+###   ####
+  #####
+
+
+Level: The Bagatelle collection 18
+
+####  ####
+#  ####  #
+# .    . #
+#  ####B #
+## #    ##
+## .BX# ##
+# X#B #  #
+#&B    . #
+#  ####  #
+####  ####
+
+
+Level: The Bagatelle collection 19
+
+ ########
+ #   #  #
+## #B# B#
+#       #
+#  #X# B##
+#  ..X   #
+####.### #
+#  ..X B #
+#& #.#  ##
+# B    B#
+#  ###  #
+#### ####
+
+
+Level: The Bagatelle collection 20
+
+   ########   #####
+  ##   #  #####   #
+ ##    #  B       #
+ #  # ##   ##### ###
+##. . .## ##  B    #
+#   #      #& B  # #
+#   ..####  ####B# #
+######## ## B      #
+          #####   ##
+              #####

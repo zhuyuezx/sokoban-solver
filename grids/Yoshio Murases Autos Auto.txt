@@ -1,0 +1,622 @@
+Level: Yoshio Murases Autos Auto 1
+
+########
+###  . #
+## X # #
+## .B  #
+##  #B##
+### & ##
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 2
+
+########
+##  .& #
+## #.# #
+##   B #
+##.BB ##
+##  ####
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 3
+
+########
+#### &##
+#  XB ##
+#     ##
+## .####
+##B ####
+## .####
+########
+
+
+Level: Yoshio Murases Autos Auto 4
+
+########
+##.###.#
+## #  .#
+## BB &#
+##  B  #
+##  #  #
+##  ####
+########
+
+
+Level: Yoshio Murases Autos Auto 5
+
+########
+#### &##
+####   #
+#. #BB #
+#     ##
+#.  B###
+##.  ###
+########
+
+
+Level: Yoshio Murases Autos Auto 6
+
+########
+# ..####
+# B    #
+#  #B# #
+# & .B #
+########
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 7
+
+########
+###  .##
+# B # ##
+# XB  ##
+# .#& ##
+#    ###
+#   ####
+########
+
+
+Level: Yoshio Murases Autos Auto 8
+
+########
+########
+#.  &.##
+#  B# ##
+# # B. #
+#   B# #
+####   #
+########
+
+
+Level: Yoshio Murases Autos Auto 9
+
+########
+#. .####
+#.#BB ##
+#   & ##
+# B#  ##
+##   ###
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 10
+
+########
+#.  ####
+# #   ##
+# . # ##
+# BXB ##
+##& ####
+##  ####
+########
+
+
+Level: Yoshio Murases Autos Auto 11
+
+########
+########
+#.   . #
+# # #  #
+#&B  B.#
+##### B#
+#####  #
+########
+
+
+Level: Yoshio Murases Autos Auto 12
+
+########
+#  #####
+#  #####
+# .X   #
+##B    #
+## #B###
+##. &###
+########
+
+
+Level: Yoshio Murases Autos Auto 13
+
+########
+## & ###
+## .   #
+#. B.B #
+##B# ###
+##   ###
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 14
+
+########
+##   ###
+# B# ###
+# . &###
+# X   ##
+## #B ##
+##.  ###
+########
+
+
+Level: Yoshio Murases Autos Auto 15
+
+########
+########
+##  ####
+#..B  .#
+# #B B #
+#&  #  #
+#####  #
+########
+
+
+Level: Yoshio Murases Autos Auto 16
+
+########
+##  .&##
+##   B.#
+####X# #
+##     #
+#  B  ##
+#   ####
+########
+
+
+Level: Yoshio Murases Autos Auto 17
+
+########
+##& ####
+##  ####
+##. ####
+# BB. .#
+#  B ###
+###  ###
+########
+
+
+Level: Yoshio Murases Autos Auto 18
+
+########
+########
+##.  ###
+## # ###
+## XB  #
+##  B. #
+##  &###
+########
+
+
+Level: Yoshio Murases Autos Auto 19
+
+########
+########
+###   ##
+### #.##
+###  .##
+#& BB ##
+#  .B ##
+########
+
+
+Level: Yoshio Murases Autos Auto 20
+
+########
+#   &###
+# B# ###
+# X B  #
+#   ## #
+##.  . #
+###   ##
+########
+
+
+Level: Yoshio Murases Autos Auto 21
+
+########
+##   &##
+##  #  #
+##.  B #
+## BB#.#
+####  .#
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 22
+
+########
+########
+###. ###
+# .  ###
+#   BB #
+## . B&#
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 23
+
+########
+##&.  ##
+# BBX ##
+#  #  ##
+#  #  .#
+#### # #
+####   #
+########
+
+
+Level: Yoshio Murases Autos Auto 24
+
+########
+#####  #
+#####B.#
+###  . #
+###  #.#
+# B  B #
+#   #& #
+########
+
+
+Level: Yoshio Murases Autos Auto 25
+
+########
+#  .####
+# B.. ##
+#  ##B##
+##  #  #
+##B   &#
+##  ####
+########
+
+
+Level: Yoshio Murases Autos Auto 26
+
+########
+###  ###
+###  ###
+### .. #
+#  B#  #
+#  .BB #
+#### & #
+########
+
+
+Level: Yoshio Murases Autos Auto 27
+
+########
+#   ####
+# # X&##
+#  X   #
+###B   #
+###   .#
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 28
+
+########
+### .  #
+# B&#. #
+#  B# ##
+#  X  ##
+##  # ##
+###   ##
+########
+
+
+Level: Yoshio Murases Autos Auto 29
+
+########
+########
+########
+##  ####
+#     ##
+#  #BB&#
+#  . X.#
+########
+
+
+Level: Yoshio Murases Autos Auto 30
+
+########
+##&    #
+#. #   #
+# BBB.##
+# .#  ##
+#  #####
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 31
+
+########
+#      #
+# # ##X#
+# #& B #
+#.B .  #
+#####  #
+#####  #
+########
+
+
+Level: Yoshio Murases Autos Auto 32
+
+########
+##&   ##
+###B   #
+### .  #
+# B #B##
+# .  .##
+####  ##
+########
+
+
+Level: Yoshio Murases Autos Auto 33
+
+########
+#   ####
+#  B  ##
+##BB .##
+##& . ##
+### # ##
+###  .##
+########
+
+
+Level: Yoshio Murases Autos Auto 34
+
+########
+#   ####
+# BB   #
+# .#.  #
+#  ## ##
+#  ##B##
+# &  .##
+########
+
+
+Level: Yoshio Murases Autos Auto 35
+
+########
+########
+########
+# .  ###
+# .# ###
+# &BB  #
+# B.   #
+########
+
+
+Level: Yoshio Murases Autos Auto 36
+
+########
+# &.#  #
+# .B . #
+#  #B  #
+#  B  ##
+###  ###
+###  ###
+########
+
+
+Level: Yoshio Murases Autos Auto 37
+
+########
+#    . #
+# B  B&#
+#.B.####
+#  #####
+#  #####
+#  #####
+########
+
+
+Level: Yoshio Murases Autos Auto 38
+
+########
+# .  ###
+#  #&###
+#  B ###
+##B#  ##
+#   # ##
+#. X  ##
+########
+
+
+Level: Yoshio Murases Autos Auto 39
+
+########
+########
+#### . #
+# X& . #
+# B #  #
+# #  B #
+#   ####
+########
+
+
+Level: Yoshio Murases Autos Auto 40
+
+########
+########
+########
+###  ###
+# .. B.#
+#  BB &#
+####   #
+########
+
+
+Level: Yoshio Murases Autos Auto 41
+
+########
+########
+#####& #
+##### .#
+# B B B#
+#   .  #
+### .  #
+########
+
+
+Level: Yoshio Murases Autos Auto 42
+
+########
+#   #  #
+# #.B B#
+#   B  #
+#####. #
+###   &#
+###   .#
+########
+
+
+Level: Yoshio Murases Autos Auto 43
+
+########
+####& ##
+###  ..#
+## B#B##
+#   B. #
+#  #   #
+#    ###
+########
+
+
+Level: Yoshio Murases Autos Auto 44
+
+########
+#   &###
+# BB####
+# B .  #
+## #.# #
+#.   # #
+#      #
+########
+
+
+Level: Yoshio Murases Autos Auto 45
+
+########
+####  ##
+#### B##
+# &B.  #
+# ##   #
+#   ## #
+#   X .#
+########
+
+
+Level: Yoshio Murases Autos Auto 46
+
+########
+#### & #
+####   #
+## B B##
+## B  ##
+#.  # ##
+#..   ##
+########
+
+
+Level: Yoshio Murases Autos Auto 47
+
+########
+########
+####. &#
+#  .B  #
+# #  ###
+# B B .#
+####   #
+########
+
+
+Level: Yoshio Murases Autos Auto 48
+
+########
+########
+#  .# &#
+# # B  #
+# B.#B #
+## .   #
+##  ####
+########
+
+
+Level: Yoshio Murases Autos Auto 49
+
+########
+########
+##     #
+##.## .#
+##X  B&#
+##  #B #
+##  #  #
+########
+
+
+Level: Yoshio Murases Autos Auto 50
+
+########
+#. #####
+# B#####
+#  #####
+# .B & #
+# .B # #
+###    #
+########
+
+
+Level: Yoshio Murases Autos Auto 51
+
+########
+#      #
+# #B   #
+# B &#.#
+##B#.  #
+##    .#
+########
+########
+
+
+Level: Yoshio Murases Autos Auto 52
+
+########
+#  . ###
+#    ###
+# #BB. #
+#.  ## #
+#&B ## #
+###    #
+########

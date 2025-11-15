@@ -144,6 +144,19 @@ const bindClicks = () => {
     exportToUrl()
   })
 
+  document.querySelector('.reset').addEventListener('click', function (event) {
+    loadLevel(DATA.current)
+  })
+
+  document.querySelector('.grid-set-select').addEventListener('change', async function (event) {
+    const gridSetPath = event.target.value
+    await loadLevelList(gridSetPath)
+    // Load the first level in the new grid set
+    if (DATA.levels.length > 0) {
+      loadLevel(DATA.levels[0].name)
+    }
+  })
+
   document.querySelector('.up').addEventListener('click', function (event) { executeManualMove('u') })
   document.querySelector('.down').addEventListener('click', function (event) { executeManualMove('d') })
   document.querySelector('.left').addEventListener('click', function (event) { executeManualMove('l') })
@@ -343,7 +356,8 @@ const importFromUrl = () => {
     } else {
       // Add new level to the list
       DATA.levels.push(importedLevel)
-      DATA.levels.sort((a, b) => a.name.localeCompare(b.name))
+      // Don't sort - keep the order from the .txt file
+      // DATA.levels.sort((a, b) => a.name.localeCompare(b.name))
     }
 
     // Update the select dropdown
@@ -641,8 +655,8 @@ const calculate = async () => {
     document.querySelector('.next').classList.remove('d-none')
   }
 }
-const loadLevelList = async () => {
-  const req = await fetch('levels.txt')
+const loadLevelList = async (gridSetPath = 'grids/Base-Levels.txt') => {
+  const req = await fetch(gridSetPath)
   const res = await req.text()
   const levels = res.split('Level:').filter(t => t !== '').map(l => {
     let grid = l.split('\n').filter(t => t !== '')
@@ -675,7 +689,8 @@ const loadLevelList = async () => {
       level.solution = savedLevel.solution
     }
   })
-  levels.sort((a, b) => a.name.localeCompare(b.name))
+  // Don't sort - keep the order from the .txt file
+  // levels.sort((a, b) => a.name.localeCompare(b.name))
 
   DATA.levels = levels
   console.log('DATA.levels', DATA.levels)

@@ -1,0 +1,255 @@
+Level: The Cantrip collection 1
+
+#####
+#   ####
+# #B   ###
+# #.XBX  #
+# # .X # #
+#  . B.#&#
+###  B # #
+  ####   #
+     #####
+
+
+Level: The Cantrip collection 2
+
+ #####
+ #   #####
+ #     B&#
+ ## ##.#X###
+### # B  B #
+# B .B. .# #
+#   B ##B# #
+###.#.  .  #
+  #   ######
+  #####
+
+
+Level: The Cantrip collection 3
+
+  ####
+###  #
+#&B .#####
+# XB B B #
+## X X . #
+ # . . ###
+ # . ###
+ ## B#
+  #  #
+  ####
+
+
+Level: The Cantrip collection 4
+
+#####
+#   #####
+# # B B #
+# BB. X&#
+# #  XX #
+# ### X##
+#  # .X #
+##  . . #
+ ##     #
+  #######
+
+
+Level: The Cantrip collection 5
+
+ #####
+##   #####
+#  # B&B #
+# #..#X  #
+#  .   . #
+## B.#.X #
+ # B BB# #
+ #####   #
+     #####
+
+
+Level: The Cantrip collection 6
+
+      #####
+ ######   #
+ #   # B  #
+##  B..#B #
+#  #XX.   #
+#&# X.X#  #
+#   ##   ##
+### B  ###
+  ###  #
+    ####
+
+
+Level: The Cantrip collection 7
+
+    ####
+#####  ##
+#   B B ##
+#   #.B. #
+##  XX.#&#
+ #   . B #
+ #####  ##
+     ####
+
+
+Level: The Cantrip collection 8
+
+  ########
+  #   #  #
+ ##B#   .##
+## .X #   #
+#  .X XB# #
+#   . #&B #
+#  # ##B###
+####    #
+   ######
+
+
+Level: The Cantrip collection 9
+
+##########
+#& X.##  #
+# B   B  #
+###X..#  #
+  #  B  ##
+  # .#. #
+  # B B #
+  ####  #
+     ####
+
+
+Level: The Cantrip collection 10
+
+  #####
+###   ###
+# B #B  #
+# ....X #
+#  X. B #
+## # # ##
+ # BBX #
+ ## & ##
+  #####
+
+
+Level: The Cantrip collection 11
+
+####   ####
+#  #####  #
+#    B&B  #
+# X.B#X.X #
+## . # . ##
+ # . #B. #
+ ## BB  ##
+  #  #  #
+  #######
+
+
+Level: The Cantrip collection 12
+
+   #####
+ ###   ###
+ # B # X #
+## BX.X  #
+#  X   . #
+#&  ###  #
+##### ####
+
+
+Level: The Cantrip collection 13
+
+ ####
+##  ####
+# B  B #
+# B... ##
+#&XBBBX #
+## ...  #
+ ##   ###
+  #####
+
+
+Level: The Cantrip collection 14
+
+     ####
+ #####  #
+## B  B #
+#&B.#.X ##
+# B.B .  #
+##B.X#.  #
+ #      ##
+ #  ######
+ ####
+
+
+Level: The Cantrip collection 15
+
+##########
+#   #    #
+# #B. .# #
+#&#. X # #
+# # X .# #
+# #XBXB# #
+# B      #
+####  ####
+   ####
+
+
+Level: The Cantrip collection 16
+
+ ####
+ #  ######
+ #   B&B #
+ # XX##. #
+##B.B  . #
+#  .# .X##
+#    B  #
+######  #
+     ####
+
+
+Level: The Cantrip collection 17
+
+  ####
+###  #####
+#  .B  . ##
+# BX&#BX  #
+## .BX .  #
+ ### #  ###
+   #   ##
+   #####
+
+
+Level: The Cantrip collection 18
+
+    #####
+  ###   #
+###..B. #
+# B B.B##
+# #B. X #
+#  . XB #
+##   # &#
+ ########
+
+
+Level: The Cantrip collection 19
+
+   #####
+ ###   #
+## .B.B#
+#  .XX ##
+# X . X #
+##   BB #
+ #  ## &#
+ ########
+
+
+Level: The Cantrip collection 20
+
+ #######
+##  #  ##
+#     B #
+# XX XX&#
+# X # X #
+##  .  ##
+ #  .B##
+ ##   #
+  #####

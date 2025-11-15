@@ -128,7 +128,7 @@ const DEFAULT_ALGORITHM = 'astar';
 ```
 
 ### Adding Levels
-Edit `levels.txt` to include new puzzles:
+Edit `grids/Base-Levels.txt` to include new puzzles:
 ```
 Level: Easy Puzzle
 ####

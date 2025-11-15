@@ -1,0 +1,900 @@
+Level: Sasquatch IX 1
+
+########  ######
+###    #####   #
+#   ##  ### B  #
+# &   # ## B  ##
+## ## ....X  ##
+# B   B###  ##
+#   #  ######
+########  ##
+
+
+Level: Sasquatch IX 2
+
+#####  ####
+#   ####  #
+#      .  #
+##B### #X #
+ #  .BB# ##
+ # #.&.# #
+## #BB.  #
+# X# ###B##
+#  .      #
+#  ####   #
+####  #####
+
+
+Level: Sasquatch IX 3
+
+   ####
+ ###  ###
+ #   X  ###
+##  B.B   #
+# X.X&X.X #
+#   B.B  ##
+###  X   #
+  ###  ###
+    ####
+
+
+Level: Sasquatch IX 4
+
+ #####
+ #   #####
+ # #BB B #
+## .&.   #
+# X.#..###
+#   BB  #
+#####   #
+    #####
+
+
+Level: Sasquatch IX 5
+
+####
+#  ###
+#  . #
+# .B.####
+## X    #
+ # BB&B #
+ # .#####
+ #  #
+ ####
+
+
+Level: Sasquatch IX 6
+
+   ######
+   #  & #
+   # #B #
+   # .X.#
+ #####B ##
+## . . . #
+# B B B  #
+# # ######
+#   #
+#####
+
+
+Level: Sasquatch IX 7
+
+#####
+#   ##
+# #  #
+# #B.###
+# #.B  #
+#  B.# #
+# #.B  #
+#  B.#&#
+###.B# #
+  #  # #
+  ##   #
+   #####
+
+
+Level: Sasquatch IX 8
+
+    #####
+  ###   #
+  #. &# #####
+  #X#B  #   #
+  #. B #    ##
+  # ###  X X #
+  #   X X X  #
+  #  X X X  ##
+  # X . X   #
+###X # ######
+# B X  #
+#     ##
+###  ##
+  ####
+
+
+Level: Sasquatch IX 9
+
+  ##         #####
+ ##  ######  #   ###
+     #    # ##  B  #
+ #####  ..### BB   #
+##     #...   B  ###
+#  &##  .###  BB #
+#        # ###  ##
+#  ###  ##   #  #
+#### ####    ####
+
+
+Level: Sasquatch IX 10
+
+  #####
+  #.  #########
+  #.# #####   #
+  #XB         #
+  #.##### # # #
+ ##.#####BB B #
+## .      ##B #
+#  & #   ###  #
+#   ###### ####
+#####   ####
+
+
+Level: Sasquatch IX 11
+
+ ############
+ #          #
+## ####B    #
+#    B BB#  #
+# #  B&  ## ##
+#  # B B##...#
+##  # #  #.  #
+ ##   ## #. .#
+  ######  .###
+   ##  #    #
+    ## ##   #
+     ########
+
+
+Level: Sasquatch IX 12
+
+   ####
+####  ##
+#  B & ###
+#  ## B  ##
+##.## .#  #
+ # #. B B #
+ #.# B.#  #
+ #    #####
+ #  ###
+ ####
+
+
+Level: Sasquatch IX 13
+
+####
+#  #####  #####
+#      ## #   #
+#  ###  ### # ###
+#  #  #  ##  B  #
+#      #  #  B  #
+#  #    # BB #  #
+#####   ### B####
+   #  ###&##  #
+   #    .... .#
+   ##  ########
+    ####
+
+
+Level: Sasquatch IX 14
+
+        ####
+  #######  #
+ ##     B  #
+ #  #####  #
+## ##  # B##
+# ....B.  #
+# & ## #  #
+###### #  #
+    ## ## ##
+    # B B  #
+    #      #
+    ########
+
+
+Level: Sasquatch IX 15
+
+    ####
+    #  ###
+    #  . #
+    #  B #
+    ## ########
+ ##### . ##   #
+ #  # XBX     #
+##.B#.B&B.#B.##
+#     XBX #  #
+#   ## . #####
+######## ##
+     # B  #
+     # .  #
+     ###  #
+       ####
+
+
+Level: Sasquatch IX 16
+
+   ####
+   #& #
+  ##  ##
+  # .B###
+  #B. ####
+### .B#  #
+#  ..X.B #
+# B B #  #
+##### # ###
+    # #  #
+    #    #
+    ###  #
+      ####
+
+
+Level: Sasquatch IX 17
+
+#####
+#   # ######
+#  B###..B.#
+## & ##..  #
+ #  B# ..#.#
+ ## B BBBB #
+  #       ##
+  #########
+
+
+Level: Sasquatch IX 18
+
+     #####
+  ####   #
+  #   B  #
+###  #B###
+#  X .  #
+# X X #&##
+#  X X   #
+### X X# #
+  ## X . #
+   ##   ##
+    #####
+
+
+Level: Sasquatch IX 19
+
+ #######
+## #  ###
+#  B    ##
+##. X #  ##
+#  X X # ##
+#   X&X   #
+## # X X  #
+##  # X .##
+ ##    B  #
+  ###  # ##
+   #######
+
+
+Level: Sasquatch IX 20
+
+ ##### #
+##   ####
+## . ## ##
+# B X    ##
+#  X X #  ##
+### X X #  ##
+ ##  X&X  ##
+##  # X X ###
+ ##  # X X  #
+  ##    X B #
+   ## ## . ##
+    ####   ##
+     # #####
+
+
+Level: Sasquatch IX 21
+
+     #######
+     #  #  #
+  ####. BX #
+  #   BX  .#
+  ###  #X  #
+  ## BX B.##
+  ##   .& #
+  ###X#  ##
+####  #####
+#   .  #
+# BX B.####
+##  #X    #
+## BX  .###
+###. BX ###
+  #  #    #
+  #########
+
+
+Level: Sasquatch IX 22
+
+#####   ###
+##  #######
+##.B###   #
+ # B   B  #
+ #.B. # .##
+ # # & # #
+##. # .B.#
+#  B   B #
+#   ###B.##
+#######  ##
+###   #####
+
+
+Level: Sasquatch IX 23
+
+####
+#  #    #####
+#  ######  &#
+#  X X X    #
+##  X X  X###
+ #X  X  X #
+ # X   X X#
+ #X X   X #
+ # X  X  X#
+ #.  X X  ##
+ #  B X X  #
+ ########  #
+        #  #
+        ####
+
+
+Level: Sasquatch IX 24
+
+    #####
+#####   #
+#       #
+#B B B B#
+#.X.X.X.#
+#B B B B#
+#.X.X.X.#
+#       #
+#.X.X.X.#
+#B B B B#
+#.X.X.X.#
+#B B B B#
+#       #
+#& ######
+####
+
+
+Level: Sasquatch IX 25
+
+ #######
+##    ###
+## X X  #
+# X.B.X #
+#  B&B  #
+# X.B.X #
+#  X X ##
+###    ##
+ #######
+
+
+Level: Sasquatch IX 26
+
+#########
+#   # # #
+## BB   #
+#  ...B #
+##B.&.B##
+# B...  #
+#   BB ##
+# # #   #
+#########
+
+
+Level: Sasquatch IX 27
+
+ #######
+##     ##
+# X B X #
+#  # #  #
+##. & .##
+#  # #  #
+# X B X #
+##  X  ##
+ #######
+
+
+Level: Sasquatch IX 28
+
+   ######
+   #    #
+#### #  #
+#  .B.B.###
+#  B.B.B  #
+# #.B&B.# #
+#  B.B.B  #
+###.B.B.  #
+  #  # ####
+  #    #
+  ######
+
+
+Level: Sasquatch IX 29
+
+     ####
+   ###  #
+####    #
+#  .B.B.##
+#  B.B.B #
+## .B&B. ##
+ # B.B.B  #
+ ##.B.B.  #
+  #    ####
+  #  ###
+  ####
+
+
+Level: Sasquatch IX 30
+
+##### #####
+#   ###   #
+# #  X  # #
+#  X...XB #
+## .BBB. ##
+ #X B&B X#
+## .BBB. ##
+# BX...X  #
+# #  X  # #
+#   ###   #
+##### #####
+
+
+Level: Sasquatch IX 31
+
+   #####        #####        #####
+   #   #        #   #   ##   #   #
+ ### .B###    ###  B#  ####  #  B###
+####B. ####  ####X..####  ####B. ####
+# B B.BB  #### B.B.BX  # B# B X.XB  #
+# ... ...       . & .        .. ..  #
+#  BB.B B #B #  XB.B.B ####  BX.X B #
+#### .B####  ####..X####  #### .B####
+ ###B. #  ####  #B  ###    ###B  ###
+   #   #   ##   #   #        #   #
+   #####        #####        #####
+
+
+Level: Sasquatch IX 32
+
+     ###
+   ##   ##
+  #   #   #
+ # # . . # #
+ #   BXB   #
+#  .B# #B.  #
+# # X & X # #
+#  .B# #B.  #
+ #   BXB   #
+ # # . . # #
+  #   #   #
+   ##   ##
+     ###
+
+
+Level: Sasquatch IX 33
+
+     ###
+   ##   ##
+  #   #   #
+ # # ..X # #
+ #   BXB   #
+#  XB# #B.  #
+# #.X & X.# #
+#  .B# #BX  #
+ #   BXB   #
+ # # X.. # #
+  #   #   #
+   ##   ##
+     ###
+
+
+Level: Sasquatch IX 34
+
+  #########
+  #   &   #
+### # # # ##
+#  .B.B.B. ###
+# #B.B.B.B   #
+#  .B# # # # #
+# #B.B.B.B.  #
+#  .B.B.B.B# #
+# # # # #B.  #
+#   B.B.B.B# #
+### .B.B.B.  #
+  ## # # # ###
+   #       #
+   #########
+
+
+Level: Sasquatch IX 35
+
+  #########
+  #   #   #
+###B. # .B###
+# B.B.B.B.B #
+# .B X X B. #
+#  .X   X.  #
+###B# & #B###
+#  .X   X.  #
+# .B X X B. #
+# B.B.B.B.B #
+###B. # .B###
+  #   #   #
+  #########
+
+
+Level: Sasquatch IX 36
+
+ ###############
+#    .     .    #
+# # # # # # # # #
+#  X X X X X X  #
+# # # # # # # # #
+#. X B X X B X .#
+# # # # # # # # #
+#  X X B B X X  #
+# # # # & # # # #
+#  X X B B X X  #
+# # # # # # # # #
+#. X B X X B X .#
+# # # # # # # # #
+#  X X X X X X  #
+# # # # # # # # #
+#    .     .    #
+ ###############
+
+
+Level: Sasquatch IX 37
+
+        #
+       # #
+      #   #
+     #  .  #
+    #  X X  #
+   # BXB.BXB #
+  #  X . . X  #
+ #  XB.BXB.BX  #
+#  . . X&X . .  #
+ #  XB.BXB.BX  #
+  #  X . . X  #
+   # BXB.BXB #
+    #  X X  #
+     #  .  #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 38
+
+        #
+       # #
+      #   #
+     # B.  #
+    #  X X  #
+   #  X X X  #
+  #  X X X X  #
+ #  X X X X XB #
+#  . X X&X X .  #
+ # BX X X X X  #
+  #  X X X X  #
+   #  X X X  #
+    #  X X  #
+     #  .B #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 39
+
+        #
+       # #
+      #   #
+     #  X  #
+    #  X X  #
+   #  X X X  #
+  #  XBX XBX  #
+ #  X X . X X  #
+#  X X .&. X X  #
+ #  X X . X X  #
+  #  XBX XBX  #
+   #  X X X  #
+    #  X X  #
+     #  X  #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 40
+
+        #
+       # #
+      #   #
+     # .B. #
+    # .B.B. #
+   #  B.B.B  #
+  # .B#B.B#B. #
+ # .B.B   B.B. #
+#  B.B. & .B.B  #
+ # .B.B   B.B. #
+  # .B#B.B#B. #
+   #  B.B.B  #
+    # .B.B. #
+     # .B. #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 41
+
+        #
+       # #
+      # . #
+     # .B. #
+    # .B.B. #
+   #  B.B.B  #
+  # .B#B.B#B. #
+ # .B.B B B.B. #
+# .B.B.B&B.B.B. #
+ # .B.B B B.B. #
+  # .B#B.B#B. #
+   #  B.B.B  #
+    # .B.B. #
+     # .B. #
+      # . #
+       # #
+        #
+
+
+Level: Sasquatch IX 42
+
+        #
+       # #
+      #   #
+     # .B. #
+    # .B.B. #
+   #  B.B.B  #
+  # .B.B.B.B. #
+ # .B.B B B.B. #
+#  B.B.B&B.B.B  #
+ # .B.B B B.B. #
+  # .B.B.B.B. #
+   #  B.B.B  #
+    # .B.B. #
+     # .B. #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 43
+
+        #
+       # #
+      #   #
+     #  B  #
+    # .X X. #
+   # .B X B. #
+  # .B X.X B. #
+ #  X X B X X  #
+#  B X.B&B.X B  #
+ #  X X B X X  #
+  # .B X.X B. #
+   # .B X B. #
+    # .X X. #
+     #  B  #
+      #   #
+       # #
+        #
+
+
+Level: Sasquatch IX 44
+
+      # # #
+ ###############
+ # ... . . ... #
+ #.BBBBBXBBBBB.#
+ #.B.  . .  .B.#
+ #.B BXBXBXB B.#
+## B X . . X B ##
+ #.B.B.BXB.B.B.#
+## X X X&X X X ##
+ #.B.B.BXB.B.B.#
+## B X . . X B ##
+ #.B BXBXBXB B.#
+ #.B.  . .  .B.#
+ #.BBBBBXBBBBB.#
+ # ... . . ... #
+ ###############
+      # # #
+
+
+Level: Sasquatch IX 45
+
+      #  ###  #
+ ###################
+ # ... ..   .. ... #
+ #.BBBBBBXBXBBBBBB.#
+ #.B  . . . . .  B.#
+ #.B XBXBXBXBXBX B.#
+## B.B. . . . .B.B ##
+ #.B X XBXBXBX X B.#
+ #.B.B.B. . .B.B.B.#
+## X X X XBX X X X ##
+## B.B.B.B&B.B.B.B ##
+## X X X XBX X X X ##
+ #.B.B.B. . .B.B.B.#
+ #.B X XBXBXBX X B.#
+## B.B. . . . .B.B ##
+ #.B XBXBXBXBXBX B.#
+ #.B  . . . . .  B.#
+ #.BBBBBBXBXBBBBBB.#
+ # ... ..   .. ... #
+ ###################
+      #  ###  #
+
+
+Level: Sasquatch IX 46
+
+   #       #
+  # #     # #
+ #   #####   #
+#  B . B . B  #
+ #  # X#X #  #
+  #. X   X .#
+  # X B.B X #
+  #B# .&. #B#
+  # X B.B X #
+  #. X   X .#
+ #  # X#X #  #
+#  B . B . B  #
+ #   #####   #
+  # #     # #
+   #       #
+
+
+Level: Sasquatch IX 47
+
+          #
+     #   # #   #
+    # # #   # # #
+   #   #  X  #   #
+  # .B . B.B . B. #
+ #  B X X X X X B  #
+  #  X X X X X X  #
+   #. X X X X X .#
+  #  X X B B X X  #
+ #  B X B...B X B  #
+#  X.X X .&. X X.X  #
+ #  B X B...B X B  #
+  #  X X B B X X  #
+   #. X X X X X .#
+  #  X X X X X X  #
+ #  B X X X X X B  #
+  # .B . B.B . B. #
+   #   #  X  #   #
+    # # #   # # #
+     #   # #   #
+          #
+
+
+Level: Sasquatch IX 48
+
+            #
+     #     # #     #
+    # #   #   #   # #
+   #   ###  X  ###   #
+  #  B . . B B . . B  #
+ #  B X X X X X X X B  #
+  #  X X X X X X X X  #
+   #. X X X B X X X .#
+   # X X X X X X X X #
+   #. X X X . X X X .#
+  #  X X X X X X X X  #
+ #  B X X X   X X X B  #
+#  X X B .  &  . B X X  #
+ #  B X X X   X X X B  #
+  #  X X X X X X X X  #
+   #. X X X . X X X .#
+   # X X X X X X X X #
+   #. X X X B X X X .#
+  #  X X X X X X X X  #
+ #  B X X X X X X X B  #
+  #  B . . B B . . B  #
+   #   ###  X  ###   #
+    # #   #   #   # #
+     #     # #     #
+            #
+
+
+Level: Sasquatch IX 49
+
+           #####
+          #  X  #
+         ## X#X ##
+        # B .B. B #
+       #    X#X    #
+     ##    X # X    ##
+     ##.X X# # #X X.##
+    # .B X   X   X B. #
+   #  X # X  X  X # X  #
+  #    X X  # #  X X    #
+ ##B  X X #  #  # X X  B##
+#    X#    .B.B.    #X    #
+# X.X    # B.B.B #    X.X #
+#X#B###XX #.B&B.# XX###B#X#
+# X.X    # B.B.B #    X.X #
+#    X#    .B.B.    #X    #
+ ##B  X X #  #  # X X  B##
+  #    X X  # #  X X    #
+   #  X # X  X  X # X  #
+    # .B X   X   X B. #
+     ##.X X# # #X X.##
+     ##    X # X    ##
+       #    X#X    #
+        # B .B. B #
+         ## X#X ##
+          #  X  #
+           #####
+
+
+Level: Sasquatch IX 50
+
+                     #
+                    # #
+                   # # #
+                  #  X  #
+                 # X B X #
+                # .  B  . #
+      ##########  # X#X #  ##########
+      ##    #  X   X # X   X  #    ##
+      # B X . X X X  #  X X X . X B #
+      #  # X   X X   X   X X   X #  #
+      # X # X X  ###X#X###  X X # X #
+      #  X # X  # B .B. B #  X # X  #
+      ##. X B  #    X#X    #  B X .##
+      #    X ##    X # X    ## X    #
+      # X X  ##.X X# # #X X.##  X X #
+      #X X  # .B X   X   X B. #  X X#
+     #  X  #  X # X  X  X # X  #  X  #
+    #    X#    X X  # #  X X    #X    #
+   # .# X #B  X X #  #  # X X  B# X #. #
+  # X  X  #  X#    .B.B.    #X  #  X  X #
+ #    X   X.X    # B.B.B #    X.X   X    #
+# #XBB###X#B###XX #.B&B.# XX###B#X###BBX# #
+ #    X   X.X    # B.B.B #    X.X   X    #
+  # X  X  #  X#    .B.B.    #X  #  X  X #
+   # .# X #B  X X #  #  # X X  B# X #. #
+    #    X#    X X  # #  X X    #X    #
+     #  X  #  X # X  X  X # X  #  X  #
+      #X X  # .B X   X   X B. #  X X#
+      # X X  ##.X X# # #X X.##  X X #
+      #    X ##    X # X    ## X    #
+      ##. X B  #    X#X    #  B X .##
+      #  X # X  # B .B. B #  X # X  #
+      # X # X X  ###X#X###  X X # X #
+      #  # X   X X   X   X X   X #  #
+      # B X . X X X  #  X X X . X B #
+      ##    #  X   X # X   X  #    ##
+      ##########  # X#X #  ##########
+                # .  B  . #
+                 # X B X #
+                  #  X  #
+                   # # #
+                    # #
+                     #
