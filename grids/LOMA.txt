@@ -3,10 +3,10 @@ Level: Loma 1 | uurRllddrrUrULdrrdrruuluulllDurrrddrddlluluUluRdddlUddlluuRRUruu
   ####
   #  ###
   #    #
-###B.# ##
-#  B.#  #
-# #B. # #
-#&  #   #
+###$.# ##
+#  $.#  #
+# #$. # #
+#@  #   #
 #########
 
 
@@ -14,9 +14,9 @@ Level: Loma 2 | ruRRdLruuulDDrddrruuLrddlluUluurDDrrddlllUUrDldRuullldRRuruulDrd
 
   ####
   #  #
-###B.###
-#  B.  #
-#& B.# #
+###$.###
+#  $.  #
+#@ $.# #
 ###    #
    #  #
    ####
@@ -27,9 +27,9 @@ Level: Loma 3 | ddllddlluluuurRlldddrdrruurruuuululldDrDLuuurrdrddddlllUdrrruuuu
   #####
  ##   ##
 ### #  #
-###B.# #
-#  B.#&#
-# #B.# #
+###$.# #
+#  $.#@#
+# #$.# #
 # #    #
 #  # ###
 ##   ##
@@ -39,9 +39,9 @@ Level: Loma 3 | ddllddlluluuurRlldddrdrruurruuuululldDrDLuuurrdrddddlllUdrrruuuu
 Level: Loma 4 | ullldLLLrrDuluRRRllddDDrdLullddrUluRdrUUUruulldRurDruRRdrruLLLLdlllldlluRRRR
 
    ##########
-#### B.     #
-#    B. #&  #
-#   #B.######
+#### $.     #
+#    $. #@  #
+#   #$.######
 ##### ##
   #    #
   #    #
@@ -54,9 +54,9 @@ Level: Loma 5 | RDDurUrruulllDurrrddllUddldldRRRdrUUUddllluuruulDDurrRllldDuurrr
   ####
  ##  ##
  #    ###
-##B.#   #
-#&B.    #
-##B.#  ##
+##$.#   #
+#@$.    #
+##$.#  ##
 #  ## ##
 #     #
 ####  #
@@ -69,11 +69,11 @@ Level: Loma 6 | rdddLLLdlUUUUUruLdddddrrrUrdddlUruLLLdlUUUUUruulDDDDDldRRRRurDDu
 ##   #
 #    #
 #    ####
-### ##& #
+### ##@ #
  ## ##  #
- #  ##B.#
- #    B.#
- ##  #B.#
+ #  ##$.#
+ #    $.#
+ ##  #$.#
   ####  #
      #  #
      ####
@@ -83,10 +83,10 @@ Level: Loma 7 | rdrdLLLLrrUdrdLullulldRRRRlllddrrUruLruruulDrdrdLdlluLulDrrdrruL
 
     ####
     #  #
-#####& ##
-#   #B. #
-#    .B #
-## # B.##
+#####@ ##
+#   #$. #
+#    .$ #
+## # $.##
  #   ###
  #####
 
@@ -95,9 +95,9 @@ Level: Loma 8 | dlluururrDrrrddllLLrrUdlluRuRRllulldlddRluururrdddrUluulldlddrRu
 
  #########
 ##   ##  #
-#  #B.   #
-# #&.B#  #
-#   B.  ##
+#  #$.   #
+# #@.$#  #
+#   $.  ##
 #########
 
 
@@ -108,9 +108,9 @@ Level: Loma 9 | LuLrdLLLdlluRRRRurDllUUUluRdrruulDrdLulDDDrdLLrrDDDrdLullddrUluR
   #    #
   #    #
   ## ###
-#### B.##
-#    .B&#
-#   #B.##
+#### $.##
+#    .$@#
+#   #$.##
 ##### ##
   #    #
   #    #
@@ -122,9 +122,9 @@ Level: Loma 10 | rdddlllluuurRdLulDurruulDrddlluRldDurrUluurrrddLLrruullldDldRld
 
   ######
   #    ##
- ##B.#  #
- # .B&  #
-## B.# ##
+ ##$.#  #
+ # .$@  #
+## $.# ##
 #  ### #
 #      #
 #####  #
@@ -134,9 +134,9 @@ Level: Loma 10 | rdddlllluuurRdLulDurruulDrddlluRldDurrUluurrrddLLrruullldDldRld
 Level: Loma 11 | RdRRRurrdLLLLdLLLulldRRRR
 
    #########
-####&B.#   #
-#   #.B    #
-#    B.#####
+####@$.#   #
+#   #.$    #
+#    $.#####
 ########
 
 
@@ -144,9 +144,9 @@ Level: Loma 12 | dllUllluurrDRlullddrRDrddlUUUlluurrDrDDrruuLrddlllddrU
 
 #####
 #   ####
-# #B.  #
-#  .B#&#
-###B.  #
+# #$.  #
+#  .$#@#
+###$.  #
   #  ###
   #  #
   ####
@@ -156,10 +156,10 @@ Level: Loma 13 | luluurRllddrdrruLdlluuurrDDrdLuuullddRluurrdDuuurrdLulDllddrrUU
 
   #####
 ###.  #
-#  X  #
-# #X###
-#  B #
-#  & #
+#  *  #
+# #*###
+#  $ #
+#  @ #
 #  ###
 ####
 
@@ -168,10 +168,10 @@ Level: Loma 14 | lluuuurrrrddlLLrrruulllldlddrdrrUruLUdrruulLddddlluluurDRRuurrd
 
  #######
 ##  .  #
-#  #X# #
-#   X  #
-#  #B ##
-##  &##
+#  #*# #
+#   *  #
+#  #$ ##
+##  @##
  #####
 
 
@@ -179,9 +179,9 @@ Level: Loma 15 | rRRRurDDDllLLLLrrrUUddllldlluRRRRdrUUdrrddrruLdlUruLLLLLLdlluRR
 
      ######
    ###.#  #
-   #& X   #
-######X## #
-#     B   ##
+   #@ *   #
+######*## #
+#     $   ##
 #   #  #   #
 ########   #
        #####
@@ -192,9 +192,9 @@ Level: Loma 16 | uullldlddrRRdrUUUlLrrddllUUruurDldlddlluuRuRDllddrrrruruLuLrdL
    ####
  ###  #
 ## .  ##
-#  X   #
-# #X#& #
-#  B  ##
+#  *   #
+# #*#@ #
+#  $  ##
 ####  #
    ####
 
@@ -203,9 +203,9 @@ Level: Loma 17 | LLLrrrddLUUdddlluRdrUruulllulldRRR
 
 #######
 #   #.##
-#    X&#
-#####X #
-  #  B #
+#    *@#
+#####* #
+  #  $ #
   #   ##
   #####
 
@@ -215,11 +215,11 @@ Level: Loma 19 | urrruuulullullddrRurrdrdddlluLUURllluurrDrdLdddrrruuuLullddddll
 #####
 #   ###
 # #.  ##
-#  B   #
-###X## #
-#  B # ##
+#  $   #
+###*## #
+#  $ # ##
 #  .    #
-## &#   #
+## @#   #
  ########
 
 
@@ -228,9 +228,9 @@ Level: Loma 20 | luullddRluurrdLdlUdrDrUrrddldllUUUluluurrdrDLddddrruruulLulDuuu
 ######/#
 #   ##/#
 #  . #
-#  B ###
-## X & #
-###B # #
+#  $ ###
+## * @ #
+###$ # #
   #.#  #
 #/#   ##
 #/######
@@ -242,9 +242,9 @@ Level: Loma 21 | ruulLrrddldlluRdrruuullDDldRuuurrddLruulluullddRRdDrruuLrddlluU
 ##   #
 #    #
 # #.###
-#  B  #
-###X# #
- # B& #
+#  $  #
+###*# #
+ # $@ #
  # .  #
  ###  #
    ####
@@ -254,9 +254,9 @@ Level: Loma 22 | rRRRddlLrruullDDDDldRuuurrurruLLLrddlluUllddRluurrdDDDlddrUUUUd
 
   ###
 ###.#####
-#& B    #
-# #X#   #
-#  B  ###
+#@ $    #
+# #*#   #
+#  $  ###
 ###.###
  #    #
  #    #
@@ -268,9 +268,9 @@ Level: Loma 23 | uullldRurrdddlLUUluRRlddddlluRdrUrruuLulldRDDrruuLulDrrruLL
 
  #######
  # .   #
- # B   #
-###X#&##
-#  B  #
+ # $   #
+###*#@##
+#  $  #
 #  .###
 #####
 
@@ -279,9 +279,9 @@ Level: Loma 24 | RRlDuUdrRurrdLLL
 
  ###
  #.#####
-##B#   #
-#&X    #
-##B#####
+##$#   #
+#@*    #
+##$#####
  #.#
  ###
 
@@ -292,10 +292,10 @@ Level: Loma 25 | drruuuLUUluurDDDDrruLddddlluluuRRRlUUluurDDDrddddlluluurRurDurr
  #  #
  #  #
  #  ####
-###BB  #
-#  B.  #
+###$$  #
+#  $.  #
 # #..###
-# &# #
+# @# #
 ##   #
 ######
 
@@ -305,8 +305,8 @@ Level: Loma 26 | lddrrruULLrrddlUrurruullDDDldlluluurDrRRuurrddLruulldDlddllUluR
     #####
 #####   #
 #  ## # #
-#  &BB  #
-#  #B.###
+#  @$$  #
+#  #$.###
 ##  ..  #
   ###   #
     #####
@@ -318,10 +318,10 @@ Level: Loma 27 | uuUruLddddrrddlllululuuurRUrDllldddrdrdrrruuulllUdrdrrddlllulul
   #   #
   # # #
 ###   #
-#  BB #
-# #B.###
+#  $$ #
+# #$.###
 # #..  #
-#  #&  #
+#  #@  #
 ##  ## #
  ##    #
   ######
@@ -333,9 +333,9 @@ Level: Loma 28 | DDDDDllluuuruRDrUUUluRdrruulDrdLulDDDlldldddrdrRRdrruLLLullddrU
   ###  #
   #    #
   #    #
- ###&###
-## BB#
-#  B.#
+ ###@###
+## $$#
+#  $.#
 # #..#
 # ## #
 #    ####
@@ -349,9 +349,9 @@ Level: Loma 29 | lluULLrrddrddlllluuuUrrrruulDDDulDuluulldRurDldRRdrUruulDD
 ########
 #   #  #
 #   #  #
-##  BB #
- # #B.###
- # #.. &#
+##  $$ #
+ # #$.###
+ # #.. @#
  # ###  #
  #      #
  ########
@@ -363,8 +363,8 @@ Level: Loma 30 | RURlUluurDDDrRlDurRurDDullldLurrrrdDDrdLLLLdlluRRRRdrUUUUruLLLL
  #  #
  #  #####
  #  ##  ##
-###BB    #
-# &B.##  #
+###$$    #
+# @$.##  #
 #  ..## ##
 #######  #
  #       #
@@ -376,9 +376,9 @@ Level: Loma 31 | urRurDDDuullddRluurrdLdlUrrrdLrddlUUUlldRurDuluurDldlluRddrrruL
 
    ###
 ###  #
-#  B ##
-#&.X. #
-## B  #
+#  $ ##
+#@.*. #
+## $  #
   ##  #
    #  #
    ####
@@ -389,10 +389,10 @@ Level: Loma 32 | dlluluurrRUrrdLLLLulDDDrdrruUddlluluurrRuruulDrdrdLLLLulDrrrruu
     ####
     #  #
 #####  ##
-#   #B  #
-#   .X. #
-## ##B###
-#   #&#
+#   #$  #
+#   .*. #
+## ##$###
+#   #@#
 #     #
 ####  #
    ####
@@ -402,20 +402,20 @@ Level: Loma 33 | lluurRRRurDllllluurrDullddrRRRurrdLulDllllddrrUdlluurRRRurrdLLL
 
 #####
 #   #####
-# #B#   #
-# .X.   #
-# #B#   #
-#  &#   #
+# #$#   #
+# .*.   #
+# #$#   #
+#  @#   #
 #########
 
 
 Level: Loma 34 | ldddLruuLDlluRRdrruulDlldDDDlddrUUUUluRurrrddlLrruullldDDDlddrUUUU
 
    ####
-#### &#
-#  B  #
-# .X. #
-#  B  #
+#### @#
+#  $  #
+# .*. #
+#  $  #
 ## ####
 #  #
 #  #
@@ -429,9 +429,9 @@ Level: Loma 35 | lLDuUUdddDrdLLdlUUluurRRlllddrUluRdddrruuuuuruulDDD
    #  #
    #  #
    #  #
-####B###
-#  .X.&#
-#  #B###
+####$###
+#  .*.@#
+#  #$###
 #  #  #
 ##    #
  #  ###
@@ -443,10 +443,10 @@ Level: Loma 36 | ruuLrddlUlURdrUUruulDlDDlluRdrrddlUruLrUruulDDulD
   #####
   ##  #
 ###   #
-#  B  #
-# .X.##
-## B #
-###& #
+#  $  #
+# .*.##
+## $ #
+###@ #
   ####
 
 
@@ -455,10 +455,10 @@ Level: Loma 37 | ulUURDrruLLLrruullDurrddldlddrUUruuulldDRdrUllulldRRRddlUruLdrr
   #####
 ###   #
 #   # ##
-#   B  #
-###BX. #
+#   $  #
+###$*. #
   # .###
-  # &#
+  # @#
   ####
 
 
@@ -468,8 +468,8 @@ Level: Loma 38 | drruuullllddDDuuuurrrrdddllLdlUUUddrruLdlUrrdrruuulllulldRRRRur
 #   #  #
 #      #
 ## ### ##
- # B&#  #
- #BX.   #
+ # $@#  #
+ #$*.   #
  # .#####
  #  #
  #  #
@@ -483,8 +483,8 @@ Level: Loma 39 | DDDldRRRdrUUUruulDlLUUUruLdddddlddrrruUruLLrdddllluurUUlDurUUll
 #     #
 #     #
 ### ####
- #&B#  #
- #BX.  #
+ #@$#  #
+ #$*.  #
 ## .#  #
 #  ## ##
 #     #
@@ -498,9 +498,9 @@ Level: Loma 41 | URlUUruulDDDurDlDldR
   #  #
   #  #
   #  #
-### B##
-#  BX.#
-#  &.#
+### $##
+#  $*.#
+#  @.#
 #####
 
 
@@ -508,9 +508,9 @@ Level: Loma 42 | uuLulldRDRluurDrDulldRddlUUrdRluurDrDLullddrUluRuulldRurDlddrrr
 
 #####
 #   ##
-#  B ##
-##BX. ##
- # .&  #
+#  $ ##
+##$*. ##
+ # .@  #
  #  #  #
 #####  #
 ##//####
@@ -521,9 +521,9 @@ Level: Loma 43 | lUULLrrdddlUruulldRurDldRuuluurDDDlllluRRdrruulDrdLddrUdrruLLdl
    ####
    #  #
 ####  #
-#   X #
-#  . B###
-####X & #
+#   * #
+#  . $###
+####* @ #
    #    #
    ######
 
@@ -533,10 +533,10 @@ Level: Loma 44 | uLuUruulDDrDLddrUUrrdddldllluluuRlddrdrrruruuullluurDldRddlUlld
   ####
   #  #
   #  #
- ##X ###
-##. B  #
-#  X # #
-# # &# #
+ ##* ###
+##. $  #
+#  * # #
+# # @# #
 #  ##  #
 ##    ##
  ######
@@ -546,9 +546,9 @@ Level: Loma 45 | RurrdLLLLrddRRRRRllllluurrDullddrRRRurrrrddllUdrruulLdLLrruulDl
 
 #########
 #   #   ####
-#   &X  #  ###
-####.#B#     #
-  #  X     # #
+#   @*  #  ###
+####.#$#     #
+  #  *     # #
   #  #####   #
   #  #///#####
   ####
@@ -560,9 +560,9 @@ Level: Loma 46 | DrdLLLLuuuuurrrdDDurDDuuluulllddddddlluRdrUUUUUluRRRurDDDrdLuuu
  ####  #
  #     #
  #  ## ##
- ## # X #
-  # #.&B#
-### ##X ####
+ ## # * #
+  # #.@$#
+### ##* ####
 #          #
 #   ####   #
 #####//#####
@@ -573,9 +573,9 @@ Level: Loma 47 | LLuuRRDuurrdLLdDlldlluRdrUrrrddlUruL
  ####
  #  #####
  #  #   #
- #  X   #
-###.#B###
-#   X& #
+ #  *   #
+###.#$###
+#   *@ #
 #   #  #
 #####  #
     ####
@@ -586,9 +586,9 @@ Level: Loma 48 | lddrUrULrUdldlluurRuurrdLulDDDrUluurrdLulD
   #####
  ##   #
 ###   #
-#  X ##
-# .&B##
-#  X ##
+#  * ##
+# .@$##
+#  * ##
 ##  ##
 #####
 
@@ -598,8 +598,8 @@ Level: Loma 49 | ulDDDlluRdrUUruulDlDDrUddrddlUUUlldRurDrddlUUluuuRurrdLdLruulDl
   #####
   #   #
  #    #
-##BX&##
-# X.#
+##$*@##
+# *.#
 #    #
 ###  #
   #  #
@@ -610,9 +610,9 @@ Level: Loma 50 | rDDLLLulllddrrUrrrruulDrdLLLuuullddRluurrdDlllddrrURRRddlddrrur
 
  #####
  #   ####
-## # #& #
-#    #BX#
-# #   X.##
+## # #@ #
+#    #$*#
+# #   *.##
 #   ##   #
 #####  # #
     # #  #
@@ -626,7 +626,7 @@ Level: 0251 (Mini Cosmos / Level 39)+ | uurrdDLruulldDDDrrrruuLLLruulldDrrDurrdd
 ###   #
 #     #
 #  # ###
-##&BBB #
+##@$$$ #
  #.# # #
  #.    #
  #. ####
@@ -637,12 +637,12 @@ Level: Yao Xin 25 | urrrrrrdddLLulldRRlDurRlldDrddlULLrrUUddlldlluRuuuuuurrrrrrd
 
  #########
  #       #
-##&##### #
+##@##### #
 #  #   # #
-#  #   B #
-#  ##B##.#
+#  #   $ #
+#  ##$##.#
 ## ##  #.#
-#   B  #.#
+#   $  #.#
 #   #  ###
 ########
 
@@ -652,10 +652,10 @@ Level: Loma 52 | drrDDrddlUUUUUruLLrddlluluurDrrdddddlluRdrUUUllluurrrDDDuuullDl
 ####
 #  ####
 #     #
-# &#  #
+# @#  #
 #    ##
-###BX##
- # X. #
+###$*##
+ # *. #
  #    #
  ###  #
    ####
@@ -664,10 +664,10 @@ Level: Loma 52 | drrDDrddlUUUUUruLLrddlluluurDrrdddddlluRdrUUUllluurrrDDDuuullDl
 Level: Level 157 | ddlLLLDlluRRRRdddllUUddrruuulLrruurrddLruulldDlldlluRRRRuullDurrddlLuurrrrddLLuulldddddrruUUUddddlluuuuurRRlllddRldlluRRdddrruuUUddddlluuuuurRllddRluurrdDDD
 
   #######
-  #   .%#
-###B# # #
-#    B  #
-#  B# ###
+  #   .+#
+###$# # #
+#    $  #
+#  $# ###
 ### # #
   #  .#
   #####
@@ -678,8 +678,8 @@ Level: Loma 54 | llLURuulDDrdrruLdlUllDuruurDldldRllddrUluR
   ####
   #  #
 ###  ###
-## BX  #
-#  X. &#
+## $*  #
+#  *. @#
 #   ####
 #  ##
 #####
@@ -688,10 +688,10 @@ Level: Loma 54 | llLURuulDDrdrruLdlUllDuruurDldldRllddrUluR
 Level: Yasgood 2 155 | ddlLLLDlluRRRRdddllUUddrruuulLrruurrddLruulldDlldlluRRRRuullDurrddlLuurrrrddLLuulldddddrruUUUddddlluuuuurRRlllddRldlluRRdddrruuUUddddlluuuuurRllddRluurrdDDD
 
   #######
-  #   .%#
-###B# # #
-#    B  #
-#  B# ###
+  #   .+#
+###$# # #
+#    $  #
+#  $# ###
 ### # #
   #  .#
   #####
@@ -702,8 +702,8 @@ Level: Oliviers Game 4 | drRlldddrrurruuuuullldDrRlluurrrdDDDuulldRurDulllldRRll
  ######
  #    #
 ## ## #
-#&B B #
-#  B  #
+#@$ $ #
+#  $  #
 # ### ######
 # #       .#
 #        ..#
@@ -714,8 +714,8 @@ Level: Loma 57 | rdrruulullDLLulDDDuurrrurrdrddllllUdrrrruululldLLrrDldRurDlldld
 
  ########
 ##  #   ##
-#   BB#  #
-#  #B&.# #
+#   $$#  #
+#  #$@.# #
 ## # ..  #
 #    #  ##
 #   ##  #
@@ -725,8 +725,8 @@ Level: Loma 57 | rdrruulullDLLulDDDuurrrurrdrddllllUdrrrruululldLLrrDldRurDlldld
 Level: Saturday 3, #2 | lddrdrruruulDrddllluluurDRRurrdLLLLrrrddlllUlluurDRRRurDlllddrrUdlluurRlllldRurrrddllUdrruulLrrurrdLulDllddrrrUdllluurrDuurrdLulDllulldRRRRurrdLLLrrddLU
 
 #########
-#  &#   #
-#  XBX  #
+#  @#   #
+#  *$*  #
 #   #  ##
 # # .   #
 #########
@@ -738,11 +738,11 @@ Level: Level 34 | ullllddddddrruLdlUUUUUUruulldRurDldRRRurDlddrruLdlldLDlUUUUruu
 #   ####
 #  .#  #
 ## ..  ##
- # ## & #
+ # ## @ #
  # #    #
- # B ####
- # B##
- # B #
+ # $ ####
+ # $##
+ # $ #
  #   #
  #####
 
@@ -750,8 +750,8 @@ Level: Level 34 | ullllddddddrruLdlUUUUUUruulldRurDldRRRurDlddrruLdlldLDlUUUUruu
 Level: Eve 3, #5 | rrrddlLLLdlUluurDldRRRRuulDrdLLruurrrddLruulllddldlUluurDRRllldRdrUruurrrddlLLLrrUluRRllddldlUluurDRRllldRurrdrUluRldllddrUluRRdrU
 
 #########
-#  #&...#
-#  BB # #
-#    B  #
+#  #@...#
+#  $$ # #
+#    $  #
 ##  # # #
 #########

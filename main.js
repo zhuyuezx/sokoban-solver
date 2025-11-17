@@ -1,5 +1,4 @@
-// Toggle between Python (false) and JavaScript (true) solver
-const USE_JS_SOLVER = true;
+// Using Festival-Rust solver (Festival C++ ported to Rust/WASM)
 
 const DATA = {
   w: 10,
@@ -19,14 +18,13 @@ const resetSolverUI = () => {
   const prevButton = document.querySelector('.prev')
   const nextButton = document.querySelector('.next')
 
-  // Show solve button, hide navigation buttons
-  calcButton.classList.remove('d-none')
+  // Hide navigation buttons
   prevButton.classList.add('d-none')
   nextButton.classList.add('d-none')
 
   // Reset button text and state
   calcButton.removeAttribute('disabled')
-  calcButton.textContent = USE_JS_SOLVER ? 'Solve' : 'Solve (Python)'
+  calcButton.textContent = 'Solve';
 
   // Clear solution data
   DATA.solution.current = 0
@@ -137,7 +135,6 @@ const bindClicks = () => {
   document.querySelector('.save').addEventListener('click', async function (event) {
     await save()
     await loadLevel(DATA.current)
-    console.log('DATA', DATA)
   })
 
   document.querySelector('.export').addEventListener('click', function (event) {
@@ -173,9 +170,7 @@ const bindClicks = () => {
         DATA.h = parseInt(gridWidthTextSplit[1])
         setupInitialGrid()
         await save()
-        console.log('new', DATA.w, DATA.h)
         await loadLevel(levelName)
-        console.log('DATA', DATA)
       }
     }
   })
@@ -272,7 +267,6 @@ const save = async () => {
   const savedLevels = JSON.parse(window.localStorage.getItem('sok'))
 
   const level = savedLevels.find(l => l.name === DATA.current)
-  console.log('level', level)
   if (level === undefined) {
     const newLevel = { name: DATA.current, grid: text, solution: '' }
     savedLevels.push(newLevel)
@@ -401,7 +395,8 @@ const importFromUrl = () => {
     // Reset solution UI
     document.querySelector('.prev').classList.add('d-none')
     document.querySelector('.next').classList.add('d-none')
-    document.querySelector('.calc').classList.remove('d-none')
+    const solverBtnGroup = document.querySelector('.solver-btn-group')
+    if (solverBtnGroup) solverBtnGroup.classList.remove('d-none')
 
     console.log('Imported level from URL:', name, width, height)
     return true
@@ -457,9 +452,7 @@ const executeManualMove = (direction) => {
   displayState(nextState)
   if (isEnd(nextState)) {
     setTimeout(function () {
-      //   window.alert('You win')
       const currentLevelIndex = DATA.levels.findIndex(l => l.name === DATA.current)
-      console.log('currentLevelIndex', currentLevelIndex)
       if (currentLevelIndex + 1 < DATA.levels.length) {
         loadLevel(DATA.levels[currentLevelIndex + 1].name)
       }
@@ -523,18 +516,15 @@ const gridToText = () => {
       switch (dataType) {
         case 'wall': text += '#'; break
         case 'floor': text += ' '; break
-        case 'block': text += 'B'; break
+        case 'block': text += '$'; break          // XSB standard
         case 'target': text += '.'; break
-        case 'player': text += '&'; break
-        case 'target-block': text += 'X'; break
-        case 'target-player': text += '%'; break
+        case 'player': text += '@'; break         // XSB standard
+        case 'target-block': text += '*'; break   // XSB standard
+        case 'target-player': text += '+'; break  // XSB standard
       }
     }
-    // if (wi + 1 < DATA.w) text += '\n'
     textList.push(text)
   }
-  console.log('text:')
-  console.log(textList)
   return textList
 }
 const displayState = (state) => {
@@ -569,66 +559,54 @@ const calculate = async () => {
 
     populateSolutionStates()
     calcButton.removeAttribute('disabled')
-    calcButton.textContent = USE_JS_SOLVER ? 'Solve' : 'Solve (Python)'
+    calcButton.textContent = 'Solve';
     calcButton.classList.add('d-none')
     document.querySelector('.prev').classList.remove('d-none')
     document.querySelector('.next').classList.remove('d-none')
     return
   }
 
-  console.log('calcuate', gridText, savedGrid)
-
   let solution;
 
   try {
-    let solverPromise;
-
-    if (USE_JS_SOLVER) {
-      // Use JavaScript solver with progress feedback
-      console.log('Using JavaScript solver');
-
-      const progressCallback = (progress) => {
-        const { explored, frontier, iterations, timeElapsed } = progress;
-        calcButton.textContent = `Solving... ${timeElapsed}s (${explored} explored)`;
-      };
-
-      solverPromise = solveSokoban('astar', gridText, progressCallback, 60000)
-        .then(([solutionResult, timeStr]) => {
-          console.log('JS solver result:', solutionResult, 'Time:', timeStr);
-          return solutionResult;
-        });
-    } else {
-      // Use Python solver (original)
-      console.log('Using Python solver');
-      solverPromise = new Promise((resolve, reject) => {
-        try {
-          const solveSokodanRes = DATA.solveSokodan('astar', gridText);
-          console.log('solveSokodanRes', solveSokodanRes, solveSokodanRes.toJs());
-          resolve(solveSokodanRes.toJs()[0]);
-        } catch (error) {
-          console.error('Python solver error:', error);
-          reject(error);
-        }
-      });
+    // Use Festival-Rust WASM solver
+    const solverFunction = window.solveFestivalRust;
+    const solverName = 'Festival-Rust';
+    
+    if (!solverFunction) {
+      throw new Error('Festival-Rust solver not loaded');
     }
+
+    const progressCallback = (progress) => {
+      const { explored, frontier, iterations, timeElapsed } = progress;
+      calcButton.textContent = `Solving... ${timeElapsed}s (${explored} explored)`;
+    };
+
+    const solverPromise = solverFunction('astar', gridText, progressCallback, 60000)
+      .then(([solutionResult, timeStr]) => {
+        console.log(`${solverName} completed in ${timeStr}`);
+        return solutionResult;
+      });
 
     solution = await solverPromise;
 
   } catch (error) {
     console.error('Solver error:', error);
 
-    if (error.message.includes('timeout')) {
-      console.log('Solver timed out after 30 seconds');
+    const errorMessage = error?.message || error?.toString() || '';
+    if (errorMessage.includes('timeout')) {
+      console.log('Solver timed out after 60 seconds');
       window.alert('Calculation timed out after 60 seconds. This puzzle may be too complex or have no solution.');
       solution = 'timeout';
     } else {
+      window.alert('Solver error: ' + (errorMessage || 'Unknown error'));
       solution = 'x';
     }
   }
 
   // Reset button state
   calcButton.removeAttribute('disabled')
-  calcButton.textContent = USE_JS_SOLVER ? 'Solve' : 'Solve (Python)'
+  calcButton.textContent = 'Solve';
 
   if (solution === 'x') {
     window.alert('No solution found')
@@ -638,7 +616,6 @@ const calculate = async () => {
   } else {
     const savedLevels = JSON.parse(window.localStorage.getItem('sok'))
     const savedLevel = savedLevels.find(l => l.name === DATA.current)
-    console.log('savedLevels', savedLevels, savedLevel)
 
     if (savedLevel === undefined) {
       savedLevels.push({ name: DATA.current, grid: gridText, solution })
@@ -678,10 +655,8 @@ const loadLevelList = async (gridSetPath = 'grids/Base-Levels.txt') => {
   }
 
   const savedLevels = JSON.parse(window.localStorage.getItem('sok'))
-  console.log('savedLevels', savedLevels)
   savedLevels.forEach(savedLevel => {
     const level = levels.find(l => l.name === savedLevel.name)
-    console.log('savedLevel', savedLevel, level)
     if (level === undefined) {
       levels.push(savedLevel)
     } else {
@@ -715,11 +690,15 @@ const convertToDataType = (sign) => {
   switch (sign) {
     case ' ': return 'floor'
     case '#': return 'wall'
-    case 'B': return 'block'
+    case '$': return 'block'      // XSB standard
+    case 'B': return 'block'      // Legacy support
     case '.': return 'target'
-    case '&': return 'player'
-    case 'X': return 'target-block'
-    case '%': return 'target-player'
+    case '@': return 'player'     // XSB standard
+    case '&': return 'player'     // Legacy support
+    case '*': return 'target-block'  // XSB standard
+    case 'X': return 'target-block'  // Legacy support
+    case '+': return 'target-player' // XSB standard
+    case '%': return 'target-player' // Legacy support
   }
   return 'floor'
 }
@@ -784,13 +763,9 @@ const init = async () => {
     resizeTimeout = setTimeout(updateGridSize, 100)
   })
 
-  if (USE_JS_SOLVER) {
-    console.log('Using JavaScript solver - no initialization needed');
-    document.querySelector('.calc').removeAttribute('disabled')
-    document.querySelector('.calc').textContent = 'Solve'
-  } else {
-    console.log('Initializing Python solver...');
-    DATA.solveSokodan = await initSolver()
-  }
+  // Enable solve button
+  console.log('Festival-Rust solver ready');
+  document.querySelector('.calc').removeAttribute('disabled');
+  document.querySelector('.calc').textContent = 'Solve';
 }
 init()

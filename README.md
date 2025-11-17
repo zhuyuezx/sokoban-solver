@@ -79,81 +79,76 @@ php -S localhost:8000
 3. **Navigate solution** with Previous/Next buttons
 4. **Solutions are cached** for instant replay
 
-## 🧠 Solver Algorithms
+## 🧠 Solver Algorithm
 
-The application includes multiple solving algorithms:
+The application uses **Festival**, a high-performance Sokoban solver that combines optimal search strategies with advanced pruning techniques.
 
-- **A* Search** (Default) - Optimal pathfinding with heuristics
-- **Breadth-First Search** - Guarantees shortest solution
-- **Depth-First Search** - Memory efficient exploration
-- **Uniform Cost Search** - Considers move costs
+### Festival Algorithm Overview
+Festival is a state-of-the-art solver originally developed in C++ by Yaron Shoham. This implementation is a Rust port compiled to WebAssembly for browser execution.
+
+**Key Features:**
+- **Pattern Database Heuristics** - Pre-computed lookup tables for accurate distance estimates
+- **Advanced Deadlock Detection** - Identifies unsolvable positions early (freeze deadlock, bipartite matching)
+- **Macro Moves** - Optimizes sequences of moves into single operations
+- **Transposition Tables** - Avoids re-exploring identical board states
+- **Lower Bound Pruning** - Eliminates branches that cannot lead to optimal solutions
 
 ### Performance Optimizations
-- **20x faster** than original implementation
-- **Non-blocking UI** - Solver runs without freezing the interface
-- **Progress feedback** - Real-time updates on solving progress
-- **Timeout protection** - Prevents browser "unresponsive script" warnings
+- **Rust + WebAssembly** - Near-native performance in the browser (10-100x faster than JavaScript)
+- **Non-blocking UI** - Solver runs in a Web Worker without freezing the interface
+- **Real-time Progress** - Live updates on explored states and search progress
+- **Memory Efficient** - Optimized state representation and hash tables
+- **Optimal Solutions** - Finds shortest push solutions for most puzzles
 
 ## 🎨 Level Format
 
-Levels use a simple text format:
+Levels use the standard XSB (Extended Sokoban) text format:
 ```
 Level: My Custom Level
 ########
 #  .   #
-# B  & #
+# $  @ #
 #      #
 ########
 ```
 
-**Symbols:**
+**Symbols (XSB Standard):**
 - `#` = Wall
 - ` ` = Floor (empty space)
-- `B` = Block (box to push)
-- `.` = Target (goal position)
-- `&` = Player starting position
-- `X` = Block on target
-- `%` = Player on target
+- `$` = Box (crate to push)
+- `.` = Goal (target position)
+- `@` = Player starting position
+- `*` = Box on goal
+- `+` = Player on goal
 
 ## 🔧 Configuration
 
-### Solver Settings
-Edit `main.js` to customize:
-```javascript
-// Toggle between JavaScript and Python solvers
-const USE_JS_SOLVER = true;
-
-// Available algorithms: 'astar', 'bfs', 'dfs', 'ucs'
-const DEFAULT_ALGORITHM = 'astar';
-```
-
 ### Adding Levels
-Edit `grids/Base-Levels.txt` to include new puzzles:
+Edit `grids/Base-Levels.txt` to include new puzzles using XSB format:
 ```
 Level: Easy Puzzle
 ####
-#.&#
-#B #
+#.@#
+#$ #
 ####
 
 Level: Medium Challenge
 #######
-#.  & #
-# BB  #
+#.  @ #
+# $$  #
 #  .  #
 #######
 ```
 
 ## 🤝 Contributing
 
-This project builds upon the excellent work from [KnightofLuna/sokoban-solver](https://github.com/KnightofLuna/sokoban-solver).
+This project builds upon excellent work from:
+- [KnightofLuna/sokoban-solver](https://github.com/KnightofLuna/sokoban-solver) - Original web interface
+- [Festival Solver](http://www.sokobano.de/wiki/index.php?title=Solver:Festival) - High-performance C++ solver by Yaron Shoham
 
-### Recent Improvements
-- ✅ Responsive grid layout with dynamic sizing
-- ✅ Modern UI with Bootstrap styling
-- ✅ Optimized JavaScript solver (20x performance boost)
-- ✅ Deep-linking and URL sharing
-- ✅ Mobile-friendly responsive design
-- ✅ Voice control integration
-- ✅ Real-time solver progress feedback
+### Technology Stack
+- **Frontend**: Vanilla JavaScript, Bootstrap 5
+- **Solver**: Rust compiled to WebAssembly
+- **Algorithm**: Festival solver (pattern databases, advanced pruning)
+- **Performance**: Web Workers for non-blocking UI
 

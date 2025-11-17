@@ -1,8 +1,8 @@
 Level: Yoshio Murases Hand-Mades Hand-Made 1
 
 ###################
-#   ...  &  ...   #
-# BBB  #####  BBB #
+#   ...  @  ...   #
+# $$$  #####  $$$ #
 ##   ###   ###   ##
  ##  #       ##  #
   ####        ####
@@ -12,10 +12,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 2
 
   ####
 ###  ##
-#   B #
-# #.#&#
-# #B .#
-#  .B #
+#   $ #
+# #.#@#
+# #$ .#
+#  .$ #
 ##   ##
  #####
 
@@ -24,10 +24,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 3
 
   #####
 ###   #
-# B # ##
-# B.B. #
+# $ # ##
+# $.$. #
 # ##.  #
-#  & ###
+#  @ ###
 ######
 
 
@@ -35,10 +35,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 4
 
   #####
 ###   ###
-# . B . #
-# #.B.# #
-# B # B #
-### & ###
+# . $ . #
+# #.$.# #
+# $ # $ #
+### @ ###
   #####
 
 
@@ -47,9 +47,9 @@ Level: Yoshio Murases Hand-Mades Hand-Made 5
   #####
   #   ###
 ###.#   #
-# B.B # #
-# #X B  #
-#& . ####
+# $.$ # #
+# #* $  #
+#@ . ####
 ######
 
 
@@ -57,12 +57,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 6
 
   #####
   #   ##
-###B   ##
-#  .B.B #
+###$   ##
+#  .$.$ #
 # #.#.# #
-#  XBX  #
+#  *$*  #
 ###   ###
-  # & #
+  # @ #
   #####
 
 
@@ -70,10 +70,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 7
 
   #####
   #   #
-### #B#
-#  .B.###
-# #B%B  #
-#  .B # #
+### #$#
+#  .$.###
+# #$+$  #
+#  .$ # #
 ### #.  #
   #   ###
   #####
@@ -82,13 +82,13 @@ Level: Yoshio Murases Hand-Mades Hand-Made 7
 Level: Yoshio Murases Hand-Mades Hand-Made 8
 
 ###########
-#&B   ....##
-# BBBB#....#
-# B  B..XXX##
+#@$   ....##
+# $$$$#....#
+# $  $..***##
 ##   # ##.. #
-# BBB#  ##  #
+# $$$#  ##  #
 #    ## #  ##
-#  BB #    #
+#  $$ #    #
 #     ###  #
 ####### ####
 
@@ -99,10 +99,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 9
 ##    ##
 #  ##  #
 # #  # #
-#.  .#B##
-# # X B #
-# # X B&#
-#  .. B #
+#.  .#$##
+# # * $ #
+# # * $@#
+#  .. $ #
 #########
 
 
@@ -111,10 +111,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 10
 ####
 #  ####
 #     ###
-#  #B . #
-## #.#B #
-#  # &X #
-#   X  ##
+#  #$ . #
+## #.#$ #
+#  # @* #
+#   *  ##
 ####  ##
    ####
 
@@ -123,10 +123,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 11
 
   #####
 ###   ##
-#  . X #
-# .B.#&#
-## # B #
- # B # #
+#  . * #
+# .$.#@#
+## # $ #
+ # $ # #
  ###   #
    #####
 
@@ -135,11 +135,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 12
 
    #####
    #   #
-   #. B#
-   # B #
+   #. $#
+   # $ #
 ####.. ##
-# B XX  #
-# .  &B #
+# $ **  #
+# .  @$ #
 #########
 
 
@@ -149,11 +149,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 13
      #...  . #
   #### #.#.  #
 ###    ......#
-#   B B B#..##
-# B####..####
-#  B   ###  ##
-# BBB B B B& #
-#  B B B B B #
+#   $ $ $#..##
+# $####..####
+#  $   ###  ##
+# $$$ $ $ $@ #
+#  $ $ $ $ $ #
 ##          ##
  ############
 
@@ -163,10 +163,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 14
     ######
 #####    ###
 #    .##.  ##
-# .B##   #  #
-##BB #  B   #
-# .  ##B#B ##
-#  & .  . ##
+# .$##   #  #
+##$$ #  $   #
+# .  ##$#$ ##
+#  @ .  . ##
 ###########
 
 
@@ -174,11 +174,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 15
 
  #####
  #   #
- #. B#
- # B #
+ #. $#
+ # $ #
 ##.. ##
-# XXB #
-#  &  #
+# **$ #
+#  @  #
 #######
 
 
@@ -186,9 +186,9 @@ Level: Yoshio Murases Hand-Mades Hand-Made 16
 
 ######
 #    #
-# .X ###
-# .B.B #
-## B  &#
+# .* ###
+# .$.$ #
+## $  @#
  ####  #
     ####
 
@@ -197,11 +197,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 17
 
     #####
  ####   #
- #.##. B#
-##B#  B #
-# X  .. ##
-#   #XXB #
-##### &  #
+ #.##. $#
+##$#  $ #
+# *  .. ##
+#   #**$ #
+##### @  #
     ######
 
 
@@ -209,10 +209,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 18
 
  ####
  #  ######
- # B## & ###
+ # $## @ ###
 ##. ##  .  #
-# .    B.B #
-# XB #B#.###
+# .    $.$ #
+# *$ #$#.###
 ###  #   #
   ########
 
@@ -220,11 +220,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 18
 Level: Yoshio Murases Hand-Mades Hand-Made 19
 
  ####
-##& ####
-# BX X #
-#  X # #
-#  X   #
-# #X.  #
+##@ ####
+# $* * #
+#  * # #
+#  *   #
+# #*.  #
 #   #  #
 ########
 
@@ -233,12 +233,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 20
 
   #####
  ##   ##
- #  B..##
-##B #.B.#
+ #  $..##
+##$ #.$.#
 #   #...#
-# B###B #
-#  B B ##
-##&    #
+# $###$ #
+#  $ $ ##
+##@    #
  #######
 
 
@@ -246,13 +246,13 @@ Level: Yoshio Murases Hand-Mades Hand-Made 21
 
     ####
 #####  #
-# B .  #
-#   XB #
-###..B #
- ###&###
- # B. ###
- # BX.  #
- #  . B #
+# $ .  #
+#   *$ #
+###..$ #
+ ###@###
+ # $. ###
+ # $*.  #
+ #  . $ #
  #  #####
  ####
 
@@ -261,21 +261,21 @@ Level: Yoshio Murases Hand-Mades Hand-Made 22
 
   #####
   #   ####
-###B   B #
-#  B #   #
+###$   $ #
+#  $ #   #
 # # .## ##
-#.XX.##B#
-# & .   #
+#.**.##$#
+# @ .   #
 #########
 
 
 Level: Yoshio Murases Hand-Mades Hand-Made 23
 
 #########
-#  & .  #
-#  .#XB #
-# B. .B #
-##B.##B #
+#  @ .  #
+#  .#*$ #
+# $. .$ #
+##$.##$ #
  #  ##  #
  ########
 
@@ -283,11 +283,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 23
 Level: Yoshio Murases Hand-Mades Hand-Made 24
 
   #####
-  # & #
+  # @ #
 ### # ###
-# BB#BB #
+# $$#$$ #
 # .. .  #
-##  #.B##
+##  #.$##
  #   . #
  #######
 
@@ -296,11 +296,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 25
 
 #####
 #   ##
-# XB ##
-#& X  ##
-# .#B  #
-## ...B##
- ### BX #
+# *$ ##
+#@ *  ##
+# .#$  #
+## ...$##
+ ### $* #
    #    #
    ######
 
@@ -310,8 +310,8 @@ Level: Yoshio Murases Hand-Mades Hand-Made 26
   ####
 ###  ##
 # ..  ###
-# X.X   #
-#&BB.BB #
+# *.*   #
+#@$$.$$ #
 #  ##   #
 #########
 
@@ -320,14 +320,14 @@ Level: Yoshio Murases Hand-Mades Hand-Made 27
 
 ########
 #      #
-# BB#B #
-# B.X  #
+# $$#$ #
+# $.*  #
 ## ...##
- ##.B##
+ ##.$##
 ##... ##
-#  X.B #
-# B#BB #
-#  &   #
+#  *.$ #
+# $#$$ #
+#  @   #
 ########
 
 
@@ -335,11 +335,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 28
 
   #####
 ###   #
-# BB.B#
+# $$.$#
 # . . #
 # # # #
-# ..X ##
-###&BB #
+# ..* ##
+###@$$ #
   #    #
   ######
 
@@ -348,12 +348,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 29
 
   ######
   #    #
-###BB  #
-# B #B #
-# B #  #
-# B &# ##
-# B#.X. #
-#  BX #.#
+###$$  #
+# $ #$ #
+# $ #  #
+# $ @# ##
+# $#.*. #
+#  $* #.#
 ##  . #.#
  ###... #
    #    #
@@ -363,12 +363,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 29
 Level: Yoshio Murases Hand-Mades Hand-Made 30
 
   #####
- ## & ##
- # .B. #
- # X X #
- #B #.X#
+ ## @ ##
+ # .$. #
+ # * * #
+ #$ #.*#
 ##  #  ##
-# B.B.B #
+# $.$.$ #
 #   #   #
 #########
 
@@ -378,13 +378,13 @@ Level: Yoshio Murases Hand-Mades Hand-Made 31
   ####
   #  #
   #. #
-  # B#
+  # $#
   #. #
-### B###
-#  .B  ##
-# # BB  #
-# .##. &#
-## X  B##
+### $###
+#  .$  ##
+# # $$  #
+# .##. @#
+## *  $##
  #  .  #
  #######
 
@@ -393,14 +393,14 @@ Level: Yoshio Murases Hand-Mades Hand-Made 32
 
   #####
 ###   ###
-#  B..B #
+#  $..$ #
 # # ##  #
-# # ##&##
-#  B..B#
-### #B #
+# # ##@##
+#  $..$#
+### #$ #
   # . .#
-  #B# .#
-  #  B #
+  #$# .#
+  #  $ #
   ###  #
     ####
 
@@ -409,12 +409,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 33
 
     ####
  ####  ###
- #  B  B #
- #B..B . ###
+ #  $  $ #
+ #$..$ . ###
 ## #.##..  #
-#  ..B&B B #
-# B . #. ###
-####B  B #
+#  ..$@$ $ #
+# $ . #. ###
+####$  $ #
    #  ####
    ####
 
@@ -423,26 +423,26 @@ Level: Yoshio Murases Hand-Mades Hand-Made 34
 
    ######
  ###    ##
- # BBBB  #
- #  X..X #
- #  B. B.#
-## B#.B#.##
-#  B. B.  #
-# BBXB#.# #
+ # $$$$  #
+ #  *..* #
+ #  $. $.#
+## $#.$#.##
+#  $. $.  #
+# $$*$#.# #
 #  .... # #
-#######  &#
+#######  @#
       #####
 
 
 Level: Yoshio Murases Hand-Mades Hand-Made 35
 
   #####
-  # & ##
-###BBB ###
+  # @ ##
+###$$$ ###
 #  .# .  #
 # #.# .# #
 #  . #.# #
-# XBBB   #
+# *$$$   #
 ###  # ###
   ##   #
    #####
@@ -451,12 +451,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 35
 Level: Yoshio Murases Hand-Mades Hand-Made 36
 
   #####
- ## .&##
- #  X  #
- # BXB #
+ ## .@##
+ #  *  #
+ # $*$ #
  #..#..#
-##B . B##
-# B # B #
+##$ . $##
+# $ # $ #
 #   #   #
 #########
 
@@ -465,12 +465,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 37
 
   ####
   #  ###
-### B  ##
-# B...B #
+### $  ##
+# $...$ #
 # ##. # #
-#  .B.# #
-# B#. B #
-## #B##&#
+#  .$.# #
+# $#. $ #
+## #$##@#
  #      #
  ########
 
@@ -479,11 +479,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 38
 
   ######
 ###  . ###
-# B.BBB  #
+# $.$$$  #
 # # #. # #
-# &. . # #
-#### B   #
-   #B.####
+# @. . # #
+#### $   #
+   #$.####
    #  #
    ####
 
@@ -491,12 +491,12 @@ Level: Yoshio Murases Hand-Mades Hand-Made 38
 Level: Yoshio Murases Hand-Mades Hand-Made 39
 
  #####
-##  &###
-#  XX  #
+##  @###
+#  **  #
 # #  # #
-# #XB  #
+# #*$  #
 # #  #.#
-#  XB. #
+#  *$. #
 ###   ##
   #####
 
@@ -505,9 +505,9 @@ Level: Yoshio Murases Hand-Mades Hand-Made 40
 
   #####
   #   ##
-###B.& #
-#  B.  #
-# # X ##
+###$.@ #
+#  $.  #
+# # * ##
 #   ###
 #####
 
@@ -516,14 +516,14 @@ Level: Yoshio Murases Hand-Mades Hand-Made 41
 
  ##########
  #        #
- # ##B# # #
+ # ##$# # #
  # .....# #
-###BBBBB  #
-#  X .&X###
-#  BBBBB  #
+###$$$$$  #
+#  * .@*###
+#  $$$$$  #
 # # ...## #
 #  .#. .# #
-### #B#   #
+### #$#   #
   #   #####
   #####
 
@@ -533,10 +533,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 42
   #######
   #     #
 ### ### #
-#  XB  .#
-#  X B#.#
-## X&B .#
- #BBX . #
+#  *$  .#
+#  * $#.#
+## *@$ .#
+ #$$* . #
  # # .###
  # ## #
  #    #
@@ -549,10 +549,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 43
 ##   ###
 # .... #
 # #. # #
-# BBBB #
-# B.&B###
-# BBBB  #
-##B..B# #
+# $$$$ #
+# $.@$###
+# $$$$  #
+##$..$# #
  # .. # #
  #.##.  #
  #    ###
@@ -563,10 +563,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 44
 
    ####
 ####  #
-# .BX ##
-#   B  #
+# .$* ##
+#   $  #
 # .# . #
-# X#B&##
+# *#$@##
 ##    #
  ######
 
@@ -575,13 +575,13 @@ Level: Yoshio Murases Hand-Mades Hand-Made 45
 
   ###
   #.#
- ##B###
-## X  #
-# X  X##
-# X  X #
-#  XX  #
-# X   ##
-## & ##
+ ##$###
+## *  #
+# *  *##
+# *  * #
+#  **  #
+# *   ##
+## @ ##
  #####
 
 
@@ -589,13 +589,13 @@ Level: Yoshio Murases Hand-Mades Hand-Made 46
 
  #####
 ##  ######
-#  B B   #
+#  $ $   #
 #    #.  #
-##&#### ##
+##@#### ##
  #   #. ##
-## # #BB #
-# XX # ..#
-#  X## BB#
+## # #$$ #
+# ** # ..#
+#  *## $$#
 ##    .. #
  #####   #
      #####
@@ -607,10 +607,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 47
    #   #
 ####.. #
 #      #
-#XXXXXX#
+#******#
 #      #
-# BB####
-# & #
+# $$####
+# @ #
 #####
 
 
@@ -618,11 +618,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 48
 
   #####
   #   #
-###B# ###
-#   #.& #
-#   X.# #
+###$# ###
+#   #.@ #
+#   *.# #
 #   # # #
-###B#   #
+###$#   #
   #   ###
   #####
 
@@ -630,11 +630,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 48
 Level: Yoshio Murases Hand-Mades Hand-Made 49
 
 ########
-#   X  #
-# X .  #
-# XXX ##
-# B X #
-## &  #
+#   *  #
+# * .  #
+# *** ##
+# $ * #
+## @  #
  ######
 
 
@@ -642,10 +642,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 50
 
 #########
 #   .   #
-# ##B## #
-# # X   #
-# # X&# #
-# # B # #
+# ##$## #
+# # *   #
+# # *@# #
+# # $ # #
 # # ### #
 #   .   #
 #########
@@ -654,11 +654,11 @@ Level: Yoshio Murases Hand-Mades Hand-Made 50
 Level: Yoshio Murases Hand-Mades Hand-Made 51
 
 ###########
-#    X    #
-#&# X . # #
-# #XXXXX# #
-# # B X # #
-#    X    #
+#    *    #
+#@# * . # #
+# #*****# #
+# # $ * # #
+#    *    #
 ######  ###
      ####
 
@@ -668,10 +668,10 @@ Level: Yoshio Murases Hand-Mades Hand-Made 52
 ######
 #    #
 #    #
-##B ###
-# B   #
-#.XXX.#
-#  &  #
+##$ ###
+# $   #
+#.***.#
+#  @  #
 #######
 
 
@@ -680,21 +680,21 @@ Level: Yoshio Murases Hand-Mades Hand-Made 53
  #####
 ##   #
 #  # ###
-# X B  #
-#. X #&#
-# X X  #
-## X  ##
+# * $  #
+#. * #@#
+# * *  #
+## *  ##
  ######
 
 
 Level: Yoshio Murases Hand-Mades Hand-Made 54
 
   #####
-  # & #
-### X ###
+  # @ #
+### * ###
 #  ...  #
-# ##B## #
-# B   B #
+# ##$## #
+# $   $ #
 ###   ###
   #   #
   #####
