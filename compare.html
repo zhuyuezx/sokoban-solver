@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sokoban Heuristic Comparison — LLM Optimizer</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #c9d1d9; --text-dim: #8b949e; --accent: #58a6ff;
+    --green: #3fb950; --red: #f85149; --yellow: #d29922;
+    --blue: #58a6ff; --purple: #bc8cff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+  h1 { font-size: 2rem; margin-bottom: 8px; }
+  .subtitle { color: var(--text-dim); font-size: 1.1rem; margin-bottom: 32px; }
+
+  /* Summary cards */
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .card h3 { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .card .value { font-size: 2rem; font-weight: 700; }
+  .card .value.green { color: var(--green); }
+  .card .value.blue { color: var(--blue); }
+  .card .value.yellow { color: var(--yellow); }
+  .card .detail { color: var(--text-dim); font-size: 0.9rem; margin-top: 4px; }
+
+  /* Chart area */
+  .chart-section { margin-bottom: 32px; }
+  .chart-section h2 { font-size: 1.3rem; margin-bottom: 16px; }
+  .chart-container { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+  canvas { width: 100% !important; }
+
+  /* Per-level table */
+  .table-section { margin-bottom: 32px; }
+  .table-section h2 { font-size: 1.3rem; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  th, td { padding: 10px 14px; text-align: right; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  th { background: #1c2129; color: var(--text-dim); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+  td:first-child, th:first-child { text-align: left; }
+  tr:hover { background: #1c2129; }
+  .better { color: var(--green); font-weight: 600; }
+  .worse { color: var(--red); }
+  .same { color: var(--text-dim); }
+
+  /* Heuristic source */
+  .source-section { margin-bottom: 32px; }
+  .source-section h2 { font-size: 1.3rem; margin-bottom: 16px; }
+  .source-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .source-tab { padding: 8px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+                 color: var(--text-dim); cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+  .source-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .source-tab:hover { border-color: var(--accent); }
+  pre { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto;
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 0.85rem; line-height: 1.5; }
+
+  /* Iteration timeline */
+  .timeline { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; align-items: center; }
+  .timeline-dot { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+                   font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+  .timeline-dot.accepted { background: var(--green); color: #000; }
+  .timeline-dot.rejected { background: var(--red); color: #fff; }
+  .timeline-dot.baseline { background: var(--blue); color: #000; }
+  .timeline-dot:hover { transform: scale(1.15); }
+  .timeline-dot.selected { box-shadow: 0 0 0 3px var(--accent); }
+  .timeline-label { color: var(--text-dim); font-size: 0.8rem; margin: 0 8px; }
+
+  /* Controls */
+  .controls { display: flex; gap: 16px; margin-bottom: 24px; align-items: center; flex-wrap: wrap; }
+  select { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px;
+           padding: 8px 12px; font-size: 0.9rem; }
+  label { color: var(--text-dim); font-size: 0.9rem; }
+
+  .load-section { text-align: center; padding: 60px 20px; }
+  .load-section input[type="file"] { margin: 16px auto; display: block; }
+  .load-section p { color: var(--text-dim); margin-bottom: 8px; }
+  button.load-btn { background: var(--accent); color: #fff; border: none; border-radius: 6px;
+                     padding: 10px 24px; font-size: 1rem; cursor: pointer; margin-top: 12px; }
+  button.load-btn:hover { opacity: 0.9; }
+
+  .no-data { text-align: center; padding: 40px; color: var(--text-dim); }
+
+  .improvement { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+  .improvement.positive { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+  .improvement.negative { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Sokoban A* Heuristic Optimization</h1>
+  <p class="subtitle">LLM-driven heuristic improvement — measuring nodes explored per level</p>
+
+  <div id="app">
+    <div class="load-section">
+      <p>Load optimization results JSON to visualize the comparison</p>
+      <input type="file" id="file-input" accept=".json">
+      <br>
+      <button class="load-btn" onclick="loadDemo()">Load Demo Data</button>
+      <p style="margin-top: 12px; font-size: 0.85rem;">
+        Or run <code>python heuristic_optimizer.py</code> to generate results
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script>
+let DATA = null;
+let selectedIteration = null;
+let compareMode = 'vs_baseline'; // 'vs_baseline' or 'vs_naive'
+
+document.getElementById('file-input').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    try {
+      DATA = JSON.parse(ev.target.result);
+      render();
+    } catch (err) {
+      alert('Invalid JSON file: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+});
+
+function loadDemo() {
+  // Generate demo data from the baselines for preview
+  fetch('optimization_results.json')
+    .then(r => { if (!r.ok) throw new Error('No results file found'); return r.json(); })
+    .then(d => { DATA = d; render(); })
+    .catch(() => alert('No optimization_results.json found. Run the optimizer first.'));
+}
+
+function render() {
+  if (!DATA) return;
+
+  const app = document.getElementById('app');
+  const baselines = DATA.baselines || {};
+  const iterations = DATA.iterations || [];
+  const best = DATA.best || {};
+  const levels = DATA.levels || [];
+
+  // Find the best iteration
+  const bestIter = iterations.find(it =>
+    it.summary && it.summary.total_nodes === best.summary?.total_nodes
+  ) || iterations[iterations.length - 1];
+
+  const naive = baselines.naive_manhattan?.summary || {};
+  const enhanced = baselines.enhanced?.summary || {};
+  const bestSummary = best.summary || enhanced;
+
+  // Calculate improvement
+  const naiveNodes = naive.total_nodes || 1;
+  const enhancedNodes = enhanced.total_nodes || 1;
+  const bestNodes = bestSummary.total_nodes || enhancedNodes;
+  const impVsNaive = ((naiveNodes - bestNodes) / naiveNodes * 100).toFixed(1);
+  const impVsEnhanced = ((enhancedNodes - bestNodes) / enhancedNodes * 100).toFixed(1);
+
+  const acceptedCount = iterations.filter(it => it.accepted).length;
+
+  app.innerHTML = `
+    <!-- Summary Cards -->
+    <div class="summary-grid">
+      <div class="card">
+        <h3>Naive Manhattan</h3>
+        <div class="value yellow">${(naiveNodes).toLocaleString()}</div>
+        <div class="detail">total nodes &middot; ${naive.solved || 0}/${naive.total || 0} solved</div>
+      </div>
+      <div class="card">
+        <h3>Enhanced (Baseline)</h3>
+        <div class="value blue">${(enhancedNodes).toLocaleString()}</div>
+        <div class="detail">total nodes &middot; ${enhanced.solved || 0}/${enhanced.total || 0} solved</div>
+      </div>
+      <div class="card">
+        <h3>Best LLM Heuristic</h3>
+        <div class="value green">${(bestNodes).toLocaleString()}</div>
+        <div class="detail">
+          <span class="improvement ${Number(impVsEnhanced) > 0 ? 'positive' : 'negative'}">
+            ${Number(impVsEnhanced) > 0 ? '↓' : '↑'}${Math.abs(impVsEnhanced)}% vs enhanced
+          </span>
+          &middot; ${bestSummary.solved || 0}/${bestSummary.total || 0} solved
+        </div>
+      </div>
+      <div class="card">
+        <h3>Optimization</h3>
+        <div class="value">${iterations.length - 1}</div>
+        <div class="detail">${acceptedCount} accepted / ${iterations.length - 1} attempts</div>
+      </div>
+    </div>
+
+    <!-- Iteration Timeline -->
+    <div class="chart-section">
+      <h2>Optimization Timeline</h2>
+      <div class="timeline" id="timeline"></div>
+      <div class="chart-container"><canvas id="timeline-chart"></canvas></div>
+    </div>
+
+    <!-- Per-level comparison chart -->
+    <div class="chart-section">
+      <h2>Per-Level Node Comparison</h2>
+      <div class="controls">
+        <label>Compare:</label>
+        <select id="compare-select">
+          <option value="vs_baseline">Best LLM vs Enhanced Baseline</option>
+          <option value="vs_naive">Best LLM vs Naive Manhattan</option>
+          <option value="all">All Heuristics</option>
+        </select>
+      </div>
+      <div class="chart-container"><canvas id="level-chart"></canvas></div>
+    </div>
+
+    <!-- Per-level table -->
+    <div class="table-section">
+      <h2>Detailed Results</h2>
+      <div style="overflow-x: auto;">
+        <table id="results-table"></table>
+      </div>
+    </div>
+
+    <!-- Source code viewer -->
+    <div class="source-section">
+      <h2>Heuristic Source Code</h2>
+      <div class="source-tabs" id="source-tabs"></div>
+      <pre id="source-code"></pre>
+    </div>
+  `;
+
+  renderTimeline(iterations);
+  renderTimelineChart(iterations);
+  renderLevelChart(levels, baselines, iterations);
+  renderTable(levels, baselines, iterations, best);
+  renderSourceTabs(iterations, baselines);
+
+  document.getElementById('compare-select').addEventListener('change', (e) => {
+    compareMode = e.target.value;
+    renderLevelChart(levels, baselines, iterations);
+  });
+}
+
+function renderTimeline(iterations) {
+  const el = document.getElementById('timeline');
+  el.innerHTML = '<span class="timeline-label">Iterations:</span>';
+  iterations.forEach((it, idx) => {
+    const dot = document.createElement('div');
+    dot.className = 'timeline-dot ' + (idx === 0 ? 'baseline' : it.accepted ? 'accepted' : 'rejected');
+    dot.textContent = it.iteration;
+    dot.title = `${it.name}\nNodes: ${it.summary?.total_nodes?.toLocaleString()}\n${it.accepted ? 'Accepted' : 'Rejected'}`;
+    dot.onclick = () => {
+      document.querySelectorAll('.timeline-dot').forEach(d => d.classList.remove('selected'));
+      dot.classList.add('selected');
+      selectedIteration = it;
+      showSource(it.source, it.name);
+    };
+    el.appendChild(dot);
+  });
+}
+
+function renderTimelineChart(iterations) {
+  const ctx = document.getElementById('timeline-chart').getContext('2d');
+  const labels = iterations.map(it => it.iteration === 0 ? 'Baseline' : `Iter ${it.iteration}`);
+  const nodes = iterations.map(it => it.summary?.total_nodes || 0);
+  const colors = iterations.map(it =>
+    it.iteration === 0 ? 'rgba(88, 166, 255, 0.8)' :
+    it.accepted ? 'rgba(63, 185, 80, 0.8)' : 'rgba(248, 81, 73, 0.5)'
+  );
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Total Nodes Explored',
+        data: nodes,
+        backgroundColor: colors,
+        borderColor: colors.map(c => c.replace('0.8', '1').replace('0.5', '0.8')),
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.parsed.y.toLocaleString()} nodes`
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: 'Total Nodes Explored', color: '#8b949e' },
+          ticks: { color: '#8b949e', callback: v => v.toLocaleString() },
+          grid: { color: '#30363d' },
+        },
+        x: { ticks: { color: '#8b949e' }, grid: { display: false } }
+      }
+    }
+  });
+}
+
+function renderLevelChart(levels, baselines, iterations) {
+  const canvas = document.getElementById('level-chart');
+  if (canvas._chart) canvas._chart.destroy();
+
+  const bestIter = [...iterations].reverse().find(it => it.accepted) || iterations[0];
+  const datasets = [];
+
+  if (compareMode === 'all' || compareMode === 'vs_naive') {
+    const naiveResults = baselines.naive_manhattan?.results || [];
+    datasets.push({
+      label: 'Naive Manhattan',
+      data: levels.map((_, i) => naiveResults[i]?.nodes || 0),
+      backgroundColor: 'rgba(210, 153, 34, 0.6)',
+      borderColor: 'rgba(210, 153, 34, 1)',
+      borderWidth: 1,
+    });
+  }
+  if (compareMode === 'all' || compareMode === 'vs_baseline') {
+    const enhancedResults = baselines.enhanced?.results || [];
+    datasets.push({
+      label: 'Enhanced Baseline',
+      data: levels.map((_, i) => enhancedResults[i]?.nodes || 0),
+      backgroundColor: 'rgba(88, 166, 255, 0.6)',
+      borderColor: 'rgba(88, 166, 255, 1)',
+      borderWidth: 1,
+    });
+  }
+  if (compareMode === 'all') {
+    const greedyResults = baselines.greedy_matching?.results || [];
+    datasets.push({
+      label: 'Greedy Matching',
+      data: levels.map((_, i) => greedyResults[i]?.nodes || 0),
+      backgroundColor: 'rgba(188, 140, 255, 0.6)',
+      borderColor: 'rgba(188, 140, 255, 1)',
+      borderWidth: 1,
+    });
+  }
+  {
+    const bestResults = bestIter?.results || [];
+    datasets.push({
+      label: 'Best LLM Heuristic',
+      data: levels.map((_, i) => bestResults[i]?.nodes || 0),
+      backgroundColor: 'rgba(63, 185, 80, 0.6)',
+      borderColor: 'rgba(63, 185, 80, 1)',
+      borderWidth: 1,
+    });
+  }
+
+  const ctx = canvas.getContext('2d');
+  canvas._chart = new Chart(ctx, {
+    type: 'bar',
+    data: { labels: levels, datasets },
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#c9d1d9' } } },
+      scales: {
+        y: {
+          type: 'logarithmic',
+          title: { display: true, text: 'Nodes Explored (log)', color: '#8b949e' },
+          ticks: { color: '#8b949e', callback: v => v.toLocaleString() },
+          grid: { color: '#30363d' },
+        },
+        x: {
+          ticks: { color: '#8b949e', maxRotation: 45, minRotation: 45, font: { size: 10 } },
+          grid: { display: false },
+        }
+      }
+    }
+  });
+}
+
+function renderTable(levels, baselines, iterations, best) {
+  const table = document.getElementById('results-table');
+  const bestIter = [...iterations].reverse().find(it => it.accepted) || iterations[0];
+  const naiveR = baselines.naive_manhattan?.results || [];
+  const greedyR = baselines.greedy_matching?.results || [];
+  const enhancedR = baselines.enhanced?.results || [];
+  const bestR = bestIter?.results || [];
+
+  let html = `<thead><tr>
+    <th>Level</th>
+    <th>Naive Manhattan</th>
+    <th>Greedy Matching</th>
+    <th>Enhanced</th>
+    <th>Best LLM</th>
+    <th>Improvement</th>
+  </tr></thead><tbody>`;
+
+  levels.forEach((name, i) => {
+    const n = naiveR[i]?.nodes || 0;
+    const gr = greedyR[i]?.nodes || 0;
+    const e = enhancedR[i]?.nodes || 0;
+    const b = bestR[i]?.nodes || 0;
+    const imp = e > 0 ? ((e - b) / e * 100) : 0;
+    const impClass = imp > 0 ? 'positive' : imp < 0 ? 'negative' : '';
+    const cellClass = b < e ? 'better' : b > e ? 'worse' : 'same';
+
+    html += `<tr>
+      <td>${name}</td>
+      <td>${n.toLocaleString()}</td>
+      <td>${gr.toLocaleString()}</td>
+      <td>${e.toLocaleString()}</td>
+      <td class="${cellClass}">${b.toLocaleString()}</td>
+      <td><span class="improvement ${impClass}">${imp > 0 ? '↓' : imp < 0 ? '↑' : ''}${Math.abs(imp).toFixed(1)}%</span></td>
+    </tr>`;
+  });
+
+  // Totals row
+  const totalN = naiveR.reduce((s, r) => s + (r?.nodes || 0), 0);
+  const totalGr = greedyR.reduce((s, r) => s + (r?.nodes || 0), 0);
+  const totalE = enhancedR.reduce((s, r) => s + (r?.nodes || 0), 0);
+  const totalB = bestR.reduce((s, r) => s + (r?.nodes || 0), 0);
+  const totalImp = totalE > 0 ? ((totalE - totalB) / totalE * 100) : 0;
+  const totalImpClass = totalImp > 0 ? 'positive' : totalImp < 0 ? 'negative' : '';
+
+  html += `<tr style="font-weight: 700; border-top: 2px solid var(--border);">
+    <td>TOTAL</td>
+    <td>${totalN.toLocaleString()}</td>
+    <td>${totalGr.toLocaleString()}</td>
+    <td>${totalE.toLocaleString()}</td>
+    <td class="${totalB < totalE ? 'better' : 'worse'}">${totalB.toLocaleString()}</td>
+    <td><span class="improvement ${totalImpClass}">${totalImp > 0 ? '↓' : '↑'}${Math.abs(totalImp).toFixed(1)}%</span></td>
+  </tr>`;
+
+  html += '</tbody>';
+  table.innerHTML = html;
+}
+
+function renderSourceTabs(iterations, baselines) {
+  const tabs = document.getElementById('source-tabs');
+  const sources = [
+    { name: 'Naive Manhattan', source: 'def naive_manhattan(board, boxes):\n    total = 0\n    for bx in boxes:\n        total += min(bx.manhattan(g) for g in board.goals)\n    return total' },
+    { name: 'Greedy Matching', source: 'def greedy_matching(board, boxes):\n    used = [False] * len(board.goals)\n    total = 0\n    for bx in boxes:\n        best_dist = 10**9\n        best_idx = 0\n        for i, g in enumerate(board.goals):\n            if used[i]: continue\n            d = bx.manhattan(g)\n            if d < best_dist:\n                best_dist = d\n                best_idx = i\n        used[best_idx] = True\n        total += best_dist\n    return total' },
+    { name: 'Enhanced', source: iterations[0]?.source || '# baseline' },
+  ];
+
+  iterations.forEach(it => {
+    if (it.iteration > 0) {
+      sources.push({ name: it.name + (it.accepted ? ' ✓' : ' ✗'), source: it.source });
+    }
+  });
+
+  tabs.innerHTML = '';
+  sources.forEach((s, i) => {
+    const tab = document.createElement('div');
+    tab.className = 'source-tab' + (i === 0 ? ' active' : '');
+    tab.textContent = s.name;
+    tab.onclick = () => {
+      document.querySelectorAll('.source-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      showSource(s.source, s.name);
+    };
+    tabs.appendChild(tab);
+  });
+
+  // Show first by default
+  if (sources.length > 0) showSource(sources[0].source, sources[0].name);
+}
+
+function showSource(source, name) {
+  document.getElementById('source-code').textContent = source || '# No source available';
+}
+</script>
+</body>
+</html>
