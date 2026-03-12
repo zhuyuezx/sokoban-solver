@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import random
 import re
 import sys
 import textwrap
@@ -212,6 +213,42 @@ def _compile_heuristic(source: str) -> HeuristicFn | None:
 
 # ── Main optimizer loop ──────────────────────────────────────────────
 
+# ── Heuristic persistence ────────────────────────────────────────────
+
+_HEURISTICS_DIR = _SOLVER_DIR / "heuristics"
+
+
+def save_heuristic(source: str, name: str, metadata: dict | None = None) -> Path:
+    """Save a heuristic function source to heuristics/<name>.py."""
+    _HEURISTICS_DIR.mkdir(exist_ok=True)
+    header = '"""Auto-generated heuristic."""\n'
+    if metadata:
+        header += f"# metadata: {json.dumps(metadata)}\n"
+    header += "from sokoban_solver import Board, Pos\n\n"
+    path = _HEURISTICS_DIR / f"{name}.py"
+    path.write_text(header + source + "\n", encoding="utf-8")
+    return path
+
+
+def load_heuristic(name_or_path: str | Path) -> HeuristicFn:
+    """Load a saved heuristic from heuristics/<name>.py or an arbitrary path.
+
+    Returns the callable ``heuristic`` function.
+    """
+    p = Path(name_or_path)
+    if not p.suffix:  # bare name like "best" → heuristics/best.py
+        p = _HEURISTICS_DIR / f"{p.name}.py"
+    if not p.exists():
+        raise FileNotFoundError(f"Heuristic file not found: {p}")
+    spec = importlib.util.spec_from_file_location("_loaded_heuristic", p)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    fn = getattr(mod, "heuristic", None)
+    if fn is None or not callable(fn):
+        raise ValueError(f"No callable `heuristic` found in {p}")
+    return fn
+
+
 class HeuristicOptimizer:
     """
     Iterative LLM-based heuristic optimizer for Sokoban A*.
@@ -219,9 +256,13 @@ class HeuristicOptimizer:
     Parameters
     ----------
     levels : list[tuple[str, str]]
-        (name, grid_text) pairs to benchmark on.
+        Full pool of levels to draw from.
     num_iters : int
         Number of LLM improvement iterations.
+    random_select : bool
+        If True, each iteration trains on a random subset of levels.
+    ratio : float
+        Fraction of levels to use for training when random_select is True.
     time_limit_s : float
         Per-level solve time limit.
     max_nodes : int
@@ -234,12 +275,16 @@ class HeuristicOptimizer:
         self,
         levels: list[tuple[str, str]],
         num_iters: int = 10,
+        random_select: bool = False,
+        ratio: float = 0.4,
         time_limit_s: float = 10.0,
         max_nodes: int = 200_000,
         verbose: bool = True,
     ):
         self.levels = levels
         self.num_iters = num_iters
+        self.random_select = random_select
+        self.ratio = ratio
         self.time_limit_s = time_limit_s
         self.max_nodes = max_nodes
         self.verbose = verbose
@@ -269,15 +314,24 @@ class HeuristicOptimizer:
                 print(f"  LLM query failed: {e}")
             raise
 
+    def _select_train_levels(self) -> list[tuple[str, str]]:
+        """Return the training subset for this iteration."""
+        if not self.random_select:
+            return self.levels
+        k = max(1, int(len(self.levels) * self.ratio))
+        return random.sample(self.levels, k)
+
     def run(self) -> dict[str, Any]:
         """Run the full optimization loop."""
         import inspect
 
         if self.verbose:
+            mode = (f"random {self.ratio:.0%} subset"
+                    if self.random_select else "all levels")
             print(f"=== Heuristic Optimizer: {self.num_iters} iterations, "
-                  f"{len(self.levels)} levels ===\n")
+                  f"{len(self.levels)} levels ({mode}) ===\n")
 
-        # Baseline: enhanced heuristic
+        # Baseline: enhanced heuristic — always on full set
         self.best_source = inspect.getsource(enhanced_heuristic)
         self.best_fn = enhanced_heuristic
         self.best_results = benchmark(
@@ -301,14 +355,24 @@ class HeuristicOptimizer:
                   f"{s['total_nodes']:,} nodes\n")
 
         for i in range(1, self.num_iters + 1):
+            # Pick training subset
+            train_levels = self._select_train_levels()
             if self.verbose:
-                print(f"--- Iteration {i}/{self.num_iters} ---")
+                print(f"--- Iteration {i}/{self.num_iters}  "
+                      f"(train on {len(train_levels)}/{len(self.levels)} levels) ---")
 
-            # Build prompt
+            # Baseline results on training subset for the LLM prompt
+            train_results = benchmark(
+                self.best_fn, train_levels,
+                self.time_limit_s, self.max_nodes,
+            )
+            train_summary = summarize(train_results)
+
+            # Build prompt with training subset performance
             prompt = _build_prompt(
                 current_source=self.best_source,
-                baseline_results=self.best_results,
-                baseline_summary=self.best_summary,
+                baseline_results=train_results,
+                baseline_summary=train_summary,
                 iteration=i,
                 history=self.history,
             )
@@ -348,7 +412,7 @@ class HeuristicOptimizer:
                 })
                 continue
 
-            # Benchmark
+            # Test on FULL level set for accept/reject decision
             try:
                 new_results = benchmark(
                     fn, self.levels,
@@ -409,9 +473,22 @@ class HeuristicOptimizer:
                 self.best_fn = fn
                 self.best_results = new_results
                 self.best_summary = new_summary
+                # Save accepted heuristic to file
+                save_heuristic(fn_source, f"iter_{i}", {
+                    "iteration": i,
+                    "total_nodes": new_summary["total_nodes"],
+                    "solved": new_solved,
+                })
+
+        # Save best heuristic as heuristics/best.py
+        save_heuristic(self.best_source, "best", {
+            "total_nodes": self.best_summary["total_nodes"],
+            "solved": self.best_summary["solved"],
+        })
 
         if self.verbose:
             print(f"\n=== Done. Best: {self.best_summary} ===")
+            print(f"Saved to {_HEURISTICS_DIR / 'best.py'}")
 
         return {
             "best_source": self.best_source,
@@ -468,10 +545,31 @@ class HeuristicOptimizer:
 # ── CLI ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    levels = load_levels(_SOLVER_DIR / "grids" / "Microban.txt")
-    # Use first 20 levels for faster iteration
-    levels = levels[:20]
+    import argparse
 
-    optimizer = HeuristicOptimizer(levels=levels, num_iters=10)
+    parser = argparse.ArgumentParser(description="LLM Sokoban heuristic optimizer")
+    parser.add_argument("--grid", default="grids/Microban.txt",
+                        help="Level file (default: grids/Microban.txt)")
+    parser.add_argument("--max-levels", type=int, default=50,
+                        help="Max levels to load from file (default: 50)")
+    parser.add_argument("--iters", type=int, default=10,
+                        help="Number of LLM iterations (default: 10)")
+    parser.add_argument("--random-select", action="store_true",
+                        help="Train on random subset each iteration")
+    parser.add_argument("--ratio", type=float, default=0.4,
+                        help="Fraction of levels for training subset (default: 0.4)")
+    parser.add_argument("--output", default="optimization_results.json",
+                        help="Output JSON path")
+    args = parser.parse_args()
+
+    levels = load_levels(_SOLVER_DIR / args.grid)
+    levels = levels[:args.max_levels]
+
+    optimizer = HeuristicOptimizer(
+        levels=levels,
+        num_iters=args.iters,
+        random_select=args.random_select,
+        ratio=args.ratio,
+    )
     result = optimizer.run()
-    optimizer.save_results("optimization_results.json")
+    optimizer.save_results(args.output)
