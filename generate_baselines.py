@@ -13,7 +13,7 @@ import json, inspect, time
 
 GRID_FILE = Path(__file__).parent / "grids" / "Microban.txt"
 OUT_FILE = Path(__file__).parent / "optimization_results.json"
-NUM_LEVELS = 30  # first N levels
+NUM_LEVELS = 50  # first N levels
 
 
 def main():

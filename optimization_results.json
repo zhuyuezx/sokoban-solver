@@ -19,7 +19,17 @@
     "Microban 17",
     "Microban 18",
     "Microban 19",
-    "Microban 20"
+    "Microban 20",
+    "Microban 21",
+    "Microban 22",
+    "Microban 23",
+    "Microban 24",
+    "Microban 25",
+    "Microban 26",
+    "Microban 27",
+    "Microban 28",
+    "Microban 29",
+    "Microban 30"
   ],
   "baselines": {
     "naive_manhattan": {
@@ -46,7 +56,7 @@
           "level": "Microban 3",
           "solved": true,
           "nodes": 98,
-          "time_ms": 3.7,
+          "time_ms": 3.6,
           "pushes": 13,
           "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
           "fail_reason": null
@@ -55,7 +65,7 @@
           "level": "Microban 4",
           "solved": true,
           "nodes": 518,
-          "time_ms": 36.4,
+          "time_ms": 37.8,
           "pushes": 7,
           "solution": "ullDullddrRuLurrrdLLrrddlUruL",
           "fail_reason": null
@@ -64,7 +74,7 @@
           "level": "Microban 5",
           "solved": true,
           "nodes": 422,
-          "time_ms": 71.1,
+          "time_ms": 71.2,
           "pushes": 6,
           "solution": "LuurrdLulldDrddrruUlldRdllluR",
           "fail_reason": null
@@ -73,7 +83,7 @@
           "level": "Microban 6",
           "solved": true,
           "nodes": 11257,
-          "time_ms": 386.4,
+          "time_ms": 389.1,
           "pushes": 29,
           "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRlllldRurrrRRdrrruullDldLurrurrddlLLulllllddrUluRRRRRdrrruullDurrddlL",
           "fail_reason": null
@@ -82,7 +92,7 @@
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 3.6,
+          "time_ms": 3.5,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -91,7 +101,7 @@
           "level": "Microban 8",
           "solved": true,
           "nodes": 177,
-          "time_ms": 8.8,
+          "time_ms": 8.9,
           "pushes": 32,
           "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUdddddrddlluUruuuuuUluRdddddddldlluurRdrUUUUUU",
           "fail_reason": null
@@ -109,7 +119,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 586,
-          "time_ms": 34.3,
+          "time_ms": 33.8,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddrruUddlllllluuRlddrrrrrruuUdddlllllluurRddrrrruuuUddddlluuRlddlluuRlddrrrruUddlllluurRddrruuUdddlluuRlddrruU",
           "fail_reason": null
@@ -118,7 +128,7 @@
           "level": "Microban 11",
           "solved": true,
           "nodes": 418,
-          "time_ms": 14.4,
+          "time_ms": 14.0,
           "pushes": 16,
           "solution": "ulllddddrrrruLdllluuuurrrdDlDurrddlLLLullddrUluRdrrrrruLulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
@@ -127,7 +137,7 @@
           "level": "Microban 12",
           "solved": true,
           "nodes": 19,
-          "time_ms": 1.0,
+          "time_ms": 1.1,
           "pushes": 11,
           "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
           "fail_reason": null
@@ -136,7 +146,7 @@
           "level": "Microban 13",
           "solved": true,
           "nodes": 553,
-          "time_ms": 23.1,
+          "time_ms": 23.0,
           "pushes": 21,
           "solution": "dDDuuurDlddRddlUUrdrruLdlluUUruLddddrruLdlUUUrDlddrruLdlUruullUdrrddlUruLruL",
           "fail_reason": null
@@ -163,7 +173,7 @@
           "level": "Microban 16",
           "solved": true,
           "nodes": 18618,
-          "time_ms": 691.0,
+          "time_ms": 702.4,
           "pushes": 39,
           "solution": "lddrUdrruLLdlUUUruLLrrdrDLuullLulDDDldRdrUluuurrrrdddlUrddrruLullUruLLrddddrUluuulLulDDDlddrruLuuurrrrdrdLdlUruullllddddlUruuurrrrddlUruLLLulDDDDldR",
           "fail_reason": null
@@ -172,7 +182,7 @@
           "level": "Microban 17",
           "solved": true,
           "nodes": 64,
-          "time_ms": 4.0,
+          "time_ms": 4.2,
           "pushes": 9,
           "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
           "fail_reason": null
@@ -181,7 +191,7 @@
           "level": "Microban 18",
           "solved": true,
           "nodes": 142,
-          "time_ms": 5.4,
+          "time_ms": 5.7,
           "pushes": 13,
           "solution": "ruuuulllddrRDrUUdllluuurrrrdLdddddlUUruuuulldlddrRdrUllluuurrrdLulldddrrrUdllluuurrdLurrrdL",
           "fail_reason": null
@@ -190,7 +200,7 @@
           "level": "Microban 19",
           "solved": true,
           "nodes": 185,
-          "time_ms": 4.8,
+          "time_ms": 4.9,
           "pushes": 20,
           "solution": "urrDDDlddrUUUUruLLLdRllluRdrrurDllluRdrrDDlddrUUUU",
           "fail_reason": null
@@ -199,18 +209,108 @@
           "level": "Microban 20",
           "solved": true,
           "nodes": 241,
-          "time_ms": 9.3,
+          "time_ms": 9.7,
           "pushes": 16,
           "solution": "urDDDlddrUUrrruulLLLrrrrddlllUdrrruullulldRRulllldRRurrdRlulldRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 9,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 343,
+          "time_ms": 14.2,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUUddrrrdLulluuluRRdlddddrUruLdlUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 87,
+          "time_ms": 2.5,
+          "pushes": 10,
+          "solution": "ruulluRdrdddllUUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 54,
+          "time_ms": 2.2,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 39,
+          "time_ms": 2.8,
+          "pushes": 7,
+          "solution": "urrdLulluurDldRlddrUrruuLLulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 138,
+          "time_ms": 7.2,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 79,
+          "time_ms": 2.7,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 92,
+          "time_ms": 3.0,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 495,
+          "time_ms": 18.4,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUruLdddddllllllluurrrrrRllllllddrrrrrrruUUruulDuulldRdrDDuuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 15,
+          "time_ms": 1.2,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
           "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 33479,
-        "total_time_ms": 1303.6,
-        "avg_nodes": 1674
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 34830,
+        "total_time_ms": 1373.9,
+        "avg_nodes": 1161
       }
     },
     "greedy_matching": {
@@ -237,7 +337,7 @@
           "level": "Microban 3",
           "solved": true,
           "nodes": 59,
-          "time_ms": 2.4,
+          "time_ms": 2.5,
           "pushes": 13,
           "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
           "fail_reason": null
@@ -246,7 +346,7 @@
           "level": "Microban 4",
           "solved": true,
           "nodes": 74,
-          "time_ms": 8.9,
+          "time_ms": 9.1,
           "pushes": 7,
           "solution": "ullDLurrrdLLulllddrrRurrddlUruL",
           "fail_reason": null
@@ -255,7 +355,7 @@
           "level": "Microban 5",
           "solved": true,
           "nodes": 91,
-          "time_ms": 17.8,
+          "time_ms": 17.6,
           "pushes": 6,
           "solution": "LuurrdLulldDrddrruUlldRdllluR",
           "fail_reason": null
@@ -264,7 +364,7 @@
           "level": "Microban 6",
           "solved": true,
           "nodes": 10686,
-          "time_ms": 356.8,
+          "time_ms": 360.9,
           "pushes": 29,
           "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRRRdrrruullDldLurrurrddlLulllllddlUluRurrdrrrrdLulllulldRRRRRdrrruullDurrddlL",
           "fail_reason": null
@@ -273,7 +373,7 @@
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 3.3,
+          "time_ms": 3.2,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -282,7 +382,7 @@
           "level": "Microban 8",
           "solved": true,
           "nodes": 122,
-          "time_ms": 5.6,
+          "time_ms": 5.5,
           "pushes": 32,
           "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
           "fail_reason": null
@@ -300,7 +400,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 263,
-          "time_ms": 17.4,
+          "time_ms": 17.0,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
           "fail_reason": null
@@ -309,7 +409,7 @@
           "level": "Microban 11",
           "solved": true,
           "nodes": 325,
-          "time_ms": 11.8,
+          "time_ms": 11.7,
           "pushes": 16,
           "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
@@ -327,7 +427,7 @@
           "level": "Microban 13",
           "solved": true,
           "nodes": 247,
-          "time_ms": 12.6,
+          "time_ms": 13.4,
           "pushes": 21,
           "solution": "rDlDDRddlUUUUddrdrruLdlluuuruLdlUrddddrruLdlUUUruLrdDlddrruLdlUUruL",
           "fail_reason": null
@@ -336,7 +436,7 @@
           "level": "Microban 14",
           "solved": true,
           "nodes": 57,
-          "time_ms": 2.0,
+          "time_ms": 2.1,
           "pushes": 10,
           "solution": "uullllddrdrUlluurrrrddLLLrrruullDurrddlLdllURRuullD",
           "fail_reason": null
@@ -354,7 +454,7 @@
           "level": "Microban 16",
           "solved": true,
           "nodes": 18656,
-          "time_ms": 684.0,
+          "time_ms": 707.4,
           "pushes": 39,
           "solution": "lddrUdrruLLdlUUUruLLrrdrDullddrdrruLuLuullLulDDDuurrrrdrdddlluUruullllddldRuuurrrrddlUruLLLulDDurrrrdrddLuuulllldDuurrrrddddlUruuullllddlddrrULuuurrrrdddlUruullllddddlUruuurrrrddlUruLLLulDDDDldR",
           "fail_reason": null
@@ -363,7 +463,7 @@
           "level": "Microban 17",
           "solved": true,
           "nodes": 124,
-          "time_ms": 6.2,
+          "time_ms": 5.9,
           "pushes": 9,
           "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
           "fail_reason": null
@@ -372,7 +472,7 @@
           "level": "Microban 18",
           "solved": true,
           "nodes": 72,
-          "time_ms": 3.2,
+          "time_ms": 3.1,
           "pushes": 13,
           "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
           "fail_reason": null
@@ -381,7 +481,7 @@
           "level": "Microban 19",
           "solved": true,
           "nodes": 182,
-          "time_ms": 4.8,
+          "time_ms": 4.7,
           "pushes": 20,
           "solution": "urrDDDlddrUUUUruLLLdRurDlllluRdrrrDullluRdrrdDlddrUUUU",
           "fail_reason": null
@@ -394,14 +494,104 @@
           "pushes": 16,
           "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
           "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.4,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 315,
+          "time_ms": 12.3,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUdrrrdLulluUddrrdLuluuluRRdlddrddlUUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 69,
+          "time_ms": 2.3,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 1.8,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 1.6,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 130,
+          "time_ms": 6.4,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 86,
+          "time_ms": 2.9,
+          "pushes": 12,
+          "solution": "dlldlluuuurrrdDLLrddlluUrrrrdLulllddrrUruuulllDDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 140,
+          "time_ms": 3.4,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 497,
+          "time_ms": 18.4,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRRlullldRlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDuulldRdrDDuuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.6,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
+          "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 31268,
-        "total_time_ms": 1148.9,
-        "avg_nodes": 1563
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 32582,
+        "total_time_ms": 1226.3,
+        "avg_nodes": 1086
       }
     },
     "enhanced": {
@@ -419,7 +609,7 @@
           "level": "Microban 2",
           "solved": true,
           "nodes": 1223,
-          "time_ms": 56.1,
+          "time_ms": 46.2,
           "pushes": 3,
           "solution": "rddLruulDuullddR",
           "fail_reason": null
@@ -437,7 +627,7 @@
           "level": "Microban 4",
           "solved": true,
           "nodes": 84,
-          "time_ms": 11.3,
+          "time_ms": 11.1,
           "pushes": 7,
           "solution": "ullDLdRuurrdLLrrddlUruL",
           "fail_reason": null
@@ -446,7 +636,7 @@
           "level": "Microban 5",
           "solved": true,
           "nodes": 91,
-          "time_ms": 22.1,
+          "time_ms": 22.0,
           "pushes": 6,
           "solution": "LuurrdLulldDrddrruUlldRdllluR",
           "fail_reason": null
@@ -455,7 +645,7 @@
           "level": "Microban 6",
           "solved": true,
           "nodes": 9561,
-          "time_ms": 370.0,
+          "time_ms": 370.9,
           "pushes": 29,
           "solution": "ulldllllulDulldRRRRllllddrrUdlluuurrrdrRRdrrruullDurrddlLLLullulldRRRRRdrrruullDurrddlLulllllddlUluRurrdrrrrdLulllulldRRRRRdrrruullDurrddlL",
           "fail_reason": null
@@ -464,7 +654,7 @@
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 4.1,
+          "time_ms": 4.0,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -491,7 +681,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 178,
-          "time_ms": 11.4,
+          "time_ms": 11.0,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRlddrrrruUUUddddlllluurRddlllluuRlddrrrruuRlddrruUUdddlllllluurRRRRlddrruU",
           "fail_reason": null
@@ -500,7 +690,7 @@
           "level": "Microban 11",
           "solved": true,
           "nodes": 342,
-          "time_ms": 12.6,
+          "time_ms": 12.4,
           "pushes": 16,
           "solution": "ulllddddrrrruLdllluuuurrrdDlDurrddlLLLullddrUluRdrrrrruLulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
@@ -509,7 +699,7 @@
           "level": "Microban 12",
           "solved": true,
           "nodes": 14,
-          "time_ms": 0.9,
+          "time_ms": 0.8,
           "pushes": 11,
           "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
           "fail_reason": null
@@ -518,7 +708,7 @@
           "level": "Microban 13",
           "solved": true,
           "nodes": 411,
-          "time_ms": 19.4,
+          "time_ms": 18.8,
           "pushes": 21,
           "solution": "dDDRuluurDlddrddlUUUUruLdlUrdddrdrruLLdlUUUruLrdDlddrruLdlUUruL",
           "fail_reason": null
@@ -545,7 +735,7 @@
           "level": "Microban 16",
           "solved": true,
           "nodes": 18438,
-          "time_ms": 762.3,
+          "time_ms": 766.8,
           "pushes": 39,
           "solution": "lddrUdrruLLdlUUUrrDLuuLLLrrrddddrruLuululllulDDurrrrdrdddlluUruulllldDldRuuurrrrddlUdddrUruuluLLLulDDDlddrrULdlUruuurrrdddrUruLdlUruLLLulDDDDldR",
           "fail_reason": null
@@ -554,203 +744,7 @@
           "level": "Microban 17",
           "solved": true,
           "nodes": 304,
-          "time_ms": 11.4,
-          "pushes": 9,
-          "solution": "dlDurrDulldRddlUrdrruLdlluUddrruUddlUU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 18",
-          "solved": true,
-          "nodes": 122,
-          "time_ms": 5.9,
-          "pushes": 13,
-          "solution": "ruuuulllddrRDrddlUruUUdllluuurrrrdLddddlUruuuulldlddrRlluuurrrdLulldddrrdrUUdllluuurrdLurrrdL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 19",
-          "solved": true,
-          "nodes": 192,
-          "time_ms": 5.7,
-          "pushes": 20,
-          "solution": "urrDDDlddrUUUUruLLLdlluRdrRurDllluRdrrDDlddrUUUU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 20",
-          "solved": true,
-          "nodes": 250,
-          "time_ms": 10.3,
-          "pushes": 16,
-          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
-          "fail_reason": null
-        }
-      ],
-      "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 31557,
-        "total_time_ms": 1318.7,
-        "avg_nodes": 1578
-      }
-    }
-  },
-  "iterations": [
-    {
-      "iteration": 0,
-      "name": "enhanced (baseline)",
-      "source": "def enhanced_heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"Greedy matching + mobility penalty (mirrors Rust enhanced_heuristic).\"\"\"\n    base = greedy_matching(board, boxes)\n    goal_set = frozenset(board.goals)\n    box_set = frozenset(boxes)\n    penalty = 0\n    for bx in boxes:\n        if bx in goal_set:\n            continue\n        blocked = 0\n        for dx, dy in DIRECTIONS:\n            nb = Pos(bx.x + dx, bx.y + dy)\n            if nb in board.walls or nb in box_set:\n                blocked += 1\n        if blocked >= 3:\n            penalty += 10\n        elif blocked == 2:\n            penalty += 2\n    return base + penalty\n",
-      "results": [
-        {
-          "level": "Microban 1",
-          "solved": true,
-          "nodes": 16,
-          "time_ms": 0.9,
-          "pushes": 8,
-          "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 2",
-          "solved": true,
-          "nodes": 1223,
-          "time_ms": 48.5,
-          "pushes": 3,
-          "solution": "rddLruulDuullddR",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 3",
-          "solved": true,
-          "nodes": 70,
-          "time_ms": 2.8,
-          "pushes": 13,
-          "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 4",
-          "solved": true,
-          "nodes": 84,
-          "time_ms": 11.2,
-          "pushes": 7,
-          "solution": "ullDLdRuurrdLLrrddlUruL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 5",
-          "solved": true,
-          "nodes": 91,
-          "time_ms": 22.5,
-          "pushes": 6,
-          "solution": "LuurrdLulldDrddrruUlldRdllluR",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 6",
-          "solved": true,
-          "nodes": 9561,
-          "time_ms": 396.7,
-          "pushes": 29,
-          "solution": "ulldllllulDulldRRRRllllddrrUdlluuurrrdrRRdrrruullDurrddlLLLullulldRRRRRdrrruullDurrddlLulllllddlUluRurrdrrrrdLulllulldRRRRRdrrruullDurrddlL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 7",
-          "solved": true,
-          "nodes": 7,
-          "time_ms": 4.1,
-          "pushes": 6,
-          "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 8",
-          "solved": true,
-          "nodes": 134,
-          "time_ms": 6.9,
-          "pushes": 32,
-          "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 9",
-          "solved": true,
-          "nodes": 16,
-          "time_ms": 0.6,
-          "pushes": 10,
-          "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 10",
-          "solved": true,
-          "nodes": 178,
-          "time_ms": 11.6,
-          "pushes": 21,
-          "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRlddrrrruUUUddddlllluurRddlllluuRlddrrrruuRlddrruUUdddlllllluurRRRRlddrruU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 11",
-          "solved": true,
-          "nodes": 342,
-          "time_ms": 12.8,
-          "pushes": 16,
-          "solution": "ulllddddrrrruLdllluuuurrrdDlDurrddlLLLullddrUluRdrrrrruLulDrdLLLUllddrUrrruuruullldD",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 12",
-          "solved": true,
-          "nodes": 14,
-          "time_ms": 0.9,
-          "pushes": 11,
-          "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 13",
-          "solved": true,
-          "nodes": 411,
-          "time_ms": 19.3,
-          "pushes": 21,
-          "solution": "dDDRuluurDlddrddlUUUUruLdlUrdddrdrruLLdlUUUruLrdDlddrruLdlUUruL",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 14",
-          "solved": true,
-          "nodes": 56,
-          "time_ms": 2.3,
-          "pushes": 10,
-          "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 15",
-          "solved": true,
-          "nodes": 48,
-          "time_ms": 1.9,
-          "pushes": 12,
-          "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 16",
-          "solved": true,
-          "nodes": 18438,
-          "time_ms": 789.2,
-          "pushes": 39,
-          "solution": "lddrUdrruLLdlUUUrrDLuuLLLrrrddddrruLuululllulDDurrrrdrdddlluUruulllldDldRuuurrrrddlUdddrUruuluLLLulDDDlddrrULdlUruuurrrdddrUruLdlUruLLLulDDDDldR",
-          "fail_reason": null
-        },
-        {
-          "level": "Microban 17",
-          "solved": true,
-          "nodes": 304,
-          "time_ms": 10.9,
+          "time_ms": 11.1,
           "pushes": 9,
           "solution": "dlDurrDulldRddlUrdrruLdlluUddrruUddlUU",
           "fail_reason": null
@@ -777,31 +771,407 @@
           "level": "Microban 20",
           "solved": true,
           "nodes": 250,
-          "time_ms": 10.0,
+          "time_ms": 9.7,
           "pushes": 16,
           "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 7,
+          "time_ms": 0.4,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 721,
+          "time_ms": 23.2,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUUddrrrdLulluuluRdddddrUluuuuRdldddrruLdlUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 71,
+          "time_ms": 2.5,
+          "pushes": 10,
+          "solution": "ruulluRdrdddllUUdrruululldRddrruuruLLrdddlluuRurDDullluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 31,
+          "time_ms": 1.5,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.0,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 156,
+          "time_ms": 8.5,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 74,
+          "time_ms": 3.0,
+          "pushes": 12,
+          "solution": "dlldlluuuurrrdDLLrddlluUrrrrdLulllddrrUruuulllDDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 139,
+          "time_ms": 3.9,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 473,
+          "time_ms": 19.0,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRRlullldRRllllddrrrrrrruUUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDuulldRdrDDuuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 9,
+          "time_ms": 1.0,
+          "pushes": 7,
+          "solution": "uluurDDrruLdllddrUdrUruulLulD",
           "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 31557,
-        "total_time_ms": 1364.6,
-        "avg_nodes": 1578
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 33257,
+        "total_time_ms": 1376.5,
+        "avg_nodes": 1109
+      }
+    }
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "name": "enhanced (baseline)",
+      "source": "def enhanced_heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"Greedy matching + mobility penalty (mirrors Rust enhanced_heuristic).\"\"\"\n    base = greedy_matching(board, boxes)\n    goal_set = frozenset(board.goals)\n    box_set = frozenset(boxes)\n    penalty = 0\n    for bx in boxes:\n        if bx in goal_set:\n            continue\n        blocked = 0\n        for dx, dy in DIRECTIONS:\n            nb = Pos(bx.x + dx, bx.y + dy)\n            if nb in board.walls or nb in box_set:\n                blocked += 1\n        if blocked >= 3:\n            penalty += 10\n        elif blocked == 2:\n            penalty += 2\n    return base + penalty\n",
+      "results": [
+        {
+          "level": "Microban 1",
+          "solved": true,
+          "nodes": 16,
+          "time_ms": 0.9,
+          "pushes": 8,
+          "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 2",
+          "solved": true,
+          "nodes": 1223,
+          "time_ms": 49.6,
+          "pushes": 3,
+          "solution": "rddLruulDuullddR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 3",
+          "solved": true,
+          "nodes": 70,
+          "time_ms": 2.9,
+          "pushes": 13,
+          "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 4",
+          "solved": true,
+          "nodes": 84,
+          "time_ms": 11.8,
+          "pushes": 7,
+          "solution": "ullDLdRuurrdLLrrddlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 5",
+          "solved": true,
+          "nodes": 91,
+          "time_ms": 23.3,
+          "pushes": 6,
+          "solution": "LuurrdLulldDrddrruUlldRdllluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 6",
+          "solved": true,
+          "nodes": 9561,
+          "time_ms": 388.3,
+          "pushes": 29,
+          "solution": "ulldllllulDulldRRRRllllddrrUdlluuurrrdrRRdrrruullDurrddlLLLullulldRRRRRdrrruullDurrddlLulllllddlUluRurrdrrrrdLulllulldRRRRRdrrruullDurrddlL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 7",
+          "solved": true,
+          "nodes": 7,
+          "time_ms": 4.1,
+          "pushes": 6,
+          "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 8",
+          "solved": true,
+          "nodes": 134,
+          "time_ms": 6.8,
+          "pushes": 32,
+          "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 9",
+          "solved": true,
+          "nodes": 16,
+          "time_ms": 0.6,
+          "pushes": 10,
+          "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 10",
+          "solved": true,
+          "nodes": 178,
+          "time_ms": 11.4,
+          "pushes": 21,
+          "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRlddrrrruUUUddddlllluurRddlllluuRlddrrrruuRlddrruUUdddlllllluurRRRRlddrruU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 11",
+          "solved": true,
+          "nodes": 342,
+          "time_ms": 12.8,
+          "pushes": 16,
+          "solution": "ulllddddrrrruLdllluuuurrrdDlDurrddlLLLullddrUluRdrrrrruLulDrdLLLUllddrUrrruuruullldD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 12",
+          "solved": true,
+          "nodes": 14,
+          "time_ms": 0.9,
+          "pushes": 11,
+          "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 13",
+          "solved": true,
+          "nodes": 411,
+          "time_ms": 19.6,
+          "pushes": 21,
+          "solution": "dDDRuluurDlddrddlUUUUruLdlUrdddrdrruLLdlUUUruLrdDlddrruLdlUUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 14",
+          "solved": true,
+          "nodes": 56,
+          "time_ms": 2.4,
+          "pushes": 10,
+          "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 15",
+          "solved": true,
+          "nodes": 48,
+          "time_ms": 1.9,
+          "pushes": 12,
+          "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 16",
+          "solved": true,
+          "nodes": 18438,
+          "time_ms": 778.3,
+          "pushes": 39,
+          "solution": "lddrUdrruLLdlUUUrrDLuuLLLrrrddddrruLuululllulDDurrrrdrdddlluUruulllldDldRuuurrrrddlUdddrUruuluLLLulDDDlddrrULdlUruuurrrdddrUruLdlUruLLLulDDDDldR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 17",
+          "solved": true,
+          "nodes": 304,
+          "time_ms": 11.4,
+          "pushes": 9,
+          "solution": "dlDurrDulldRddlUrdrruLdlluUddrruUddlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 18",
+          "solved": true,
+          "nodes": 122,
+          "time_ms": 5.7,
+          "pushes": 13,
+          "solution": "ruuuulllddrRDrddlUruUUdllluuurrrrdLddddlUruuuulldlddrRlluuurrrdLulldddrrdrUUdllluuurrdLurrrdL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 19",
+          "solved": true,
+          "nodes": 192,
+          "time_ms": 5.6,
+          "pushes": 20,
+          "solution": "urrDDDlddrUUUUruLLLdlluRdrRurDllluRdrrDDlddrUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 20",
+          "solved": true,
+          "nodes": 250,
+          "time_ms": 9.9,
+          "pushes": 16,
+          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 7,
+          "time_ms": 0.4,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 721,
+          "time_ms": 23.5,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUUddrrrdLulluuluRdddddrUluuuuRdldddrruLdlUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 71,
+          "time_ms": 2.6,
+          "pushes": 10,
+          "solution": "ruulluRdrdddllUUdrruululldRddrruuruLLrdddlluuRurDDullluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 31,
+          "time_ms": 1.5,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.0,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 156,
+          "time_ms": 8.5,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 74,
+          "time_ms": 3.0,
+          "pushes": 12,
+          "solution": "dlldlluuuurrrdDLLrddlluUrrrrdLulllddrrUruuulllDDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 139,
+          "time_ms": 3.9,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 473,
+          "time_ms": 19.1,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRRlullldRRllllddrrrrrrruUUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDuulldRdrDDuuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 9,
+          "time_ms": 1.0,
+          "pushes": 7,
+          "solution": "uluurDDrruLdllddrUdrUruulLulD",
+          "fail_reason": null
+        }
+      ],
+      "summary": {
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 33257,
+        "total_time_ms": 1413.7,
+        "avg_nodes": 1109
       },
       "accepted": true
     },
     {
       "iteration": 1,
       "name": "llm_iter_1",
-      "source": "def heuristic(board, boxes):\n    \"\"\"\n    Admissible heuristic: optimal assignment of boxes to goals using\n    static shortest\u2011push distances (ignoring other boxes).  If a box\n    cannot reach any goal (dead\u2011locked), return a large value.\n    \"\"\"\n    # Pre\u2011compute distance maps from each goal to every reachable cell.\n    if not hasattr(board, \"_goal_dist_maps\"):\n        from collections import deque\n\n        goal_maps = []\n        for goal in board.goals:\n            dist = {goal: 0}\n            q = deque([goal])\n            while q:\n                p = q.popleft()\n                d = dist[p]\n                for dx, dy in [(0, -1), (1, 0), (0, 1), (-1, 0)]:\n                    np = board.Pos(p.x + dx, p.y + dy) if hasattr(board, \"Pos\") else None\n                    if np is None:\n                        np = type(p)(p.x + dx, p.y + dy)  # fallback Pos construction\n                    if np.x < 0 or np.y < 0 or np.x >= board.width or np.y >= board.height:\n                        continue\n                    if np in board.walls:\n                        continue\n                    if np not in dist:\n                        dist[np] = d + 1\n                        q.append(np)\n            goal_maps.append(dist)\n        board._goal_dist_maps = goal_maps\n\n    m = len(board.goals)\n    n = len(boxes)\n    INF = 10 ** 9\n\n    # Cost matrix: pushes needed for box i to goal j (ignoring other boxes)\n    cost = [[INF] * m for _ in range(n)]\n    for i, b in enumerate(boxes):\n        for j, gmap in enumerate(board._goal_dist_maps):\n            d = gmap.get(b, INF)\n            cost[i][j] = d\n\n    # DP over subsets of goals to find minimal sum of distances (optimal matching)\n    dp = [INF] * (1 << m)\n    dp[0] = 0\n    for i in range(n):\n        newdp = [INF] * (1 << m)\n        for mask in range(1 << m):\n            cur = dp[mask]\n            if cur == INF:\n                continue\n            for j in range(m):\n                if mask & (1 << j):\n                    continue\n                d = cost[i][j]\n                if d == INF:\n                    continue\n                nmask = mask | (1 << j)\n                val = cur + d\n                if val < newdp[nmask]:\n                    newdp[nmask] = val\n        dp = newdp\n\n    best = dp[(1 << m) - 1]\n\n    # If any box cannot reach any goal (deadlock), push heuristic high\n    if best >= INF // 2:\n        return 1000\n\n    return int(best)",
+      "source": "def heuristic(board, boxes):\n    \"\"\"\n    Admissible heuristic:\n    - Detect simple corner deadlocks (return a large value to prune).\n    - Compute a lower\u2011bound on remaining pushes by solving the\n      minimum\u2011cost assignment of boxes to goals using Manhattan distance.\n      For up to 7 boxes we enumerate all permutations (exact optimum);\n      otherwise we fall back to the sum of per\u2011box nearest\u2011goal distances,\n      which is still a safe lower bound.\n    \"\"\"\n    import itertools\n\n    # ----- deadlock detection (corner against two walls) -----\n    walls = board.walls\n    goal_set = frozenset(board.goals)\n\n    for b in boxes:\n        if b in goal_set:\n            continue\n        # two orthogonal walls around the box \u2192 impossible to move off\n        if ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x + 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x + 1, b.y) in walls)):\n            # unsolvable \u2013 return a large admissible value\n            return 1000\n\n    # ----- minimum\u2011cost matching (Manhattan distances) -----\n    n = len(boxes)\n    goals = board.goals\n\n    # exact solution via permutation enumeration for small n\n    if n <= 7:\n        best = 10 ** 9\n        for perm in itertools.permutations(goals, n):\n            total = 0\n            for bx, g in zip(boxes, perm):\n                total += bx.manhattan(g)\n                if total >= best:        # early cut\u2011off\n                    break\n            if total < best:\n                best = total\n        return best\n\n    # fallback (still admissible) \u2013 sum of each box's nearest\u2011goal distance\n    # this never overestimates because each box must travel at least that far.\n    total = 0\n    for bx in boxes:\n        total += min(bx.manhattan(g) for g in goals)\n    return total",
       "results": [
         {
           "level": "Microban 1",
           "solved": true,
           "nodes": 24,
-          "time_ms": 2.5,
+          "time_ms": 1.7,
           "pushes": 8,
           "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
           "fail_reason": null
@@ -810,7 +1180,7 @@
           "level": "Microban 2",
           "solved": true,
           "nodes": 5,
-          "time_ms": 1.5,
+          "time_ms": 1.1,
           "pushes": 3,
           "solution": "rddLruulDuullddR",
           "fail_reason": null
@@ -818,8 +1188,8 @@
         {
           "level": "Microban 3",
           "solved": true,
-          "nodes": 39,
-          "time_ms": 3.9,
+          "nodes": 60,
+          "time_ms": 4.2,
           "pushes": 13,
           "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
           "fail_reason": null
@@ -828,7 +1198,7 @@
           "level": "Microban 4",
           "solved": true,
           "nodes": 74,
-          "time_ms": 16.9,
+          "time_ms": 14.5,
           "pushes": 7,
           "solution": "ullDLurrrdLLulllddrrRurrddlUruL",
           "fail_reason": null
@@ -837,7 +1207,7 @@
           "level": "Microban 5",
           "solved": true,
           "nodes": 118,
-          "time_ms": 38.6,
+          "time_ms": 38.4,
           "pushes": 6,
           "solution": "LulDuurrrdLrrddlUlldRdllluR",
           "fail_reason": null
@@ -845,17 +1215,17 @@
         {
           "level": "Microban 6",
           "solved": true,
-          "nodes": 10047,
-          "time_ms": 382.9,
+          "nodes": 10688,
+          "time_ms": 439.6,
           "pushes": 29,
-          "solution": "ulldllllulllddRluurDRRRllllddrrUdlluuurrrdrRRdrrruullDurrddlLLulllulldRRRRlllddlUrurrrRdrrruullDldLurrurrddlLullllullldRurrdrrrrdLulllulldRRRRRdrrruullDurrddlL",
+          "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRRllllldRurrrrRdrrruullDldLullllddrUluurrdrrrrurrddlLLulllulldRRRRRdrrruullDurrddlL",
           "fail_reason": null
         },
         {
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 6.9,
+          "time_ms": 25.1,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -864,7 +1234,7 @@
           "level": "Microban 8",
           "solved": true,
           "nodes": 122,
-          "time_ms": 5.9,
+          "time_ms": 6.1,
           "pushes": 32,
           "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
           "fail_reason": null
@@ -882,7 +1252,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 263,
-          "time_ms": 18.4,
+          "time_ms": 19.8,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
           "fail_reason": null
@@ -890,10 +1260,10 @@
         {
           "level": "Microban 11",
           "solved": true,
-          "nodes": 222,
-          "time_ms": 9.8,
+          "nodes": 325,
+          "time_ms": 13.6,
           "pushes": 16,
-          "solution": "ulllddddrrrruLdllluuuurrrdDlDurrddlLLLullddrUrrruurDldlllluRdrrrurrdLLLLUllddrUrrruuruullldD",
+          "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
         },
         {
@@ -909,7 +1279,7 @@
           "level": "Microban 13",
           "solved": true,
           "nodes": 247,
-          "time_ms": 14.3,
+          "time_ms": 15.0,
           "pushes": 21,
           "solution": "rDlDDRddlUUUUddrdrruLdlluuuruLdlUrddddrruLdlUUUruLrdDlddrruLdlUUruL",
           "fail_reason": null
@@ -917,8 +1287,8 @@
         {
           "level": "Microban 14",
           "solved": true,
-          "nodes": 31,
-          "time_ms": 1.4,
+          "nodes": 36,
+          "time_ms": 1.8,
           "pushes": 10,
           "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
           "fail_reason": null
@@ -935,17 +1305,17 @@
         {
           "level": "Microban 16",
           "solved": true,
-          "nodes": 10167,
-          "time_ms": 540.5,
+          "nodes": 18612,
+          "time_ms": 805.2,
           "pushes": 39,
-          "solution": "lddrUdrruLLdlUUUruLLLulDDDuurrrrdrDullddrUddrruLdlUruuLullllddrdLuuurrrrdrddlluUruLdddrUluuLLulDDDrddllURuuurrrddrruLullllddddrUluuurrrrddlUruLLLulDDDDldR",
+          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLuuluLLLulDDDuurrrrdrdLrddlluUruullllddrddlUruLuurrrrddlUruLLLulDDDrddlluRuuurrrddddrUluuulllddddrUluuurrrdddrUruLdlUruLLLulDDDDldR",
           "fail_reason": null
         },
         {
           "level": "Microban 17",
           "solved": true,
           "nodes": 124,
-          "time_ms": 7.3,
+          "time_ms": 7.8,
           "pushes": 9,
           "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
           "fail_reason": null
@@ -953,17 +1323,17 @@
         {
           "level": "Microban 18",
           "solved": true,
-          "nodes": 60,
-          "time_ms": 3.2,
+          "nodes": 72,
+          "time_ms": 3.7,
           "pushes": 13,
-          "solution": "ruuuulllddrRDrUUdllluuurrrrdLdddddlUUruuuulldlddrRlluuurrrdLulldddrrdrUUdllluuurrdLurrrdL",
+          "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
           "fail_reason": null
         },
         {
           "level": "Microban 19",
           "solved": true,
           "nodes": 182,
-          "time_ms": 4.8,
+          "time_ms": 5.5,
           "pushes": 20,
           "solution": "urrDDDlddrUUUUruLLLdRurDlllluRdrrrDullluRdrrdDlddrUUUU",
           "fail_reason": null
@@ -971,32 +1341,122 @@
         {
           "level": "Microban 20",
           "solved": true,
-          "nodes": 190,
-          "time_ms": 7.9,
+          "nodes": 196,
+          "time_ms": 8.7,
           "pushes": 16,
-          "solution": "urDDDrrruulLrrddllllddrUUrrruullLLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 316,
+          "time_ms": 14.0,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUdrrrdLulluUddrrdLuluuluRRdlddrddlUUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 70,
+          "time_ms": 2.6,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 2.1,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.0,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 130,
+          "time_ms": 7.4,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 53,
+          "time_ms": 2.2,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 100,
+          "time_ms": 3.6,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 485,
+          "time_ms": 20.2,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDDDuuuulldRurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.7,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
           "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 22000,
-        "total_time_ms": 1070.1,
-        "avg_nodes": 1100
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 32464,
+        "total_time_ms": 1470.5,
+        "avg_nodes": 1082
       },
       "accepted": true
     },
     {
-      "iteration": 3,
-      "name": "llm_iter_3",
-      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible push\u2011distance heuristic.\n    Pre\u2011computes, per goal, the minimum number of pushes required to move a\n    box from any reachable cell to that goal (ignoring other boxes).\n    The heuristic is the optimal assignment (exact min\u2011sum) of boxes to\n    distinct goals using those push distances.\n    \"\"\"\n    from collections import deque\n\n    # ------------------------------------------------------------------\n    # 1. Pre\u2011compute per\u2011goal push\u2011distance maps (once per board)\n    # ------------------------------------------------------------------\n    if not hasattr(board, \"_push_dist_maps\"):\n        # walkable cells = all non\u2011wall cells\n        walkable = {Pos(x, y)\n                    for y in range(board.height)\n                    for x in range(board.width)\n                    if Pos(x, y) not in board.walls}\n\n        goal_maps: list[dict[Pos, int]] = []\n\n        for goal in board.goals:\n            dist: dict[Pos, int] = {goal: 0}\n            q = deque([goal])\n\n            while q:\n                cur = q.popleft()\n                d = dist[cur]\n\n                # generate predecessor box positions (reverse push)\n                for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n                    # predecessor box position (where the box was before the push)\n                    prev = Pos(cur.x - dx, cur.y - dy)\n\n                    # cell where the player must have stood to push forward:\n                    player_cell = Pos(prev.x - dx, prev.y - dy)\n\n                    # forward push from `prev` to `cur` is possible iff\n                    #   - prev is walkable\n                    #   - player_cell is walkable\n                    #   - cur is already walkable (true by construction)\n                    if (prev in walkable) and (player_cell in walkable):\n                        if prev not in dist:\n                            dist[prev] = d + 1\n                            q.append(prev)\n\n            goal_maps.append(dist)\n\n        board._push_dist_maps = goal_maps  # type: ignore\n\n    # ------------------------------------------------------------------\n    # 2. Build cost matrix: push distance from each box to each goal\n    # ------------------------------------------------------------------\n    goal_maps = board._push_dist_maps  # type: ignore\n    m = len(board.goals)\n    n = len(boxes)\n    INF = 10 ** 9\n\n    cost = [[INF] * m for _ in range(n)]\n    for i, b in enumerate(boxes):\n        for j, gmap in enumerate(goal_maps):\n            d = gmap.get(b)\n            if d is not None:\n                cost[i][j] = d\n\n    # ------------------------------------------------------------------\n    # 3. DP over subsets of goals to obtain optimal matching sum\n    # ------------------------------------------------------------------\n    full_mask = (1 << m) - 1\n    dp = [INF] * (1 << m)\n    dp[0] = 0\n\n    for i in range(n):\n        newdp = [INF] * (1 << m)\n        for mask in range(1 << m):\n            cur = dp[mask]\n            if cur == INF:\n                continue\n            for j in range(m):\n                if mask & (1 << j):\n                    continue\n                d = cost[i][j]\n                if d == INF:\n                    continue\n                nmask = mask | (1 << j)\n                val = cur + d\n                if val < newdp[nmask]:\n                    newdp[nmask] = val\n        dp = newdp\n\n    best = dp[full_mask]\n\n    # If any box cannot reach any goal (dead\u2011locked), push heuristic high\n    if best >= INF // 2:\n        return 1000\n\n    return int(best)",
+      "iteration": 2,
+      "name": "llm_iter_2",
+      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible heuristic:\n    * Detect simple corner deadlocks (unsolvable \u2192 large constant).\n    * Compute an exact minimum\u2011cost assignment of boxes to goals using\n      Manhattan distance via DP over goal subsets (tight lower bound).\n      For >13 boxes/goals fall back to a fast greedy sum.\n    \"\"\"\n    # ---- corner deadlock detection (same as baseline) ----\n    walls = board.walls\n    goal_set = frozenset(board.goals)\n\n    for b in boxes:\n        if b in goal_set:\n            continue\n        # two orthogonal walls around the box -> dead corner\n        if ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x + 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x + 1, b.y) in walls)):\n            return 1000                     # admissible large penalty\n\n    # ---- exact minimum\u2011cost matching (Manhattan) ----\n    n = len(boxes)\n    m = len(board.goals)\n\n    # trivial cases\n    if n == 0:\n        return 0\n    if n == 1:\n        bx = boxes[0]\n        return min(bx.manhattan(g) for g in board.goals)\n\n    # If problem size is moderate we can solve it exactly with DP over subsets.\n    # Threshold chosen to keep 2^m feasible (\u2248 2^13 = 8192 states).\n    MAX_EXACT = 13\n    if n <= MAX_EXACT and m <= MAX_EXACT:\n        # distance matrix\n        d = [[bx.manhattan(g) for g in board.goals] for bx in boxes]\n\n        from functools import lru_cache\n\n        @lru_cache(maxsize=None)\n        def dp(i: int, mask: int) -> int:\n            \"\"\"minimum total distance for assigning boxes[i:] given used goals mask.\"\"\"\n            if i == n:\n                return 0\n            best = 10 ** 9\n            for j in range(m):\n                if not (mask >> j) & 1:\n                    val = d[i][j] + dp(i + 1, mask | (1 << j))\n                    if val < best:\n                        best = val\n            return best\n\n        return dp(0, 0)\n\n    # ---- fallback: greedy assignment (still admissible) ----\n    # Assign each box to its closest still\u2011available goal.\n    used = [False] * m\n    total = 0\n    for bx in boxes:\n        best_dist = 10 ** 9\n        best_idx = -1\n        for idx, g in enumerate(board.goals):\n            if used[idx]:\n                continue\n            dist = bx.manhattan(g)\n            if dist < best_dist:\n                best_dist = dist\n                best_idx = idx\n        used[best_idx] = True\n        total += best_dist\n    return total",
       "results": [
         {
           "level": "Microban 1",
           "solved": true,
-          "nodes": 21,
-          "time_ms": 1.6,
+          "nodes": 24,
+          "time_ms": 3.0,
           "pushes": 8,
           "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
           "fail_reason": null
@@ -1004,8 +1464,8 @@
         {
           "level": "Microban 2",
           "solved": true,
-          "nodes": 4,
-          "time_ms": 0.9,
+          "nodes": 5,
+          "time_ms": 2.6,
           "pushes": 3,
           "solution": "rddLruulDuullddR",
           "fail_reason": null
@@ -1013,8 +1473,8 @@
         {
           "level": "Microban 3",
           "solved": true,
-          "nodes": 39,
-          "time_ms": 2.8,
+          "nodes": 60,
+          "time_ms": 32.2,
           "pushes": 13,
           "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
           "fail_reason": null
@@ -1022,35 +1482,35 @@
         {
           "level": "Microban 4",
           "solved": true,
-          "nodes": 15,
-          "time_ms": 3.4,
+          "nodes": 74,
+          "time_ms": 15.7,
           "pushes": 7,
-          "solution": "ullDLdRuurrdLLrrddlUruL",
+          "solution": "ullDLurrrdLLulllddrrRurrddlUruL",
           "fail_reason": null
         },
         {
           "level": "Microban 5",
           "solved": true,
-          "nodes": 10,
-          "time_ms": 4.0,
+          "nodes": 118,
+          "time_ms": 40.5,
           "pushes": 6,
-          "solution": "LuurrdLulldDrddrruUlldRdllluR",
+          "solution": "LulDuurrrdLrrddlUlldRdllluR",
           "fail_reason": null
         },
         {
           "level": "Microban 6",
           "solved": true,
-          "nodes": 50,
-          "time_ms": 6.6,
+          "nodes": 10688,
+          "time_ms": 483.6,
           "pushes": 29,
-          "solution": "ulldllllulllddRluurDRllddrUluurrdRullldRurrdRRRlllulldRRRRdrrrruullDurrddlLLLuRdrrruullDurrddlLLulllllddrUluRRRRRdrrruullDurrddlL",
+          "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRRllllldRurrrrRdrrruullDldLullllddrUluurrdrrrrurrddlLLulllulldRRRRRdrrruullDurrddlL",
           "fail_reason": null
         },
         {
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 8.1,
+          "time_ms": 8.0,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -1059,7 +1519,7 @@
           "level": "Microban 8",
           "solved": true,
           "nodes": 122,
-          "time_ms": 6.8,
+          "time_ms": 6.7,
           "pushes": 32,
           "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
           "fail_reason": null
@@ -1068,7 +1528,7 @@
           "level": "Microban 9",
           "solved": true,
           "nodes": 13,
-          "time_ms": 0.6,
+          "time_ms": 0.5,
           "pushes": 10,
           "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
           "fail_reason": null
@@ -1077,7 +1537,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 263,
-          "time_ms": 19.8,
+          "time_ms": 20.7,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
           "fail_reason": null
@@ -1085,8 +1545,8 @@
         {
           "level": "Microban 11",
           "solved": true,
-          "nodes": 89,
-          "time_ms": 5.2,
+          "nodes": 325,
+          "time_ms": 14.3,
           "pushes": 16,
           "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
@@ -1094,7 +1554,292 @@
         {
           "level": "Microban 12",
           "solved": true,
-          "nodes": 15,
+          "nodes": 16,
+          "time_ms": 1.0,
+          "pushes": 11,
+          "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 13",
+          "solved": true,
+          "nodes": 247,
+          "time_ms": 25.6,
+          "pushes": 21,
+          "solution": "rDlDDRddlUUUUddrdrruLdlluuuruLdlUrddddrruLdlUUUruLrdDlddrruLdlUUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 14",
+          "solved": true,
+          "nodes": 36,
+          "time_ms": 1.8,
+          "pushes": 10,
+          "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 15",
+          "solved": true,
+          "nodes": 49,
+          "time_ms": 2.1,
+          "pushes": 12,
+          "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 16",
+          "solved": true,
+          "nodes": 18612,
+          "time_ms": 885.7,
+          "pushes": 39,
+          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLuuluLLLulDDDuurrrrdrdLrddlluUruullllddrddlUruLuurrrrddlUruLLLulDDDrddlluRuuurrrddddrUluuulllddddrUluuurrrdddrUruLdlUruLLLulDDDDldR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 17",
+          "solved": true,
+          "nodes": 124,
+          "time_ms": 8.8,
+          "pushes": 9,
+          "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 18",
+          "solved": true,
+          "nodes": 72,
+          "time_ms": 4.1,
+          "pushes": 13,
+          "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 19",
+          "solved": true,
+          "nodes": 182,
+          "time_ms": 6.0,
+          "pushes": 20,
+          "solution": "urrDDDlddrUUUUruLLLdRurDlllluRdrrrDullluRdrrdDlddrUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 20",
+          "solved": true,
+          "nodes": 196,
+          "time_ms": 9.4,
+          "pushes": 16,
+          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 316,
+          "time_ms": 15.1,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUdrrrdLulluUddrrdLuluuluRRdlddrddlUUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 70,
+          "time_ms": 3.5,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 2.4,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.1,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 130,
+          "time_ms": 7.9,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 53,
+          "time_ms": 2.5,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 100,
+          "time_ms": 3.8,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 485,
+          "time_ms": 21.6,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDDDuuuulldRurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.7,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
+          "fail_reason": null
+        }
+      ],
+      "summary": {
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 32464,
+        "total_time_ms": 1632.4,
+        "avg_nodes": 1082
+      },
+      "accepted": false
+    },
+    {
+      "iteration": 3,
+      "name": "llm_iter_3",
+      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible heuristic:\n    * Return a large value for obvious dead squares (corner not a goal).\n    * Exact minimum\u2011cost assignment of boxes to goals using Manhattan\n      distance via DP over subsets (optimal for up to ~15 boxes).\n    * Fall back to simple greedy matching when the DP would be too large.\n    \"\"\"\n    # ---- simple corner deadlock detection (already done in solver,\n    #      but we keep it here for early pruning) ----\n    goal_set = frozenset(board.goals)\n    walls = board.walls\n    for b in boxes:\n        if b in goal_set:\n            continue\n        # two orthogonal walls around the box -> impossible to move off\n        if ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x - 1, b.y) in walls)) \\\n        or ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x + 1, b.y) in walls)) \\\n        or ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x - 1, b.y) in walls)) \\\n        or ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x + 1, b.y) in walls)):\n            return 1000   # unsolvable \u2013 any large admissible value\n\n    n = len(boxes)\n    # Goals count equals boxes count for valid boards\n    goals = board.goals\n\n    # ---- exact minimum\u2011cost matching via DP (bitmask) ----\n    # Use DP when the state space is reasonable (n \u2264 15 gives \u2264 32768 masks)\n    if n <= 15:\n        # distance matrix box i -> goal j\n        dist = [[b.manhattan(g) for g in goals] for b in boxes]\n\n        from functools import lru_cache\n\n        @lru_cache(maxsize=None)\n        def dp(i: int, used_mask: int) -> int:\n            \"\"\"minimum total distance for boxes[i:] given used_mask of goals.\"\"\"\n            if i == n:\n                return 0\n            best = 10 ** 9\n            row = dist[i]\n            for j in range(n):\n                if not (used_mask & (1 << j)):\n                    cand = row[j] + dp(i + 1, used_mask | (1 << j))\n                    if cand < best:\n                        best = cand\n            return best\n\n        return dp(0, 0)\n\n    # ---- fallback: greedy nearest\u2011goal sum (admissible) ----\n    total = 0\n    for b in boxes:\n        total += min(b.manhattan(g) for g in goals)\n    return total",
+      "results": [
+        {
+          "level": "Microban 1",
+          "solved": true,
+          "nodes": 24,
+          "time_ms": 3.7,
+          "pushes": 8,
+          "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 2",
+          "solved": true,
+          "nodes": 5,
+          "time_ms": 2.0,
+          "pushes": 3,
+          "solution": "rddLruulDuullddR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 3",
+          "solved": true,
+          "nodes": 60,
+          "time_ms": 7.0,
+          "pushes": 13,
+          "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 4",
+          "solved": true,
+          "nodes": 74,
+          "time_ms": 21.8,
+          "pushes": 7,
+          "solution": "ullDLurrrdLLulllddrrRurrddlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 5",
+          "solved": true,
+          "nodes": 118,
+          "time_ms": 45.0,
+          "pushes": 6,
+          "solution": "LulDuurrrdLrrddlUlldRdllluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 6",
+          "solved": true,
+          "nodes": 10688,
+          "time_ms": 484.0,
+          "pushes": 29,
+          "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRRllllldRurrrrRdrrruullDldLullllddrUluurrdrrrrurrddlLLulllulldRRRRRdrrruullDurrddlL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 7",
+          "solved": true,
+          "nodes": 7,
+          "time_ms": 7.8,
+          "pushes": 6,
+          "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 8",
+          "solved": true,
+          "nodes": 122,
+          "time_ms": 6.5,
+          "pushes": 32,
+          "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 9",
+          "solved": true,
+          "nodes": 13,
+          "time_ms": 0.5,
+          "pushes": 10,
+          "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 10",
+          "solved": true,
+          "nodes": 263,
+          "time_ms": 20.5,
+          "pushes": 21,
+          "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 11",
+          "solved": true,
+          "nodes": 325,
+          "time_ms": 14.0,
+          "pushes": 16,
+          "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 12",
+          "solved": true,
+          "nodes": 16,
           "time_ms": 0.9,
           "pushes": 11,
           "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
@@ -1103,26 +1848,26 @@
         {
           "level": "Microban 13",
           "solved": true,
-          "nodes": 41,
-          "time_ms": 3.4,
+          "nodes": 247,
+          "time_ms": 15.8,
           "pushes": 21,
-          "solution": "dDDuuurDlddRddlUUUUruLdddrdrruLdlluuulUrddddrruLdlUUUrDlddrruLdlUUruLruL",
+          "solution": "rDlDDRddlUUUUddrdrruLdlluuuruLdlUrddddrruLdlUUUruLrdDlddrruLdlUUruL",
           "fail_reason": null
         },
         {
           "level": "Microban 14",
           "solved": true,
-          "nodes": 25,
-          "time_ms": 1.0,
+          "nodes": 36,
+          "time_ms": 1.8,
           "pushes": 10,
-          "solution": "uullllddrdrUlluurrrrddLLLrrruullDurrddlLdllURRuullD",
+          "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
           "fail_reason": null
         },
         {
           "level": "Microban 15",
           "solved": true,
-          "nodes": 50,
-          "time_ms": 1.9,
+          "nodes": 49,
+          "time_ms": 2.1,
           "pushes": 12,
           "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
           "fail_reason": null
@@ -1130,26 +1875,26 @@
         {
           "level": "Microban 16",
           "solved": true,
-          "nodes": 7642,
-          "time_ms": 417.0,
+          "nodes": 18612,
+          "time_ms": 869.1,
           "pushes": 39,
-          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLLUruLuLLLulDDDrdLuuurrrrddlUrdddlUUruuLLLulDDDrddllURdrUluuurrrrddlUruLLLulDDDDldR",
+          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLuuluLLLulDDDuurrrrdrdLrddlluUruullllddrddlUruLuurrrrddlUruLLLulDDDrddlluRuuurrrddddrUluuulllddddrUluuurrrdddrUruLdlUruLLLulDDDDldR",
           "fail_reason": null
         },
         {
           "level": "Microban 17",
           "solved": true,
-          "nodes": 19,
-          "time_ms": 1.7,
+          "nodes": 124,
+          "time_ms": 8.7,
           "pushes": 9,
-          "solution": "rdDullDRddlUUrddrruLUddlUU",
+          "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
           "fail_reason": null
         },
         {
           "level": "Microban 18",
           "solved": true,
-          "nodes": 23,
-          "time_ms": 1.6,
+          "nodes": 72,
+          "time_ms": 3.9,
           "pushes": 13,
           "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
           "fail_reason": null
@@ -1157,41 +1902,416 @@
         {
           "level": "Microban 19",
           "solved": true,
-          "nodes": 183,
-          "time_ms": 5.1,
+          "nodes": 182,
+          "time_ms": 6.0,
           "pushes": 20,
-          "solution": "urrDDDlddrUUUUruLLLdlluRdrRurDllluRdrrDDlddrUUUU",
+          "solution": "urrDDDlddrUUUUruLLLdRurDlllluRdrrrDullluRdrrdDlddrUUUU",
           "fail_reason": null
         },
         {
           "level": "Microban 20",
           "solved": true,
-          "nodes": 96,
-          "time_ms": 4.4,
+          "nodes": 196,
+          "time_ms": 9.2,
           "pushes": 16,
-          "solution": "urDDDlddrUUrrruulLLLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 316,
+          "time_ms": 15.0,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUdrrrdLulluUddrrdLuluuluRRdlddrddlUUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 70,
+          "time_ms": 2.7,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 2.3,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.1,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 130,
+          "time_ms": 8.0,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 53,
+          "time_ms": 2.4,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 100,
+          "time_ms": 3.9,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 485,
+          "time_ms": 21.3,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDDDuuuulldRurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.7,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
           "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 8727,
-        "total_time_ms": 496.8,
-        "avg_nodes": 436
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 32464,
+        "total_time_ms": 1589.2,
+        "avg_nodes": 1082
       },
-      "accepted": true
+      "accepted": false
     },
     {
-      "iteration": 5,
-      "name": "llm_iter_5",
-      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Improved admissible push\u2011distance heuristic.\n    1. Pre\u2011compute, once per board, the shortest push distance from every\n       reachable floor cell to each goal (ignoring other boxes).\n    2. Compute the optimal assignment of boxes \u2192 distinct goals using a\n       DP over goal subsets (exact min\u2011sum of those distances).\n    3. Add a cheap dead\u2011lock detection: if a box is pressed against a wall\n       and another non\u2011goal box lies directly behind it (forming a 2\u2011box\n       wall\u2011corner dead\u2011lock), the state is unsolvable \u2192 return a large\n       value.  This never over\u2011estimates a solvable position.\n    The returned value is an admissible lower bound on the remaining\n    number of pushes.\n    \"\"\"\n    from collections import deque\n\n    # --------------------------------------------------------------\n    # 1.  Push\u2011distance maps (cached on the Board instance)\n    # --------------------------------------------------------------\n    if not hasattr(board, \"_push_dist_maps\"):\n        walkable = {\n            Pos(x, y)\n            for y in range(board.height)\n            for x in range(board.width)\n            if Pos(x, y) not in board.walls\n        }\n\n        goal_maps: list[dict[Pos, int]] = []\n        for goal in board.goals:\n            dist: dict[Pos, int] = {goal: 0}\n            q = deque([goal])\n            while q:\n                cur = q.popleft()\n                d = dist[cur]\n                # reverse push: where could a box have been before reaching cur?\n                for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n                    prev = Pos(cur.x - dx, cur.y - dy)          # box before push\n                    player_cell = Pos(prev.x - dx, prev.y - dy) # where player stood\n                    if prev in walkable and player_cell in walkable:\n                        if prev not in dist:\n                            dist[prev] = d + 1\n                            q.append(prev)\n            goal_maps.append(dist)\n        board._push_dist_maps = goal_maps  # type: ignore\n\n    # --------------------------------------------------------------\n    # 2.  Minimal total push cost (optimal assignment)\n    # --------------------------------------------------------------\n    goal_maps = board._push_dist_maps  # type: ignore\n    m = len(board.goals)\n    n = len(boxes)\n    INF = 10 ** 9\n\n    # cost[i][j] = pushes needed for box i \u2192 goal j (ignoring other boxes)\n    cost = [[INF] * m for _ in range(n)]\n    for i, b in enumerate(boxes):\n        for j, gmap in enumerate(goal_maps):\n            d = gmap.get(b)\n            if d is not None:\n                cost[i][j] = d\n\n    # DP over subsets of goals (exact min\u2011sum matching)\n    full_mask = (1 << m) - 1\n    dp = [INF] * (1 << m)\n    dp[0] = 0\n    for i in range(n):\n        newdp = [INF] * (1 << m)\n        for mask, cur in enumerate(dp):\n            if cur == INF:\n                continue\n            for j in range(m):\n                if mask & (1 << j):\n                    continue\n                d = cost[i][j]\n                if d == INF:\n                    continue\n                nmask = mask | (1 << j)\n                val = cur + d\n                if val < newdp[nmask]:\n                    newdp[nmask] = val\n        dp = newdp\n    best = dp[full_mask]\n\n    # If any box cannot reach any goal (dead\u2011locked in isolation) -> high cost\n    if best >= INF // 2:\n        return 1000\n\n    # --------------------------------------------------------------\n    # 3.  Simple two\u2011box wall dead\u2011lock detection (admissible)\n    # --------------------------------------------------------------\n    box_set = frozenset(boxes)\n    goal_set = frozenset(board.goals)\n\n    for b in boxes:\n        if b in goal_set:\n            continue\n        for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n            # look for a wall directly next to the box\n            wall_adj = Pos(b.x + dx, b.y + dy)\n            if wall_adj in board.walls:\n                # cell opposite the wall (where another box could be)\n                behind = Pos(b.x - dx, b.y - dy)\n                if behind in box_set and behind not in goal_set:\n                    # two boxes stacked against a wall with no goal behind \u2192 unsolvable\n                    return 1000\n\n    # --------------------------------------------------------------\n    # 4.  Return the admissible lower bound\n    # --------------------------------------------------------------\n    return int(best)",
+      "iteration": 4,
+      "name": "llm_iter_4",
+      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible heuristic:\n    - Detect simple corner deadlocks (return a large constant to prune).\n    - Compute an exact minimum\u2011cost assignment of boxes to goals using the\n      Hungarian algorithm on Manhattan distances.  The sum of these distances\n      is a lower bound on the remaining pushes.\n    \"\"\"\n    walls = board.walls\n    goal_set = frozenset(board.goals)\n\n    # ----- simple corner deadlock detection (same as solver) -----\n    for b in boxes:\n        if b in goal_set:\n            continue\n        if ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y - 1) in walls) and (Pos(b.x + 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x - 1, b.y) in walls)) or \\\n           ((Pos(b.x, b.y + 1) in walls) and (Pos(b.x + 1, b.y) in walls)):\n            return 1000          # large admissible value\n\n    # ----- exact min\u2011cost matching via Hungarian algorithm -----\n    n = len(boxes)\n    goals = board.goals\n    # cost matrix: Manhattan distance box i -> goal j\n    cost = [[boxes[i].manhattan(goals[j]) for j in range(n)] for i in range(n)]\n\n    # Hungarian algorithm (O(n\u00b3))\n    # implementation works with 1\u2011based indexing internally\n    u = [0] * (n + 1)\n    v = [0] * (n + 1)\n    p = [0] * (n + 1)\n    way = [0] * (n + 1)\n\n    for i in range(1, n + 1):\n        p[0] = i\n        j0 = 0\n        minv = [float('inf')] * (n + 1)\n        used = [False] * (n + 1)\n\n        while True:\n            used[j0] = True\n            i0 = p[j0]\n            delta = float('inf')\n            j1 = 0\n            for j in range(1, n + 1):\n                if not used[j]:\n                    cur = cost[i0 - 1][j - 1] - u[i0] - v[j]\n                    if cur < minv[j]:\n                        minv[j] = cur\n                        way[j] = j0\n                    if minv[j] < delta:\n                        delta = minv[j]\n                        j1 = j\n            for j in range(n + 1):\n                if used[j]:\n                    u[p[j]] += delta\n                    v[j] -= delta\n                else:\n                    minv[j] -= delta\n            j0 = j1\n            if p[j0] == 0:\n                break\n\n        # augmenting\n        while True:\n            j1 = way[j0]\n            p[j0] = p[j1]\n            j0 = j1\n            if j0 == 0:\n                break\n\n    # total minimal cost\n    assignment = [0] * n\n    for j in range(1, n + 1):\n        if p[j]:\n            assignment[p[j] - 1] = j - 1\n    min_cost = sum(cost[i][assignment[i]] for i in range(n))\n    return min_cost",
       "results": [
         {
           "level": "Microban 1",
           "solved": true,
+          "nodes": 24,
+          "time_ms": 3.4,
+          "pushes": 8,
+          "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 2",
+          "solved": true,
+          "nodes": 5,
+          "time_ms": 1.6,
+          "pushes": 3,
+          "solution": "rddLruulDuullddR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 3",
+          "solved": true,
+          "nodes": 60,
+          "time_ms": 6.6,
+          "pushes": 13,
+          "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 4",
+          "solved": true,
+          "nodes": 74,
+          "time_ms": 19.6,
+          "pushes": 7,
+          "solution": "ullDLurrrdLLulllddrrRurrddlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 5",
+          "solved": true,
+          "nodes": 118,
+          "time_ms": 40.1,
+          "pushes": 6,
+          "solution": "LulDuurrrdLrrddlUlldRdllluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 6",
+          "solved": true,
+          "nodes": 10688,
+          "time_ms": 473.0,
+          "pushes": 29,
+          "solution": "ulldllllulDulldRRRRRRdrrruullDurrddlLLullllllddrrUdlluurRRRRllllldRurrrrRdrrruullDldLullllddrUluurrdrrrrurrddlLLulllulldRRRRRdrrruullDurrddlL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 7",
+          "solved": true,
+          "nodes": 7,
+          "time_ms": 5.0,
+          "pushes": 6,
+          "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 8",
+          "solved": true,
+          "nodes": 122,
+          "time_ms": 6.3,
+          "pushes": 32,
+          "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 9",
+          "solved": true,
+          "nodes": 13,
+          "time_ms": 0.5,
+          "pushes": 10,
+          "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 10",
+          "solved": true,
+          "nodes": 263,
+          "time_ms": 20.3,
+          "pushes": 21,
+          "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 11",
+          "solved": true,
+          "nodes": 325,
+          "time_ms": 13.7,
+          "pushes": 16,
+          "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 12",
+          "solved": true,
           "nodes": 16,
+          "time_ms": 1.0,
+          "pushes": 11,
+          "solution": "uululldRdRluurDrDDrddlluRuuulldRurDDrrrddllUdlluR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 13",
+          "solved": true,
+          "nodes": 247,
+          "time_ms": 15.5,
+          "pushes": 21,
+          "solution": "rDlDDRddlUUUUddrdrruLdlluuuruLdlUrddddrruLdlUUUruLrdDlddrruLdlUUruL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 14",
+          "solved": true,
+          "nodes": 36,
+          "time_ms": 1.8,
+          "pushes": 10,
+          "solution": "uullllddrdrUlluurrrrddLLLdlUrrrruullDurrddlLdlluRRuullD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 15",
+          "solved": true,
+          "nodes": 49,
+          "time_ms": 2.0,
+          "pushes": 12,
+          "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 16",
+          "solved": true,
+          "nodes": 18612,
+          "time_ms": 815.3,
+          "pushes": 39,
+          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLuuluLLLulDDDuurrrrdrdLrddlluUruullllddrddlUruLuurrrrddlUruLLLulDDDrddlluRuuurrrddddrUluuulllddddrUluuurrrdddrUruLdlUruLLLulDDDDldR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 17",
+          "solved": true,
+          "nodes": 124,
+          "time_ms": 8.0,
+          "pushes": 9,
+          "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 18",
+          "solved": true,
+          "nodes": 72,
+          "time_ms": 3.8,
+          "pushes": 13,
+          "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 19",
+          "solved": true,
+          "nodes": 182,
+          "time_ms": 5.7,
+          "pushes": 20,
+          "solution": "urrDDDlddrUUUUruLLLdRurDlllluRdrrrDullluRdrrdDlddrUUUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 20",
+          "solved": true,
+          "nodes": 196,
+          "time_ms": 8.9,
+          "pushes": 16,
+          "solution": "urDDDrrruulLLddlddrUUrrruulllLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 316,
+          "time_ms": 14.5,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUdrrrdLulluUddrrdLuluuluRRdlddrddlUUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 70,
+          "time_ms": 2.7,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 2.2,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 19,
+          "time_ms": 2.0,
+          "pushes": 7,
+          "solution": "urrdLLuluurDldRdrruuLrddlluluurDrrddlldlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 130,
+          "time_ms": 7.5,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 53,
           "time_ms": 2.3,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 100,
+          "time_ms": 3.7,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 485,
+          "time_ms": 20.7,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUddddllllllluurrrrrRllllllddrrrrrrruUUruuLDDDuuuulldRurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.7,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
+          "fail_reason": null
+        }
+      ],
+      "summary": {
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 32464,
+        "total_time_ms": 1508.9,
+        "avg_nodes": 1082
+      },
+      "accepted": false
+    },
+    {
+      "iteration": 5,
+      "name": "llm_iter_5",
+      "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible push\u2011distance heuristic.\n    1. Pre\u2011compute, once per board, the minimum number of pushes required\n       to move a box from any free cell to each goal, ignoring other boxes.\n    2. Build a cost matrix box\u2011\u00d7\u2011goal with those distances (INF if unreachable).\n    3. Solve the assignment problem exactly with a DP over subsets\n       (optimal for \u2264\u202f12 boxes, which covers all Microban levels).\n    4. If any box cannot reach any goal (dead\u2011locked), return a large value.\n    \"\"\"\n    from collections import deque\n\n    INF = 10 ** 6  # large enough to dominate any realistic solution cost\n\n    # ---------- 1. static push\u2011distance maps (cached on board) ----------\n    if not hasattr(board, \"_push_dist_maps\"):\n        # distance maps: one dict per goal \u2192 {Pos: push_distance}\n        push_maps = []\n        walls = board.walls\n        w, h = board.width, board.height\n        for g in board.goals:\n            dist = {g: 0}\n            q = deque([g])\n            while q:\n                cur = q.popleft()\n                dcur = dist[cur]\n                for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n                    # reverse a push: box would have come from (cur - dir)\n                    prev = Pos(cur.x - dx, cur.y - dy)\n                    player_needed = Pos(prev.x - dx, prev.y - dy)\n                    if (prev in walls) or (player_needed in walls):\n                        continue\n                    if prev not in dist:\n                        dist[prev] = dcur + 1\n                        q.append(prev)\n            push_maps.append(dist)\n        board._push_dist_maps = push_maps  # cache\n    else:\n        push_maps = board._push_dist_maps\n\n    # ---------- 2. build cost matrix ----------\n    n_boxes = len(boxes)\n    n_goals = len(board.goals)\n    cost = [[INF] * n_goals for _ in range(n_boxes)]\n\n    for bi, bpos in enumerate(boxes):\n        reachable = False\n        for gi, gmap in enumerate(push_maps):\n            d = gmap.get(bpos)\n            if d is not None:\n                reachable = True\n                cost[bi][gi] = d\n        if not reachable:\n            # box can never reach any goal \u2192 dead\u2011lock\n            return INF\n\n    # ---------- 3. exact minimum\u2011cost assignment (DP over subsets) ----------\n    # dp[mask] = minimal cost after assigning first k boxes to the goals set in mask\n    full_mask = (1 << n_goals) - 1\n    dp = [INF] * (1 << n_goals)\n    dp[0] = 0\n\n    for i in range(n_boxes):\n        new_dp = [INF] * (1 << n_goals)\n        for mask in range(1 << n_goals):\n            cur_cost = dp[mask]\n            if cur_cost == INF:\n                continue\n            # try to assign box i to any unused goal j\n            free = (~mask) & full_mask\n            while free:\n                j = (free & -free).bit_length() - 1\n                nmask = mask | (1 << j)\n                nd = cur_cost + cost[i][j]\n                if nd < new_dp[nmask]:\n                    new_dp[nmask] = nd\n                free &= free - 1\n        dp = new_dp\n\n    best = dp[full_mask]\n    return best if best < INF else INF",
+      "results": [
+        {
+          "level": "Microban 1",
+          "solved": true,
+          "nodes": 21,
+          "time_ms": 3.0,
           "pushes": 8,
           "solution": "dlUrrrdLullddrUluRuulDrddrruLdlUU",
           "fail_reason": null
@@ -1200,7 +2320,7 @@
           "level": "Microban 2",
           "solved": true,
           "nodes": 4,
-          "time_ms": 1.3,
+          "time_ms": 1.5,
           "pushes": 3,
           "solution": "rddLruulDuullddR",
           "fail_reason": null
@@ -1208,8 +2328,8 @@
         {
           "level": "Microban 3",
           "solved": true,
-          "nodes": 34,
-          "time_ms": 4.3,
+          "nodes": 39,
+          "time_ms": 4.5,
           "pushes": 13,
           "solution": "ruuLLLulDrrrrddlUruLLLddllluurRDrdLuuurDD",
           "fail_reason": null
@@ -1218,7 +2338,7 @@
           "level": "Microban 4",
           "solved": true,
           "nodes": 15,
-          "time_ms": 5.1,
+          "time_ms": 4.7,
           "pushes": 7,
           "solution": "ullDLdRuurrdLLrrddlUruL",
           "fail_reason": null
@@ -1227,7 +2347,7 @@
           "level": "Microban 5",
           "solved": true,
           "nodes": 10,
-          "time_ms": 5.9,
+          "time_ms": 5.2,
           "pushes": 6,
           "solution": "LuurrdLulldDrddrruUlldRdllluR",
           "fail_reason": null
@@ -1235,17 +2355,17 @@
         {
           "level": "Microban 6",
           "solved": true,
-          "nodes": 162,
-          "time_ms": 24.2,
+          "nodes": 50,
+          "time_ms": 8.3,
           "pushes": 29,
-          "solution": "ulldllllulllddRluurDRllddrUluurrdRullldRurrdRRRdrrruullDurrddlLLulllulldRRRRRdrrruullDldLurrurrddlLLulllllddrUluRRRRRdrrruullDurrddlL",
+          "solution": "ulldllllulllddRluurDRllddrUluurrdRullldRurrdRRRlllulldRRRRdrrrruullDurrddlLLLuRdrrruullDurrddlLLulllllddrUluRRRRRdrrruullDurrddlL",
           "fail_reason": null
         },
         {
           "level": "Microban 7",
           "solved": true,
           "nodes": 7,
-          "time_ms": 8.6,
+          "time_ms": 8.4,
           "pushes": 6,
           "solution": "lluuuurRllddrUruurrddLruullllddrdRddlUrdrruL",
           "fail_reason": null
@@ -1253,7 +2373,7 @@
         {
           "level": "Microban 8",
           "solved": true,
-          "nodes": 135,
+          "nodes": 122,
           "time_ms": 8.0,
           "pushes": 32,
           "solution": "llDDDDDDldddrruuLuuuuuuurrdLulDDDDDDlllddrrUdlluurRdddrruuLUUUUUUluRdddddddrddlluUdlluurRdrUUUUUU",
@@ -1263,7 +2383,7 @@
           "level": "Microban 9",
           "solved": true,
           "nodes": 13,
-          "time_ms": 0.6,
+          "time_ms": 0.7,
           "pushes": 10,
           "solution": "urrDulldRdRluurDrDDlUruLdlUruL",
           "fail_reason": null
@@ -1272,7 +2392,7 @@
           "level": "Microban 10",
           "solved": true,
           "nodes": 263,
-          "time_ms": 20.9,
+          "time_ms": 22.2,
           "pushes": 21,
           "solution": "rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddlluuRRddlllluuRRddrrrruUUUddddlluuRlddlluuRRddrruUUdddlluuRlddrruU",
           "fail_reason": null
@@ -1280,10 +2400,10 @@
         {
           "level": "Microban 11",
           "solved": true,
-          "nodes": 71,
-          "time_ms": 4.7,
-          "pushes": 18,
-          "solution": "ulllddddrrrruLUlDrdLLLuuuurrrDDDldllullddrUluRdrrrurrdLLLLUllddrUrrruuruullldD",
+          "nodes": 89,
+          "time_ms": 5.8,
+          "pushes": 16,
+          "solution": "ulllddddrrrruLdllluuuurrrdDDrdLLLLullddrUluRdrrrruulDrdLLLUllddrUrrruuruullldD",
           "fail_reason": null
         },
         {
@@ -1298,10 +2418,10 @@
         {
           "level": "Microban 13",
           "solved": true,
-          "nodes": 416,
-          "time_ms": 20.7,
-          "pushes": 27,
-          "solution": "dDDuuurDlddRddlUUUUruLdddrdrruLLUluurDllUrddDuurDldRddlUUrdrruLdlluUddrruLdlUruuLrddlUUruL",
+          "nodes": 41,
+          "time_ms": 3.7,
+          "pushes": 21,
+          "solution": "dDDuuurDlddRddlUUUUruLdddrdrruLdlluuulUrddddrruLdlUUUrDlddrruLdlUUruLruL",
           "fail_reason": null
         },
         {
@@ -1317,7 +2437,7 @@
           "level": "Microban 15",
           "solved": true,
           "nodes": 50,
-          "time_ms": 2.1,
+          "time_ms": 2.0,
           "pushes": 12,
           "solution": "DrdddllUUddrruuulLLLdlluRRRRdddrruuLrddlluU",
           "fail_reason": null
@@ -1325,26 +2445,26 @@
         {
           "level": "Microban 16",
           "solved": true,
-          "nodes": 6628,
-          "time_ms": 406.1,
-          "pushes": 45,
-          "solution": "lddrUdrruLLUluurDrDulldRddlUrdrruLdlluUddrruLuurDllUrdddlUrdrruLuuluLrdrdddlluUddrUruululLLulDDDrddlUruLuurrrrdrddlluUruLLLulDDDrddlluRuuurrrdddrUruLullllddddrUluuurrrrddlUruLLLulDDDDldR",
+          "nodes": 7642,
+          "time_ms": 421.3,
+          "pushes": 39,
+          "solution": "lddrUdrruLLdlUUUrrDullddrdrruLLUruLuLLLulDDDrdLuuurrrrddlUrdddlUUruuLLLulDDDrddllURdrUluuurrrrddlUruLLLulDDDDldR",
           "fail_reason": null
         },
         {
           "level": "Microban 17",
           "solved": true,
-          "nodes": 12,
-          "time_ms": 1.3,
+          "nodes": 19,
+          "time_ms": 1.8,
           "pushes": 9,
-          "solution": "dlDurrDulldRddlUUrddrruLUddlUU",
+          "solution": "rdDullDRddlUUrddrruLUddlUU",
           "fail_reason": null
         },
         {
           "level": "Microban 18",
           "solved": true,
-          "nodes": 22,
-          "time_ms": 1.8,
+          "nodes": 23,
+          "time_ms": 1.7,
           "pushes": 13,
           "solution": "ruuuulllddrRDrUUdllluuurrrrdLLrdddddlUUruuuullldddrRdrUUdllluuurrdLurrrdL",
           "fail_reason": null
@@ -1352,8 +2472,8 @@
         {
           "level": "Microban 19",
           "solved": true,
-          "nodes": 169,
-          "time_ms": 5.1,
+          "nodes": 183,
+          "time_ms": 5.0,
           "pushes": 20,
           "solution": "urrDDDlddrUUUUruLLLdlluRdrRurDllluRdrrDDlddrUUUU",
           "fail_reason": null
@@ -1362,30 +2482,120 @@
           "level": "Microban 20",
           "solved": true,
           "nodes": 96,
-          "time_ms": 4.8,
+          "time_ms": 4.5,
           "pushes": 16,
           "solution": "urDDDlddrUUrrruulLLLrrrrddlllUdrrruullulldRRRlulllldRRRR",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 21",
+          "solved": true,
+          "nodes": 8,
+          "time_ms": 0.5,
+          "pushes": 5,
+          "solution": "dlllUdrUlluurDRddlU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 22",
+          "solved": true,
+          "nodes": 157,
+          "time_ms": 7.7,
+          "pushes": 15,
+          "solution": "drrruulDLdlUUUluRdddrrrdLullddrUluuuuRdldddrruLdlUUUruLdddrruruuL",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 23",
+          "solved": true,
+          "nodes": 44,
+          "time_ms": 2.2,
+          "pushes": 10,
+          "solution": "dlUrruulluRdrddllUdrruululldRddrruuruLLrdddlluuRurDllluRdrrD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 24",
+          "solved": true,
+          "nodes": 33,
+          "time_ms": 1.7,
+          "pushes": 9,
+          "solution": "ullDDlddrruLuuurrdLulDDDullddrRuulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 25",
+          "solved": true,
+          "nodes": 10,
+          "time_ms": 1.1,
+          "pushes": 7,
+          "solution": "urrdLulluurDldRlddrUrruuLLulD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 26",
+          "solved": true,
+          "nodes": 104,
+          "time_ms": 5.9,
+          "pushes": 10,
+          "solution": "rdddlUrdddlUUlldRurruuulldRDrdLrddlUruuluurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 27",
+          "solved": true,
+          "nodes": 43,
+          "time_ms": 1.5,
+          "pushes": 10,
+          "solution": "dlULddlluuuurrrDulllddddrruuLrdrruLuullldDDurRdrUU",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 28",
+          "solved": true,
+          "nodes": 28,
+          "time_ms": 1.2,
+          "pushes": 9,
+          "solution": "rDulldRddrruLdlUUluurrdDldRuuulDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 29",
+          "solved": true,
+          "nodes": 413,
+          "time_ms": 17.0,
+          "pushes": 22,
+          "solution": "ullldRurrdrrddllllllluuRurrdRullldRurrdRullldRurrdRlulldlllddrrrrrrruUllulldRllllddrrrrrrruuUdddllllllluurrrrRlllllddrrrrrrruuuUruLdddddllllllluurrrrrRllllllddrrrrrrruUUruulDDDuuuulldRurDD",
+          "fail_reason": null
+        },
+        {
+          "level": "Microban 30",
+          "solved": true,
+          "nodes": 6,
+          "time_ms": 0.7,
+          "pushes": 5,
+          "solution": "uluurDlddrdrUruuLLulD",
           "fail_reason": null
         }
       ],
       "summary": {
-        "solved": 20,
-        "total": 20,
-        "total_nodes": 8163,
-        "total_time_ms": 529.9,
-        "avg_nodes": 408
+        "solved": 30,
+        "total": 30,
+        "total_nodes": 9573,
+        "total_time_ms": 553.9,
+        "avg_nodes": 319
       },
       "accepted": true
     }
   ],
   "best": {
-    "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Improved admissible push\u2011distance heuristic.\n    1. Pre\u2011compute, once per board, the shortest push distance from every\n       reachable floor cell to each goal (ignoring other boxes).\n    2. Compute the optimal assignment of boxes \u2192 distinct goals using a\n       DP over goal subsets (exact min\u2011sum of those distances).\n    3. Add a cheap dead\u2011lock detection: if a box is pressed against a wall\n       and another non\u2011goal box lies directly behind it (forming a 2\u2011box\n       wall\u2011corner dead\u2011lock), the state is unsolvable \u2192 return a large\n       value.  This never over\u2011estimates a solvable position.\n    The returned value is an admissible lower bound on the remaining\n    number of pushes.\n    \"\"\"\n    from collections import deque\n\n    # --------------------------------------------------------------\n    # 1.  Push\u2011distance maps (cached on the Board instance)\n    # --------------------------------------------------------------\n    if not hasattr(board, \"_push_dist_maps\"):\n        walkable = {\n            Pos(x, y)\n            for y in range(board.height)\n            for x in range(board.width)\n            if Pos(x, y) not in board.walls\n        }\n\n        goal_maps: list[dict[Pos, int]] = []\n        for goal in board.goals:\n            dist: dict[Pos, int] = {goal: 0}\n            q = deque([goal])\n            while q:\n                cur = q.popleft()\n                d = dist[cur]\n                # reverse push: where could a box have been before reaching cur?\n                for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n                    prev = Pos(cur.x - dx, cur.y - dy)          # box before push\n                    player_cell = Pos(prev.x - dx, prev.y - dy) # where player stood\n                    if prev in walkable and player_cell in walkable:\n                        if prev not in dist:\n                            dist[prev] = d + 1\n                            q.append(prev)\n            goal_maps.append(dist)\n        board._push_dist_maps = goal_maps  # type: ignore\n\n    # --------------------------------------------------------------\n    # 2.  Minimal total push cost (optimal assignment)\n    # --------------------------------------------------------------\n    goal_maps = board._push_dist_maps  # type: ignore\n    m = len(board.goals)\n    n = len(boxes)\n    INF = 10 ** 9\n\n    # cost[i][j] = pushes needed for box i \u2192 goal j (ignoring other boxes)\n    cost = [[INF] * m for _ in range(n)]\n    for i, b in enumerate(boxes):\n        for j, gmap in enumerate(goal_maps):\n            d = gmap.get(b)\n            if d is not None:\n                cost[i][j] = d\n\n    # DP over subsets of goals (exact min\u2011sum matching)\n    full_mask = (1 << m) - 1\n    dp = [INF] * (1 << m)\n    dp[0] = 0\n    for i in range(n):\n        newdp = [INF] * (1 << m)\n        for mask, cur in enumerate(dp):\n            if cur == INF:\n                continue\n            for j in range(m):\n                if mask & (1 << j):\n                    continue\n                d = cost[i][j]\n                if d == INF:\n                    continue\n                nmask = mask | (1 << j)\n                val = cur + d\n                if val < newdp[nmask]:\n                    newdp[nmask] = val\n        dp = newdp\n    best = dp[full_mask]\n\n    # If any box cannot reach any goal (dead\u2011locked in isolation) -> high cost\n    if best >= INF // 2:\n        return 1000\n\n    # --------------------------------------------------------------\n    # 3.  Simple two\u2011box wall dead\u2011lock detection (admissible)\n    # --------------------------------------------------------------\n    box_set = frozenset(boxes)\n    goal_set = frozenset(board.goals)\n\n    for b in boxes:\n        if b in goal_set:\n            continue\n        for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n            # look for a wall directly next to the box\n            wall_adj = Pos(b.x + dx, b.y + dy)\n            if wall_adj in board.walls:\n                # cell opposite the wall (where another box could be)\n                behind = Pos(b.x - dx, b.y - dy)\n                if behind in box_set and behind not in goal_set:\n                    # two boxes stacked against a wall with no goal behind \u2192 unsolvable\n                    return 1000\n\n    # --------------------------------------------------------------\n    # 4.  Return the admissible lower bound\n    # --------------------------------------------------------------\n    return int(best)",
+    "source": "def heuristic(board: Board, boxes: tuple[Pos, ...]) -> int:\n    \"\"\"\n    Admissible push\u2011distance heuristic.\n    1. Pre\u2011compute, once per board, the minimum number of pushes required\n       to move a box from any free cell to each goal, ignoring other boxes.\n    2. Build a cost matrix box\u2011\u00d7\u2011goal with those distances (INF if unreachable).\n    3. Solve the assignment problem exactly with a DP over subsets\n       (optimal for \u2264\u202f12 boxes, which covers all Microban levels).\n    4. If any box cannot reach any goal (dead\u2011locked), return a large value.\n    \"\"\"\n    from collections import deque\n\n    INF = 10 ** 6  # large enough to dominate any realistic solution cost\n\n    # ---------- 1. static push\u2011distance maps (cached on board) ----------\n    if not hasattr(board, \"_push_dist_maps\"):\n        # distance maps: one dict per goal \u2192 {Pos: push_distance}\n        push_maps = []\n        walls = board.walls\n        w, h = board.width, board.height\n        for g in board.goals:\n            dist = {g: 0}\n            q = deque([g])\n            while q:\n                cur = q.popleft()\n                dcur = dist[cur]\n                for dx, dy in ((0, -1), (1, 0), (0, 1), (-1, 0)):\n                    # reverse a push: box would have come from (cur - dir)\n                    prev = Pos(cur.x - dx, cur.y - dy)\n                    player_needed = Pos(prev.x - dx, prev.y - dy)\n                    if (prev in walls) or (player_needed in walls):\n                        continue\n                    if prev not in dist:\n                        dist[prev] = dcur + 1\n                        q.append(prev)\n            push_maps.append(dist)\n        board._push_dist_maps = push_maps  # cache\n    else:\n        push_maps = board._push_dist_maps\n\n    # ---------- 2. build cost matrix ----------\n    n_boxes = len(boxes)\n    n_goals = len(board.goals)\n    cost = [[INF] * n_goals for _ in range(n_boxes)]\n\n    for bi, bpos in enumerate(boxes):\n        reachable = False\n        for gi, gmap in enumerate(push_maps):\n            d = gmap.get(bpos)\n            if d is not None:\n                reachable = True\n                cost[bi][gi] = d\n        if not reachable:\n            # box can never reach any goal \u2192 dead\u2011lock\n            return INF\n\n    # ---------- 3. exact minimum\u2011cost assignment (DP over subsets) ----------\n    # dp[mask] = minimal cost after assigning first k boxes to the goals set in mask\n    full_mask = (1 << n_goals) - 1\n    dp = [INF] * (1 << n_goals)\n    dp[0] = 0\n\n    for i in range(n_boxes):\n        new_dp = [INF] * (1 << n_goals)\n        for mask in range(1 << n_goals):\n            cur_cost = dp[mask]\n            if cur_cost == INF:\n                continue\n            # try to assign box i to any unused goal j\n            free = (~mask) & full_mask\n            while free:\n                j = (free & -free).bit_length() - 1\n                nmask = mask | (1 << j)\n                nd = cur_cost + cost[i][j]\n                if nd < new_dp[nmask]:\n                    new_dp[nmask] = nd\n                free &= free - 1\n        dp = new_dp\n\n    best = dp[full_mask]\n    return best if best < INF else INF",
     "summary": {
-      "solved": 20,
-      "total": 20,
-      "total_nodes": 8163,
-      "total_time_ms": 529.9,
-      "avg_nodes": 408
+      "solved": 30,
+      "total": 30,
+      "total_nodes": 9573,
+      "total_time_ms": 553.9,
+      "avg_nodes": 319
     }
   }
 }

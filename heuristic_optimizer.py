@@ -470,7 +470,7 @@ class HeuristicOptimizer:
 if __name__ == "__main__":
     levels = load_levels(_SOLVER_DIR / "grids" / "Microban.txt")
     # Use first 20 levels for faster iteration
-    levels = levels[:20]
+    levels = levels[:30]
 
     optimizer = HeuristicOptimizer(levels=levels, num_iters=5)
     result = optimizer.run()

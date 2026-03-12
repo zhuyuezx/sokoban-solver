@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sokoban — Heuristic Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        :root { --cell-size: 50px; }
+        html, body { height: 100%; margin: 0; padding: 0; }
+        body { display: flex; flex-direction: column; }
+
+        .header {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-bottom: 1px solid #dee2e6;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        .main-area {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            overflow: hidden;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-top: 1px solid #dee2e6;
+            flex-shrink: 0;
+        }
+        .grid { display: inline-block; }
+        .grid .row { display: flex; width: 100%; }
+        .cell {
+            width: var(--cell-size);
+            height: var(--cell-size);
+            background-size: 100%;
+            flex-shrink: 0;
+        }
+        .cell[data-type="wall"]         { background-image: url('img/wall.png'); }
+        .cell[data-type="floor"]        { background-image: url('img/tiles.png'); }
+        .cell[data-type="player"]       { background-image: url('img/green_character.png'), url('img/tiles.png'); }
+        .cell[data-type="block"]        { background-image: url('img/crate.png'); }
+        .cell[data-type="target"]       { background-image: url('img/green_hand.png'), url('img/tiles.png'); }
+        .cell[data-type="target-player"]{ background-image: url('img/green_hand.png'), url('img/green_character.png'), url('img/tiles.png'); }
+        .cell[data-type="target-block"] { background-image: url('img/green_hand.png'), url('img/crate.png'); }
+
+        .header small { font-size: 0.6rem; }
+        .github-link { color: #6c757d; text-decoration: none; margin-left: 0.5rem; }
+        .github-link:hover { color: #495057; }
+        .title-link { cursor: pointer; transition: color 0.2s ease; }
+        .title-link:hover { color: #0d6efd; text-decoration: underline; }
+        .footer .btn { margin: 0.125rem; }
+        @media (max-width: 767.98px) {
+            .footer .col-auto { display: flex; flex-wrap: wrap; gap: 0.25rem; justify-content: center; }
+        }
+
+        /* ── Comparison panel ─────────────────────────────────────── */
+        #cmp-panel {
+            background: #fff;
+            border-top: 2px solid #0d6efd;
+            flex-shrink: 0;
+            max-height: 260px;
+            overflow-y: auto;
+        }
+        #cmp-panel .cmp-hdr {
+            background: #e8edf4;
+            padding: 0.4rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; top: 0; z-index: 1;
+        }
+        #cmp-panel .cmp-hdr h6 { margin: 0; font-size: 0.85rem; color: #0d47a1; }
+        #cmp-table { font-size: 0.85rem; margin-bottom: 0; }
+        #cmp-table th { background: #e8eaf6; font-size: 0.75rem; }
+        .cmp-solved { color: #1b5e20; font-weight: 600; }
+        .cmp-failed { color: #b71c1c; }
+        tr.cmp-best { background: #e8f5e9 !important; }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="mb-0 fs-2">
+                <span class="title-link" title="Click to refresh">Sokoban — Heuristic Lab</span>
+                <a href="index.html" class="btn btn-sm btn-outline-secondary ms-2" title="Classic interface">
+                    <i class="bi bi-grid-3x3"></i> Classic
+                </a>
+            </h1>
+            <small class="text-muted">Compare A* heuristics — fewer nodes explored = better</small>
+        </div>
+    </div>
+
+    <div class="main-area">
+        <div class="grid"></div>
+    </div>
+
+    <!-- Comparison panel (hidden until solve) -->
+    <div id="cmp-panel" class="d-none">
+        <div class="cmp-hdr">
+            <h6><i class="bi bi-bar-chart-line-fill me-1"></i>Heuristic Comparison — <span id="cmp-title"></span></h6>
+            <button class="btn-close btn-sm" title="Close"
+                onclick="document.getElementById('cmp-panel').classList.add('d-none')"></button>
+        </div>
+        <div class="px-3 py-1">
+            <table class="table table-sm table-hover" id="cmp-table">
+                <thead>
+                    <tr>
+                        <th>Heuristic</th>
+                        <th class="text-end">Nodes Explored</th>
+                        <th class="text-end">Time</th>
+                        <th class="text-end">Pushes</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cmp-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="buttons">
+                <form class="row gy-2 gx-2 align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <select class="form-select grid-set-select">
+                            <option value="grids/Base-Levels.txt" selected>Base Levels</option>
+                            <option value="grids/LOMA.txt">LOMA</option>
+                            <option value="grids/Tricky.txt">Tricky</option>
+                            <option value="grids/Alberto Garcia.txt">Alberto Garcia</option>
+                            <option value="grids/Alberto Garcia 2.txt">Alberto Garcia 2</option>
+                            <option value="grids/Alberto Garcia 3.txt">Alberto Garcia 3</option>
+                            <option value="grids/Alberto Garcia 4.txt">Alberto Garcia 4</option>
+                            <option value="grids/Aruba1.txt">Aruba1</option>
+                            <option value="grids/Aruba2.txt">Aruba2</option>
+                            <option value="grids/Aruba3.txt">Aruba3</option>
+                            <option value="grids/Aruba4.txt">Aruba4</option>
+                            <option value="grids/Aruba5.txt">Aruba5</option>
+                            <option value="grids/Aruba6.txt">Aruba6</option>
+                            <option value="grids/Aruba7.txt">Aruba7</option>
+                            <option value="grids/Aruba8.txt">Aruba8</option>
+                            <option value="grids/Aruba9.txt">Aruba9</option>
+                            <option value="grids/Boxxle 1.txt">Boxxle 1</option>
+                            <option value="grids/Boxxle 2.txt">Boxxle 2</option>
+                            <option value="grids/Mas Sasquatch.txt">Mas Sasquatch</option>
+                            <option value="grids/Micro Cosmos.txt">Micro Cosmos</option>
+                            <option value="grids/Microban.txt">Microban</option>
+                            <option value="grids/Microban II.txt">Microban II</option>
+                            <option value="grids/Microban III.txt">Microban III</option>
+                            <option value="grids/Microban IV.txt">Microban IV</option>
+                            <option value="grids/Mini Cosmos.txt">Mini Cosmos</option>
+                            <option value="grids/Nabo Cosmos.txt">Nabo Cosmos</option>
+                            <option value="grids/Original & Extra.txt">Original &amp; Extra</option>
+                            <option value="grids/Pico Cosmos.txt">Pico Cosmos</option>
+                            <option value="grids/Sasquatch.txt">Sasquatch</option>
+                            <option value="grids/Sasquatch III.txt">Sasquatch III</option>
+                            <option value="grids/Sasquatch IV.txt">Sasquatch IV</option>
+                            <option value="grids/Sasquatch V.txt">Sasquatch V</option>
+                            <option value="grids/Sasquatch VI.txt">Sasquatch VI</option>
+                            <option value="grids/Sasquatch VII.txt">Sasquatch VII</option>
+                            <option value="grids/Sasquatch VIII.txt">Sasquatch VIII</option>
+                            <option value="grids/Sasquatch IX.txt">Sasquatch IX</option>
+                            <option value="grids/Sasquatch X.txt">Sasquatch X</option>
+                            <option value="grids/The Bagatelle collection.txt">The Bagatelle collection</option>
+                            <option value="grids/The Bagatelle 2 collection.txt">The Bagatelle 2 collection</option>
+                            <option value="grids/The Cantrip collection.txt">The Cantrip collection</option>
+                            <option value="grids/The Cantrip 2 collection.txt">The Cantrip 2 collection</option>
+                            <option value="grids/The DH1 collection.txt">The DH1 collection</option>
+                            <option value="grids/The DH2 collection.txt">The DH2 collection</option>
+                            <option value="grids/The Maelstrom collection.txt">The Maelstrom collection</option>
+                            <option value="grids/Yoshio Murases Autos Auto.txt">Yoshio Murases Autos Auto</option>
+                            <option value="grids/Yoshio Murases Hand-Mades Hand-Made.txt">Yoshio Murases Hand-Mades Hand-Made</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <select class="form-select load-select"></select>
+                    </div>
+                    <div class="col-auto">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-sm btn-primary new"><i class="bi bi-plus"></i></button>
+                            <button type="button" class="btn btn-sm btn-primary save"><i class="bi bi-save"></i></button>
+                            <button type="button" class="btn btn-sm btn-info export"><i class="bi bi-share"></i></button>
+                            <button type="button" class="btn btn-sm btn-secondary reset"><i class="bi bi-arrow-counterclockwise"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-sm btn-warning left"><i class="bi bi-arrow-left"></i></button>
+                            <button type="button" class="btn btn-sm btn-warning up"><i class="bi bi-arrow-up"></i></button>
+                            <button type="button" class="btn btn-sm btn-warning down"><i class="bi bi-arrow-down"></i></button>
+                            <button type="button" class="btn btn-sm btn-warning right"><i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <select class="form-select form-select-sm" id="heuristic-select" style="min-width:160px">
+                            <option value="enhanced" selected>Enhanced</option>
+                            <option value="greedy_matching">Greedy Matching</option>
+                            <option value="naive_manhattan">Naive Manhattan</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-sm btn-primary calc" disabled>Solve - Loading...</button>
+                    </div>
+                    <div class="col-auto">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-sm btn-secondary prev d-none"><i class="bi bi-chevron-left"></i></button>
+                            <button type="button" class="btn btn-sm btn-secondary next d-none"><i class="bi bi-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Load main.js for all game logic (grid, levels, keyboard, save/load) -->
+    <script src="main.js"></script>
+
+    <script>
+    // ── Heuristic Lab: override Solve button to use JS A* worker ────
+    (function () {
+      'use strict';
+
+      var worker = null;
+      var reqId  = 0;
+      var compareAcc = {};  // id → { onResult, onDone }
+
+      function getWorker() {
+        if (!worker) {
+          worker = new Worker('sokoban_astar_worker.js');
+          worker.onmessage = function (e) {
+            var d = e.data;
+            if (d.type === 'compare_result') {
+              var acc = compareAcc[d.id];
+              if (acc && acc.onResult) acc.onResult(d.heuristic, d.result);
+            } else if (d.type === 'compare_done') {
+              var acc2 = compareAcc[d.id];
+              if (acc2 && acc2.onDone) acc2.onDone();
+              delete compareAcc[d.id];
+            }
+          };
+        }
+        return worker;
+      }
+
+      // ── Labels ──────────────────────────────────────────────────
+      var LABELS = {
+        naive_manhattan: 'Naive Manhattan',
+        greedy_matching: 'Greedy Matching',
+        enhanced:        'Enhanced',
+      };
+
+      // ── Comparison panel helpers ────────────────────────────────
+      var cmpSolutions = {};
+
+      function showPanel(levelName) {
+        document.getElementById('cmp-title').textContent = levelName;
+        document.getElementById('cmp-panel').classList.remove('d-none');
+        var tbody = document.getElementById('cmp-body');
+        tbody.innerHTML = '';
+        ['naive_manhattan', 'greedy_matching', 'enhanced'].forEach(function (h) {
+          tbody.insertAdjacentHTML('beforeend',
+            '<tr id="cmp-row-' + h + '">' +
+            '<td><b>' + LABELS[h] + '</b></td>' +
+            '<td class="text-end" id="cmp-nodes-' + h + '"><span class="spinner-border spinner-border-sm"></span></td>' +
+            '<td class="text-end" id="cmp-time-' + h + '">—</td>' +
+            '<td class="text-end" id="cmp-pushes-' + h + '">—</td>' +
+            '<td id="cmp-status-' + h + '"><em class="text-muted">running…</em></td>' +
+            '<td id="cmp-action-' + h + '"></td>' +
+            '</tr>'
+          );
+        });
+      }
+
+      function updateRow(h, result) {
+        document.getElementById('cmp-nodes-' + h).textContent  = result.nodes.toLocaleString();
+        document.getElementById('cmp-time-' + h).textContent   = result.time.toFixed(0) + 'ms';
+        document.getElementById('cmp-pushes-' + h).textContent = result.solved ? result.pushes : '—';
+        document.getElementById('cmp-status-' + h).innerHTML   = result.solved
+          ? '<span class="cmp-solved">&#10003; SOLVED</span>'
+          : '<span class="cmp-failed">&#10007; ' + (result.fail || 'failed') + '</span>';
+
+        if (result.solved && result.solution) {
+          cmpSolutions[h] = result.solution;
+          document.getElementById('cmp-action-' + h).innerHTML =
+            '<button class="btn btn-sm btn-outline-success py-0 px-1" ' +
+            'style="font-size:0.75rem" onclick="window._replayH(\'' + h + '\')">&#9654; Replay</button>';
+        }
+      }
+
+      function markBest() {
+        var best = null, bestNodes = Infinity;
+        ['naive_manhattan', 'greedy_matching', 'enhanced'].forEach(function (h) {
+          if (!cmpSolutions[h]) return;
+          var n = parseInt((document.getElementById('cmp-nodes-' + h).textContent || '').replace(/,/g, ''));
+          if (n < bestNodes) { bestNodes = n; best = h; }
+        });
+        if (best) {
+          document.getElementById('cmp-row-' + best).classList.add('cmp-best');
+          document.getElementById('cmp-nodes-' + best).innerHTML +=
+            ' <span class="badge bg-success" style="font-size:0.65rem">BEST</span>';
+        }
+      }
+
+      // ── Replay a specific heuristic's solution ─────────────────
+      window._replayH = function (h) {
+        var sol = cmpSolutions[h];
+        if (!sol) return;
+        DATA.solution.directions = sol;
+        populateSolutionStates();
+        DATA.solution.current = 0;
+        displayState(DATA.solution.states[0]);
+        document.querySelector('.calc').classList.add('d-none');
+        document.querySelector('.prev').classList.remove('d-none');
+        document.querySelector('.next').classList.remove('d-none');
+        // Highlight
+        document.querySelectorAll('#cmp-body tr').forEach(function (r) { r.classList.remove('cmp-best'); });
+        var row = document.getElementById('cmp-row-' + h);
+        if (row) row.classList.add('cmp-best');
+      };
+
+      // ── Custom solve function ──────────────────────────────────
+      function solveWithComparison() {
+        var calcBtn  = document.querySelector('.calc');
+        var selected = document.getElementById('heuristic-select').value;
+
+        calcBtn.setAttribute('disabled', 'disabled');
+        calcBtn.textContent = 'Solving (' + LABELS[selected] + ')…';
+
+        var grid = gridToText().join('\n');
+        var levelName = DATA.current;
+
+        // Clear old
+        cmpSolutions = {};
+        document.querySelectorAll('#cmp-body tr').forEach(function (r) { r.classList.remove('cmp-best'); });
+
+        showPanel(levelName);
+
+        // Order: selected first for fast feedback
+        var hOrder = [selected];
+        ['naive_manhattan', 'greedy_matching', 'enhanced'].forEach(function (h) {
+          if (h !== selected) hOrder.push(h);
+        });
+
+        var solutionSet = false;
+        var id = ++reqId;
+        compareAcc[id] = {
+          onResult: function (h, result) {
+            updateRow(h, result);
+            // When the selected heuristic finishes with a solution, show it immediately
+            if (h === selected && result.solved && !solutionSet) {
+              solutionSet = true;
+              DATA.solution.directions = result.solution;
+              populateSolutionStates();
+              calcBtn.removeAttribute('disabled');
+              calcBtn.textContent = 'Solve';
+              calcBtn.classList.add('d-none');
+              document.querySelector('.prev').classList.remove('d-none');
+              document.querySelector('.next').classList.remove('d-none');
+            }
+          },
+          onDone: function () {
+            markBest();
+            if (!solutionSet) {
+              // Fallback: use any heuristic that solved it
+              var fallback = hOrder.find(function (h) { return !!cmpSolutions[h]; });
+              if (fallback) {
+                DATA.solution.directions = cmpSolutions[fallback];
+                populateSolutionStates();
+                calcBtn.classList.add('d-none');
+                document.querySelector('.prev').classList.remove('d-none');
+                document.querySelector('.next').classList.remove('d-none');
+              } else {
+                alert('No heuristic found a solution within the budget.');
+              }
+            }
+            calcBtn.removeAttribute('disabled');
+            calcBtn.textContent = 'Solve';
+          },
+        };
+
+        getWorker().postMessage({
+          type: 'compare', id: id, grid: grid,
+          heuristics: hOrder, timeLimitMs: 30000, maxNodes: 500000,
+        });
+      }
+
+      // ── Intercept the .calc button ─────────────────────────────
+      // main.js declares `calculate` as const — we can't override it.
+      // Instead, after init() finishes and bindClicks() attaches the
+      // listener, we clone-replace the button to strip old listeners.
+
+      // Wait for init() to finish (it calls bindClicks, enables button)
+      var origInit = window.init;  // init is a const in main.js scope, but also on window? No.
+      // main.js runs init() at bottom. We need to wait until it has completed.
+      // Since main.js's init is async, we poll until the button is enabled.
+      function waitForReady() {
+        var calcBtn = document.querySelector('.calc');
+        if (!calcBtn || calcBtn.hasAttribute('disabled')) {
+          setTimeout(waitForReady, 100);
+          return;
+        }
+        // Button is ready — clone-replace to strip the old click listener
+        var clone = calcBtn.cloneNode(true);
+        calcBtn.parentNode.replaceChild(clone, calcBtn);
+        clone.addEventListener('click', function (e) {
+          e.preventDefault();
+          solveWithComparison();
+        });
+        clone.textContent = 'Solve';
+      }
+      waitForReady();
+
+    })();
+    </script>
+</body>
+</html>
